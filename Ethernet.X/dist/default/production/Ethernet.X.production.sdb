@@ -1,0 +1,3460 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18LF46K22 ]
+[d frameptr 4065 ]
+"42 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/drivers/spi_master.c
+[e E355 . `uc
+MAC_CONFIG 0
+SPI2_DEFAULT 1
+]
+"56
+[e E377 . `uc
+MAC 0
+]
+"56 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/log_syslog.c
+[e E6772 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"58 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[e E614 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"85
+[e E405 . `ui
+ECHO_REPLY 0
+DEST_NETWORK_UNREACHABLE 768
+DEST_HOST_UNREACHABLE 769
+DEST_PROTOCOL_UNREACHABLE 770
+DEST_PORT_UNREACHABLE 771
+FRAGMENTATION_REQUIRED 772
+SOURCE_ROUTE_FAILED 773
+DESTINATION_NETWORK_UNKNOWN 774
+SOURCE_HOST_ISOLATED 775
+NETWORK_ADMINISTRATIVELY_PROHIBITED 776
+HOST_ADMINISTRATIVELY_PROHIBITED 777
+NETWORK_UNREACHABLE_FOR_TOS 778
+HOST_UNREACHABLE_FOR_TOS 779
+COMMUNICATION_ADMINISTRATIVELY_PROHIBITED 780
+HOST_PRECEDENCE_VIOLATION 781
+PRECEDENCE_CUTOFF_IN_EFFECT 782
+SOURCE_QUENCH 1024
+REDIRECT_DATAGRAM_FOR_THE_NETWORK 1280
+REDIRECT_DATAGRAM_FOR_THE_HOST 1281
+REDIRECT_DATAGRAM_FOR_THE_TOS_AND_NETWORK 1282
+REDIRECT_DATAGRAM_FOR_THE_TOS_AND_HOST 1283
+ALTERNATE_HOST_ADDRESS 1536
+ECHO_REQUEST 2048
+UNASSIGNED_ECHO_TYPE_CODE_REQUEST_1 2090
+UNASSIGNED_ECHO_TYPE_CODE_REQUEST_2 2300
+ROUTER_ADVERTISEMENT 2304
+ROUTER_SOLICITATION 2560
+TRACEROUTE 12288
+]
+"108
+[e E471 . `uc
+HOPOPT_TCPIP 0
+ICMP_TCPIP 1
+IGMP_TCPIP 2
+GGP_TCPIP 3
+IPV4_TCPIP 4
+ST_TCPIP 5
+TCP_TCPIP 6
+CBT_TCPIP 7
+EGP_TCPIP 8
+IGP_TCPIP 9
+BBN_RCC_MON_TCPIP 10
+NVP_II_TCPIP 11
+PUP_TCPIP 12
+ARGUS_TCPIP 13
+EMCON_TCPIP 14
+XNET_TCPIP 15
+CHAOS_TCPIP 16
+UDP_TCPIP 17
+MUX_TCPIP 18
+DCN_MEAS_TCPIP 19
+HMP_TCPIP 20
+PRM_TCPIP 21
+XNS_IDP_TCPIP 22
+TRUNK_1_TCPIP 23
+TRUNK_2_TCPIP 24
+LEAF_1_TCPIP 25
+LEAF_2_TCPIP 26
+RDP_TCPIP 27
+IRTP_TCPIP 28
+ISO_TP4_TCPIP 29
+NETBLT_TCPIP 30
+MFE_NSP_TCPIP 31
+MERIT_INP_TCPIP 32
+DCCP_TCPIP 33
+THREEPC_TCPIP 34
+IDPR_TCPIP 35
+XTP_TCPIP 36
+DDP_TCPIP 37
+IDPR_CMTP_TCPIP 38
+TPpp_TCPIP 39
+IL_TCPIP 40
+IPV6_TUNNEL_TCPIP 41
+SDRP_TCPIP 42
+IPV6_Route_TCPIP 43
+IPV6_Frag_TCPIP 44
+IDRP_TCPIP 45
+RSVP_TCPIP 46
+GRE_TCPIP 47
+DSR_TCPIP 48
+BNA_TCPIP 49
+ESP_TCPIP 50
+AH_TCPIP 51
+I_NLSP_TCPIP 52
+SWIPE_TCPIP 53
+NARP_TCPIP 54
+MOBILE_TCPIP 55
+TLSP_TCPIP 56
+SKIP_TCPIP 57
+IPV6_ICMP_TCPIP 58
+IPV6_NoNxt_TCPIP 59
+IPV6_Opts_TCPIP 60
+CFTP_TCPIP 62
+SAT_EXPAK_TCPIP 64
+KRYPTOLAN_TCPIP 65
+RVD_TCPIP 66
+IPPC_TCPIP 67
+SAT_MON_TCPIP 69
+VISA_TCPIP 70
+IPCV_TCPIP 71
+CPNX_TCPIP 72
+CPHB_TCPIP 73
+WSN_TCPIP 74
+PVP_TCPIP 75
+BR_SAT_MON_TCPIP 76
+SUN_ND_TCPIP 77
+WB_MON_TCPIP 78
+WB_EXPAK_TCPIP 79
+ISO_IP_TCPIP 80
+VMTP_TCPIP 81
+SECURE_VMTP_TCPIP 82
+VINES_TCPIP 83
+TTP_TCPIP 84
+IPTM_TCPIP 84
+NSFNET_IGP_TCPIP 85
+DGP_TCPIP 86
+TCF_TCPIP 87
+EIGRP_TCPIP 88
+OSPFIGP_TCPIP 89
+Sprite_RPC_TCPIP 90
+LARP_TCPIP 91
+MTP_TCPIP 92
+AX25_TCPIP 93
+IPIP_TCPIP 94
+MICP_TCPIP 95
+SCC_SP_TCPIP 96
+ETHERIP_TCPIP 97
+ENCAP_TCPIP 98
+GMTP_TCPIP 100
+IFMP_TCPIP 101
+PNNI_TCPIP 102
+PIM_TCPIP 103
+ARIS_TCPIP 104
+SCPS_TCPIP 105
+QNX_TCPIP 106
+A_N_TCPIP 107
+IPComp_TCPIP 108
+SNP_TCPIP 109
+Compaq_Peer_TCPIP 110
+IPX_in_IP_TCPIP 111
+VRRP_TCPIP 112
+PGM_TCPIP 113
+L2TP_TCPIP 115
+DDX_TCPIP 116
+IATP_TCPIP 117
+STP_TCPIP 118
+SRP_TCPIP 119
+UTI_TCPIP 120
+SMP_TCPIP 121
+SM_TCPIP 122
+PTP_TCPIP 123
+ISIS_TCPIP 124
+FIRE_TCPIP 125
+CRTP_TCPIP 126
+CRUDP_TCPIP 127
+SSCOPMCE_TCPIP 128
+IPLT_TCPIP 129
+SPS_TCPIP 130
+PIPE_TCPIP 131
+SCTP_TCPIP 132
+FC_TCPIP 133
+]
+"139 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/network.c
+[e E930 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"63 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[e E496 . `uc
+sfr_bank0 0
+sfr_bank1 64
+sfr_bank2 128
+sfr_bank3 192
+sfr_common 224
+]
+"139
+[e E503 . `uc
+J60_ERDPTL 0
+J60_ERDPTH 1
+J60_EWRPTL 2
+J60_EWRPTH 3
+J60_ETXSTL 4
+J60_ETXSTH 5
+J60_ETXNDL 6
+J60_ETXNDH 7
+J60_ERXSTL 8
+J60_ERXSTH 9
+J60_ERXNDL 10
+J60_ERXNDH 11
+J60_ERXRDPTL 12
+J60_ERXRDPTH 13
+J60_ERXWRPTL 14
+J60_ERXWRPTH 15
+J60_EDMASTL 16
+J60_EDMASTH 17
+J60_EDMANDL 18
+J60_EDMANDH 19
+J60_EDMADSTL 20
+J60_EDMADSTH 21
+J60_EDMACSL 22
+J60_EDMACSH 23
+RSRV_018 24
+RSRV_019 25
+RSRV_01A 26
+J60_EHT0 64
+J60_EHT1 65
+J60_EHT2 66
+J60_EHT3 67
+J60_EHT4 68
+J60_EHT5 69
+J60_EHT6 70
+J60_EHT7 71
+J60_EPMM0 72
+J60_EPMM1 73
+J60_EPMM2 74
+J60_EPMM3 75
+J60_EPMM4 76
+J60_EPMM5 77
+J60_EPMM6 78
+J60_EPMM7 79
+J60_EPMCSL 80
+J60_EPMCSH 81
+RSRV_112 82
+RSRV_113 83
+J60_EPMOL 84
+J60_EPMOH 85
+RSRV_116 86
+RSRV_117 87
+J60_ERXFCON 88
+J60_EPKTCNT 89
+RSRV_11A 90
+J60_MACON1 128
+RSRV_201 129
+J60_MACON3 130
+J60_MACON4 131
+J60_MABBIPG 132
+RSRV_205 133
+J60_MAIPGL 134
+J60_MAIPGH 135
+J60_MACLCON1 136
+J60_MACLCON2 137
+J60_MAMXFLL 138
+J60_MAMXFLH 139
+RSRV_20C 140
+RSRV_20D 141
+RSRV_20E 142
+RSRV_20F 143
+RSRV_210 144
+RSRV_211 145
+J60_MICMD 146
+RSRV_213 147
+J60_MIREGADR 148
+RSRV_215 149
+J60_MIWRL 150
+J60_MIWRH 151
+J60_MIRDL 152
+J60_MIRDH 153
+RSRV_21A 154
+J60_MAADR5 192
+J60_MAADR6 193
+J60_MAADR3 194
+J60_MAADR4 195
+J60_MAADR1 196
+J60_MAADR2 197
+J60_EBSTSD 198
+J60_EBSTCON 199
+J60_EBSTCSL 200
+J60_EBSTCSH 201
+J60_MISTAT 202
+RSRV_30B 203
+RSRV_30C 204
+RSRV_30D 205
+RSRV_30E 206
+RSRV_30F 207
+RSRV_310 208
+RSRV_311 209
+J60_EREVID 210
+RSRV_313 211
+RSRV_314 212
+J60_ECOCON 213
+RSRV_316 214
+J60_EFLOCON 215
+J60_EPAUSL 216
+J60_EPAUSH 217
+RSRV_31A 218
+J60_EIE 251
+J60_EIR 252
+J60_ESTAT 253
+J60_ECON2 254
+J60_ECON1 255
+]
+"148
+[e E487 . `uc
+rcr_inst 0
+rbm_inst 58
+wcr_inst 64
+wbm_inst 122
+bfs_inst 128
+bfc_inst 160
+src_inst 255
+]
+"169
+[e E618 . `uc
+J60_PHCON1 0
+J60_PHSTAT1 1
+J60_PHID1 2
+J60_PHID2 3
+J60_PHCON2 16
+J60_PHSTAT2 17
+J60_PHIE 18
+J60_PHIR 19
+J60_PHLCON 20
+]
+"329
+[e E7040 . `uc
+MAC 0
+]
+"452
+[e E309 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"101 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[e E779 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"118 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[e E614 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"211
+[e E471 . `uc
+HOPOPT_TCPIP 0
+ICMP_TCPIP 1
+IGMP_TCPIP 2
+GGP_TCPIP 3
+IPV4_TCPIP 4
+ST_TCPIP 5
+TCP_TCPIP 6
+CBT_TCPIP 7
+EGP_TCPIP 8
+IGP_TCPIP 9
+BBN_RCC_MON_TCPIP 10
+NVP_II_TCPIP 11
+PUP_TCPIP 12
+ARGUS_TCPIP 13
+EMCON_TCPIP 14
+XNET_TCPIP 15
+CHAOS_TCPIP 16
+UDP_TCPIP 17
+MUX_TCPIP 18
+DCN_MEAS_TCPIP 19
+HMP_TCPIP 20
+PRM_TCPIP 21
+XNS_IDP_TCPIP 22
+TRUNK_1_TCPIP 23
+TRUNK_2_TCPIP 24
+LEAF_1_TCPIP 25
+LEAF_2_TCPIP 26
+RDP_TCPIP 27
+IRTP_TCPIP 28
+ISO_TP4_TCPIP 29
+NETBLT_TCPIP 30
+MFE_NSP_TCPIP 31
+MERIT_INP_TCPIP 32
+DCCP_TCPIP 33
+THREEPC_TCPIP 34
+IDPR_TCPIP 35
+XTP_TCPIP 36
+DDP_TCPIP 37
+IDPR_CMTP_TCPIP 38
+TPpp_TCPIP 39
+IL_TCPIP 40
+IPV6_TUNNEL_TCPIP 41
+SDRP_TCPIP 42
+IPV6_Route_TCPIP 43
+IPV6_Frag_TCPIP 44
+IDRP_TCPIP 45
+RSVP_TCPIP 46
+GRE_TCPIP 47
+DSR_TCPIP 48
+BNA_TCPIP 49
+ESP_TCPIP 50
+AH_TCPIP 51
+I_NLSP_TCPIP 52
+SWIPE_TCPIP 53
+NARP_TCPIP 54
+MOBILE_TCPIP 55
+TLSP_TCPIP 56
+SKIP_TCPIP 57
+IPV6_ICMP_TCPIP 58
+IPV6_NoNxt_TCPIP 59
+IPV6_Opts_TCPIP 60
+CFTP_TCPIP 62
+SAT_EXPAK_TCPIP 64
+KRYPTOLAN_TCPIP 65
+RVD_TCPIP 66
+IPPC_TCPIP 67
+SAT_MON_TCPIP 69
+VISA_TCPIP 70
+IPCV_TCPIP 71
+CPNX_TCPIP 72
+CPHB_TCPIP 73
+WSN_TCPIP 74
+PVP_TCPIP 75
+BR_SAT_MON_TCPIP 76
+SUN_ND_TCPIP 77
+WB_MON_TCPIP 78
+WB_EXPAK_TCPIP 79
+ISO_IP_TCPIP 80
+VMTP_TCPIP 81
+SECURE_VMTP_TCPIP 82
+VINES_TCPIP 83
+TTP_TCPIP 84
+IPTM_TCPIP 84
+NSFNET_IGP_TCPIP 85
+DGP_TCPIP 86
+TCF_TCPIP 87
+EIGRP_TCPIP 88
+OSPFIGP_TCPIP 89
+Sprite_RPC_TCPIP 90
+LARP_TCPIP 91
+MTP_TCPIP 92
+AX25_TCPIP 93
+IPIP_TCPIP 94
+MICP_TCPIP 95
+SCC_SP_TCPIP 96
+ETHERIP_TCPIP 97
+ENCAP_TCPIP 98
+GMTP_TCPIP 100
+IFMP_TCPIP 101
+PNNI_TCPIP 102
+PIM_TCPIP 103
+ARIS_TCPIP 104
+SCPS_TCPIP 105
+QNX_TCPIP 106
+A_N_TCPIP 107
+IPComp_TCPIP 108
+SNP_TCPIP 109
+Compaq_Peer_TCPIP 110
+IPX_in_IP_TCPIP 111
+VRRP_TCPIP 112
+PGM_TCPIP 113
+L2TP_TCPIP 115
+DDX_TCPIP 116
+IATP_TCPIP 117
+STP_TCPIP 118
+SRP_TCPIP 119
+UTI_TCPIP 120
+SMP_TCPIP 121
+SM_TCPIP 122
+PTP_TCPIP 123
+ISIS_TCPIP 124
+FIRE_TCPIP 125
+CRTP_TCPIP 126
+CRUDP_TCPIP 127
+SSCOPMCE_TCPIP 128
+IPLT_TCPIP 129
+SPS_TCPIP 130
+PIPE_TCPIP 131
+SCTP_TCPIP 132
+FC_TCPIP 133
+]
+"66 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/log.c
+[e E682 . `uc
+LOG_EMERGENCY 0
+LOG_ALERTS 1
+LOG_CRITICAL 2
+LOG_ERROR 3
+LOG_WARNING 4
+LOG_NOTICE 5
+LOG_INFO 6
+LOG_DEBUG 7
+]
+"68
+[e E692 . `uc
+LOG_KERN 0
+LOG_DTLS 1
+LOG_ECC 2
+LOG_DAEMON 3
+LOG_AUTH 4
+LOG_SYSLOG 5
+LOG_LPR 6
+LOG_NEWS 7
+LOG_TFTP 8
+LOG_UUID 9
+LOG_COAP 10
+LOG_FTP 11
+LOG_NTP 12
+LOG_HTTP 13
+LOG_SNMP 14
+LOG_RTCC 15
+LOG_CBOR 16
+LOG_UDP 17
+LOG_TCP 18
+LOG_DHCP 19
+LOG_DNS 20
+LOG_LLDP 21
+LOG_LINK 22
+LOG_LAST 23
+]
+"119
+[e E990 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"52 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/tcpv4.c
+[e E1011 . `uc
+NO_BUFF 0
+RX_BUFF_IN_USE 1
+TX_BUFF_IN_USE 2
+]
+[e E969 . `uc
+CLOSED 0
+LISTEN 1
+SYN_SENT 2
+SYN_RECEIVED 3
+ESTABLISHED 4
+FIN_WAIT_1 5
+FIN_WAIT_2 6
+CLOSE_WAIT 7
+CLOSING 8
+LAST_ACK 9
+TIME_WAIT 10
+]
+[e E982 . `uc
+CLOSE 0
+ACTIVE_OPEN 1
+PASIVE_OPEN 2
+RCV_SYN 3
+RCV_ACK 4
+RCV_SYNACK 5
+RCV_FIN 6
+RCV_FINACK 7
+RX_PACKET 8
+RCV_RST 9
+RCV_RSTACK 10
+RCV_PSHACK 11
+TIMEOUT 12
+NOP 13
+]
+[e E998 . `uc
+NOT_A_SOCKET 0
+SOCKET_CLOSED 1
+SOCKET_IN_PROGRESS 2
+SOCKET_CONNECTED 3
+SOCKET_CLOSING 4
+]
+"173
+[e E781 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"275
+[e E638 . `uc
+HOPOPT_TCPIP 0
+ICMP_TCPIP 1
+IGMP_TCPIP 2
+GGP_TCPIP 3
+IPV4_TCPIP 4
+ST_TCPIP 5
+TCP_TCPIP 6
+CBT_TCPIP 7
+EGP_TCPIP 8
+IGP_TCPIP 9
+BBN_RCC_MON_TCPIP 10
+NVP_II_TCPIP 11
+PUP_TCPIP 12
+ARGUS_TCPIP 13
+EMCON_TCPIP 14
+XNET_TCPIP 15
+CHAOS_TCPIP 16
+UDP_TCPIP 17
+MUX_TCPIP 18
+DCN_MEAS_TCPIP 19
+HMP_TCPIP 20
+PRM_TCPIP 21
+XNS_IDP_TCPIP 22
+TRUNK_1_TCPIP 23
+TRUNK_2_TCPIP 24
+LEAF_1_TCPIP 25
+LEAF_2_TCPIP 26
+RDP_TCPIP 27
+IRTP_TCPIP 28
+ISO_TP4_TCPIP 29
+NETBLT_TCPIP 30
+MFE_NSP_TCPIP 31
+MERIT_INP_TCPIP 32
+DCCP_TCPIP 33
+THREEPC_TCPIP 34
+IDPR_TCPIP 35
+XTP_TCPIP 36
+DDP_TCPIP 37
+IDPR_CMTP_TCPIP 38
+TPpp_TCPIP 39
+IL_TCPIP 40
+IPV6_TUNNEL_TCPIP 41
+SDRP_TCPIP 42
+IPV6_Route_TCPIP 43
+IPV6_Frag_TCPIP 44
+IDRP_TCPIP 45
+RSVP_TCPIP 46
+GRE_TCPIP 47
+DSR_TCPIP 48
+BNA_TCPIP 49
+ESP_TCPIP 50
+AH_TCPIP 51
+I_NLSP_TCPIP 52
+SWIPE_TCPIP 53
+NARP_TCPIP 54
+MOBILE_TCPIP 55
+TLSP_TCPIP 56
+SKIP_TCPIP 57
+IPV6_ICMP_TCPIP 58
+IPV6_NoNxt_TCPIP 59
+IPV6_Opts_TCPIP 60
+CFTP_TCPIP 62
+SAT_EXPAK_TCPIP 64
+KRYPTOLAN_TCPIP 65
+RVD_TCPIP 66
+IPPC_TCPIP 67
+SAT_MON_TCPIP 69
+VISA_TCPIP 70
+IPCV_TCPIP 71
+CPNX_TCPIP 72
+CPHB_TCPIP 73
+WSN_TCPIP 74
+PVP_TCPIP 75
+BR_SAT_MON_TCPIP 76
+SUN_ND_TCPIP 77
+WB_MON_TCPIP 78
+WB_EXPAK_TCPIP 79
+ISO_IP_TCPIP 80
+VMTP_TCPIP 81
+SECURE_VMTP_TCPIP 82
+VINES_TCPIP 83
+TTP_TCPIP 84
+IPTM_TCPIP 84
+NSFNET_IGP_TCPIP 85
+DGP_TCPIP 86
+TCF_TCPIP 87
+EIGRP_TCPIP 88
+OSPFIGP_TCPIP 89
+Sprite_RPC_TCPIP 90
+LARP_TCPIP 91
+MTP_TCPIP 92
+AX25_TCPIP 93
+IPIP_TCPIP 94
+MICP_TCPIP 95
+SCC_SP_TCPIP 96
+ETHERIP_TCPIP 97
+ENCAP_TCPIP 98
+GMTP_TCPIP 100
+IFMP_TCPIP 101
+PNNI_TCPIP 102
+PIM_TCPIP 103
+ARIS_TCPIP 104
+SCPS_TCPIP 105
+QNX_TCPIP 106
+A_N_TCPIP 107
+IPComp_TCPIP 108
+SNP_TCPIP 109
+Compaq_Peer_TCPIP 110
+IPX_in_IP_TCPIP 111
+VRRP_TCPIP 112
+PGM_TCPIP 113
+L2TP_TCPIP 115
+DDX_TCPIP 116
+IATP_TCPIP 117
+STP_TCPIP 118
+SRP_TCPIP 119
+UTI_TCPIP 120
+SMP_TCPIP 121
+SM_TCPIP 122
+PTP_TCPIP 123
+ISIS_TCPIP 124
+FIRE_TCPIP 125
+CRTP_TCPIP 126
+CRUDP_TCPIP 127
+SSCOPMCE_TCPIP 128
+IPLT_TCPIP 129
+SPS_TCPIP 130
+PIPE_TCPIP 131
+SCTP_TCPIP 132
+FC_TCPIP 133
+]
+"479
+[e E1046 . `uc
+TCP_EOP 0
+TCP_NOP 1
+TCP_MSS 2
+]
+"73 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/spi2.c
+[e E355 . `uc
+MAC_CONFIG 0
+SPI2_DEFAULT 1
+]
+"106 C:\Users\kolel\MPLABXProjects\Ethernet.X\main.c
+[e E6811 . `uc
+NO_BUFF 0
+RX_BUFF_IN_USE 1
+TX_BUFF_IN_USE 2
+]
+[e E6769 . `uc
+CLOSED 0
+LISTEN 1
+SYN_SENT 2
+SYN_RECEIVED 3
+ESTABLISHED 4
+FIN_WAIT_1 5
+FIN_WAIT_2 6
+CLOSE_WAIT 7
+CLOSING 8
+LAST_ACK 9
+TIME_WAIT 10
+]
+[e E6782 . `uc
+CLOSE 0
+ACTIVE_OPEN 1
+PASIVE_OPEN 2
+RCV_SYN 3
+RCV_ACK 4
+RCV_SYNACK 5
+RCV_FIN 6
+RCV_FINACK 7
+RX_PACKET 8
+RCV_RST 9
+RCV_RSTACK 10
+RCV_PSHACK 11
+TIMEOUT 12
+NOP 13
+]
+[e E6798 . `uc
+NOT_A_SOCKET 0
+SOCKET_CLOSED 1
+SOCKET_IN_PROGRESS 2
+SOCKET_CONNECTED 3
+SOCKET_CLOSING 4
+]
+"120
+[e E6685 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__month_to_secs.c
+[v ___month_to_secs __month_to_secs `(l  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__secs_to_tm.c
+[v ___secs_to_tm __secs_to_tm `(l  1 e 4 0 ]
+"32 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__tz.c
+[v _getint getint `(i  1 s 2 getint ]
+"39
+[v _getoff getoff `(i  1 s 2 getoff ]
+"60
+[v _getrule getrule `(v  1 s 1 getrule ]
+"82
+[v _getname getname `(v  1 s 1 getname ]
+"100
+[v _zi_read32 zi_read32 `(ul  1 s 4 zi_read32 ]
+"118
+[v _do_tzset do_tzset `(v  1 s 1 do_tzset ]
+"145
+[v _scan_trans scan_trans `(ui  1 s 2 scan_trans ]
+"210
+[v _days_in_month days_in_month `(i  1 s 2 days_in_month ]
+"218
+[v _rule_to_secs rule_to_secs `(o  1 s 8 rule_to_secs ]
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__year_to_secs.c
+[v ___year_to_secs __year_to_secs `(o  1 e 8 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"568
+[v _stoa stoa `(i  1 s 2 stoa ]
+"615
+[v _utoa utoa `(i  1 s 2 utoa ]
+"645
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"40 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\time.h
+[s S176 tm 24 `i 1 tm_sec 2 0 `i 1 tm_min 2 2 `i 1 tm_hour 2 4 `i 1 tm_mday 2 6 `i 1 tm_mon 2 8 `i 1 tm_year 2 10 `i 1 tm_wday 2 12 `i 1 tm_yday 2 14 `i 1 tm_isdst 2 16 `l 1 __tm_gmtoff 4 18 `*.32Cuc 1 __tm_zone 2 22 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\gmtime.c
+[v _gmtime gmtime `(*.39S176  1 e 2 0 ]
+"40 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\time.h
+[s S176 tm 24 `i 1 tm_sec 2 0 `i 1 tm_min 2 2 `i 1 tm_hour 2 4 `i 1 tm_mday 2 6 `i 1 tm_mon 2 8 `i 1 tm_year 2 10 `i 1 tm_wday 2 12 `i 1 tm_yday 2 14 `i 1 tm_isdst 2 16 `l 1 __tm_gmtoff 4 18 `*.32Cuc 1 __tm_zone 2 22 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\gmtime_r.c
+[v ___gmtime_r __gmtime_r `(*.39S176  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
+[v _islower islower `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strchr.c
+[v _strchr strchr `(*.32uc  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strtok.c
+[v _strtok strtok `(*.2uc  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"67 C:\Users\kolel\MPLABXProjects\Ethernet.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"190
+[v _TCP_Blinky TCP_Blinky `(v  1 e 1 0 ]
+"41 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/drivers/spi_master.c
+[v _MAC_open MAC_open `(a  1 e 1 0 ]
+"56
+[v _spi_master_open spi_master_open `(a  1 e 1 0 ]
+"83 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/eusart2.c
+[v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
+"162
+[v _EUSART2_Write EUSART2_Write `(v  1 e 1 0 ]
+"173
+[v _EUSART2_Receive_ISR EUSART2_Receive_ISR `(v  1 e 1 0 ]
+"197
+[v _EUSART2_RxDataHandler EUSART2_RxDataHandler `(v  1 e 1 0 ]
+"207
+[v _EUSART2_DefaultFramingErrorHandler EUSART2_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"209
+[v _EUSART2_DefaultOverrunErrorHandler EUSART2_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"217
+[v _EUSART2_DefaultErrorHandler EUSART2_DefaultErrorHandler `(v  1 e 1 0 ]
+"221
+[v _EUSART2_SetFramingErrorHandler EUSART2_SetFramingErrorHandler `(v  1 e 1 0 ]
+"225
+[v _EUSART2_SetOverrunErrorHandler EUSART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"229
+[v _EUSART2_SetErrorHandler EUSART2_SetErrorHandler `(v  1 e 1 0 ]
+"234
+[v _EUSART2_SetRxInterruptHandler EUSART2_SetRxInterruptHandler `(v  1 e 1 0 ]
+"238
+[v _EUSART2_putrs EUSART2_putrs `(v  1 e 1 0 ]
+"52 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"63
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"63 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/spi2.c
+[v _SPI2_Initialize SPI2_Initialize `(v  1 e 1 0 ]
+"73
+[v _SPI2_Open SPI2_Open `(a  1 e 1 0 ]
+"88
+[v _SPI2_Close SPI2_Close `(v  1 e 1 0 ]
+"93
+[v _SPI2_ExchangeByte SPI2_ExchangeByte `(uc  1 e 1 0 ]
+"101
+[v _SPI2_ExchangeBlock SPI2_ExchangeBlock `(v  1 e 1 0 ]
+"114
+[v _SPI2_WriteBlock SPI2_WriteBlock `(v  1 e 1 0 ]
+"123
+[v _SPI2_ReadBlock SPI2_ReadBlock `(v  1 e 1 0 ]
+"132
+[v _SPI2_WriteByte SPI2_WriteByte `(v  1 e 1 0 ]
+"137
+[v _SPI2_ReadByte SPI2_ReadByte `(uc  1 e 1 0 ]
+"87 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Init ARPV4_Init `(v  1 e 1 0 ]
+"101
+[v _ARPV4_Packet ARPV4_Packet `(E930  1 e 1 0 ]
+"187
+[v _ARPV4_Update ARPV4_Update `(v  1 e 1 0 ]
+"202
+[v _ARPV4_Request ARPV4_Request `(E779  1 e 1 0 ]
+"49 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/mac_address.h
+"51
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"242 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[v _ARPV4_Lookup ARPV4_Lookup `(*.39S874  1 e 2 0 ]
+"139 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ENC28_BankSel ENC28_BankSel `(v  1 s 1 ENC28_BankSel ]
+"165
+[v _ETH_CheckLinkUp ETH_CheckLinkUp `(a  1 e 1 0 ]
+"90 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[s S904 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"185 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_NewPacket ETH_NewPacket `(*.39S904  1 e 2 0 ]
+"240
+[v _ETH_PacketListReset ETH_PacketListReset `(v  1 e 1 0 ]
+"261
+[v _ETH_RemovePacket ETH_RemovePacket `(v  1 e 1 0 ]
+"327
+[v _ETH_OpenSPI ETH_OpenSPI `(v  1 e 1 0 ]
+"335
+[v _ETH_Init ETH_Init `(v  1 e 1 0 ]
+"414
+[v _ETH_EventHandler ETH_EventHandler `(v  1 e 1 0 ]
+"470
+[v _ETH_NextPacketUpdate ETH_NextPacketUpdate `(v  1 e 1 0 ]
+"507
+[v _ENC28_Rcr8 ENC28_Rcr8 `(uc  1 s 1 ENC28_Rcr8 ]
+"525
+[v _ENC28_Rcr16 ENC28_Rcr16 `(us  1 s 2 ENC28_Rcr16 ]
+"550
+[v _ENC28_Wcr8 ENC28_Wcr8 `(v  1 s 1 ENC28_Wcr8 ]
+"564
+[v _ENC28_Wcr16 ENC28_Wcr16 `(v  1 s 1 ENC28_Wcr16 ]
+"585
+[v _ENC28_Bfs ENC28_Bfs `(v  1 s 1 ENC28_Bfs ]
+"599
+[v _ENC28_Bfc ENC28_Bfc `(v  1 s 1 ENC28_Bfc ]
+"613
+[v _ENC28_PhyWrite ENC28_PhyWrite `(v  1 s 1 ENC28_PhyWrite ]
+"630
+[v _ENC28_PhyRead ENC28_PhyRead `(us  1 s 2 ENC28_PhyRead ]
+"643
+[v _ETH_SendSystemReset ETH_SendSystemReset `(v  1 e 1 0 ]
+"656
+[v _ETH_Read8 ETH_Read8 `(uc  1 e 1 0 ]
+"672
+[v _ETH_Read16 ETH_Read16 `(us  1 e 2 0 ]
+"710
+[v _ETH_ReadBlock ETH_ReadBlock `(us  1 e 2 0 ]
+"730
+[v _ETH_Write8 ETH_Write8 `(v  1 e 1 0 ]
+"743
+[v _ETH_Write16 ETH_Write16 `(v  1 e 1 0 ]
+"757
+[v _ETH_Write32 ETH_Write32 `(v  1 e 1 0 ]
+"791
+[v _ETH_WriteBlock ETH_WriteBlock `(us  1 e 2 0 ]
+"822
+[v _ETH_WriteStart ETH_WriteStart `(E309  1 e 1 0 ]
+"891
+[v _ETH_SendQueued ETH_SendQueued `(E309  1 e 1 0 ]
+"921
+[v _ETH_Send ETH_Send `(E309  1 e 1 0 ]
+"953
+[v _ETH_Dump ETH_Dump `(v  1 e 1 0 ]
+"971
+[v _ETH_Flush ETH_Flush `(v  1 e 1 0 ]
+"987
+[v _ETH_Insert ETH_Insert `(v  1 e 1 0 ]
+"1009
+[v _ETH_Copy ETH_Copy `(E614  1 e 1 0 ]
+"1063
+[v _ETH_Shift_Tx_Packets ETH_Shift_Tx_Packets `(E309  1 e 1 0 ]
+"1110
+[v _ETH_ComputeChecksum ETH_ComputeChecksum `(us  1 s 2 ETH_ComputeChecksum ]
+"1153
+[v _ETH_TxComputeChecksum ETH_TxComputeChecksum `(us  1 e 2 0 ]
+"1193
+[v _ETH_RxComputeChecksum ETH_RxComputeChecksum `(us  1 e 2 0 ]
+"1214
+[v _ETH_GetMAC ETH_GetMAC `(v  1 e 1 0 ]
+"1238
+[v _ETH_SaveRDPT ETH_SaveRDPT `(v  1 e 1 0 ]
+"1243
+[v _ETH_GetReadPtr ETH_GetReadPtr `(us  1 e 2 0 ]
+"1248
+[v _ETH_SetReadPtr ETH_SetReadPtr `(v  1 e 1 0 ]
+"1273
+[v _ETH_GetRxByteCount ETH_GetRxByteCount `(us  1 e 2 0 ]
+"1278
+[v _ETH_SetRxByteCount ETH_SetRxByteCount `(v  1 e 1 0 ]
+"1283
+[v _ETH_ResetByteCount ETH_ResetByteCount `(v  1 e 1 0 ]
+"58 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[v _ICMP_Receive ICMP_Receive `(E614  1 e 1 0 ]
+"99
+[v _ICMP_EchoReply ICMP_EchoReply `(E614  1 e 1 0 ]
+"164
+[v _isPortUnreachable isPortUnreachable `(a  1 e 1 0 ]
+"172
+[v _resetPortUnreachable resetPortUnreachable `(v  1 e 1 0 ]
+"31 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ip_database.c
+[v _ipdb_init ipdb_init `(v  1 e 1 0 ]
+"69 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_Init IPV4_Init `(v  1 e 1 0 ]
+"74
+[v _IPV4_PseudoHeaderChecksum IPV4_PseudoHeaderChecksum `(us  1 e 2 0 ]
+"107
+[v _getHeaderLen getHeaderLen `(uc  1 s 1 getHeaderLen ]
+"118
+[v _IPV4_Packet IPV4_Packet `(E930  1 e 1 0 ]
+"220
+[v _IPv4_Start IPv4_Start `(E614  1 e 1 0 ]
+"276
+[v _IPV4_Send IPV4_Send `(E614  1 e 1 0 ]
+"97 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/log.c
+[v _LOG_Init LOG_Init `(v  1 e 1 0 ]
+"53 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/log_console.c
+[v _logConsole logConsole `(uc  1 e 1 0 ]
+"56 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/log_syslog.c
+[v _logSyslog logSyslog `(E6772  1 e 1 0 ]
+"49 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/mac_address.h
+"51
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"48 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/mac_address.c
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[v _MAC_getAddress MAC_getAddress `(*.39CS874  1 e 2 0 ]
+"75 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_Init Network_Init `(v  1 e 1 0 ]
+"87
+[v _timersInit timersInit `(v  1 e 1 0 ]
+"93
+[v _Network_WaitForLink Network_WaitForLink `(v  1 e 1 0 ]
+"98
+[v _Network_Manage Network_Manage `(v  1 e 1 0 ]
+"121
+[v _Network_Read Network_Read `(v  1 e 1 0 ]
+"166
+[v _Network_SaveStartPosition Network_SaveStartPosition `(v  1 s 1 Network_SaveStartPosition ]
+"171
+[v _Network_GetStartPosition Network_GetStartPosition `(us  1 e 2 0 ]
+"60 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _rtcc_init rtcc_init `(v  1 e 1 0 ]
+"93
+[v _rtcc_handler rtcc_handler `(v  1 e 1 0 ]
+"160
+[v _time time `(o  1 e 8 0 ]
+"89 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/tcpv4.c
+[v _TCB_Insert TCB_Insert `(v  1 s 1 TCB_Insert ]
+"113
+[v _TCB_Remove TCB_Remove `(v  1 s 1 TCB_Remove ]
+"143
+[v _TCB_Reset TCB_Reset `(v  1 s 1 TCB_Reset ]
+"173
+[v _TCB_Check TCB_Check `(E781  1 s 1 TCB_Check ]
+"211
+[v _TCP_Snd TCP_Snd `(E781  1 s 1 TCP_Snd ]
+"329
+[v _TCP_PayloadSave TCP_PayloadSave `(E781  1 e 1 0 ]
+"378
+[v _TCP_ParseTCPOptions TCP_ParseTCPOptions `(E781  1 s 1 TCP_ParseTCPOptions ]
+"506
+[v _TCP_Recv TCP_Recv `(v  1 e 1 0 ]
+"625
+[v _TCP_FiniteStateMachine TCP_FiniteStateMachine `(E781  1 s 1 TCP_FiniteStateMachine ]
+"1266
+[v _TCP_Init TCP_Init `(v  1 e 1 0 ]
+"1274
+[v _TCP_SocketInit TCP_SocketInit `(E781  1 e 1 0 ]
+"1303
+[v _TCP_SocketRemove TCP_SocketRemove `(E781  1 e 1 0 ]
+"1316
+[v _TCP_SocketPoll TCP_SocketPoll `(E998  1 e 1 0 ]
+"1331
+[v _TCP_Bind TCP_Bind `(E781  1 e 1 0 ]
+"1346
+[v _TCP_Listen TCP_Listen `(E781  1 e 1 0 ]
+"1424
+[v _TCP_Send TCP_Send `(E781  1 e 1 0 ]
+"1455
+[v _TCP_SendDone TCP_SendDone `(E781  1 e 1 0 ]
+"1469
+[v _TCP_InsertRxBuffer TCP_InsertRxBuffer `(E781  1 e 1 0 ]
+"1491
+[v _TCP_GetReceivedData TCP_GetReceivedData `(s  1 e 2 0 ]
+"1511
+[v _TCP_GetRxLength TCP_GetRxLength `(s  1 e 2 0 ]
+"1525
+[v _TCP_Update TCP_Update `(v  1 e 1 0 ]
+"1575
+[v _TCP_TimoutRetransmit TCP_TimoutRetransmit `(E781  1 s 1 TCP_TimoutRetransmit ]
+"69 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"138
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"160
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"164
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"65 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"122
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"159
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"178
+[v _TMR1_CallBack TMR1_CallBack `(v  1 e 1 0 ]
+"188
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"192
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"52 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"97
+[v _ANSELB ANSELB `VEuc  1 e 1 @3897 ]
+"147
+[v _ANSELC ANSELC `VEuc  1 e 1 @3898 ]
+"198
+[v _ANSELD ANSELD `VEuc  1 e 1 @3899 ]
+"260
+[v _ANSELE ANSELE `VEuc  1 e 1 @3900 ]
+"2719
+[v _WPUB WPUB `VEuc  1 e 1 @3937 ]
+"3533
+[v _SSP2CON2 SSP2CON2 `VEuc  1 e 1 @3947 ]
+"3678
+[v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @3948 ]
+[s S4093 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"3708
+[s S4099 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S4104 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S4113 . 1 `S4093 1 . 1 0 `S4099 1 . 1 0 `S4104 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES4113  1 e 1 @3948 ]
+"3798
+[v _SSP2STAT SSP2STAT `VEuc  1 e 1 @3949 ]
+"4198
+[v _SSP2ADD SSP2ADD `VEuc  1 e 1 @3950 ]
+"4268
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @3951 ]
+"4288
+[v _BAUDCON2 BAUDCON2 `VEuc  1 e 1 @3952 ]
+"4550
+[v _RCSTA2 RCSTA2 `VEuc  1 e 1 @3953 ]
+[s S4350 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4595
+[s S4359 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S4362 . 1 `uc 1 RX9D2 1 0 :1:0 
+`uc 1 OERR2 1 0 :1:1 
+`uc 1 FERR2 1 0 :1:2 
+`uc 1 ADDEN2 1 0 :1:3 
+`uc 1 CREN2 1 0 :1:4 
+`uc 1 SREN2 1 0 :1:5 
+`uc 1 RX92 1 0 :1:6 
+`uc 1 SPEN2 1 0 :1:7 
+]
+[s S4371 . 1 `uc 1 RCD82 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC8_92 1 0 :1:6 
+]
+[s S4375 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC92 1 0 :1:6 
+]
+[u S4378 . 1 `S4350 1 . 1 0 `S4359 1 . 1 0 `S4362 1 . 1 0 `S4371 1 . 1 0 `S4375 1 . 1 0 ]
+[v _RCSTA2bits RCSTA2bits `VES4378  1 e 1 @3953 ]
+"4838
+[v _TXSTA2 TXSTA2 `VEuc  1 e 1 @3954 ]
+[s S4300 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"4875
+[s S4309 . 1 `uc 1 TX9D2 1 0 :1:0 
+`uc 1 TRMT2 1 0 :1:1 
+`uc 1 BRGH2 1 0 :1:2 
+`uc 1 SENDB2 1 0 :1:3 
+`uc 1 SYNC2 1 0 :1:4 
+`uc 1 TXEN2 1 0 :1:5 
+`uc 1 TX92 1 0 :1:6 
+`uc 1 CSRC2 1 0 :1:7 
+]
+[s S4318 . 1 `uc 1 TXD82 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 TX8_92 1 0 :1:6 
+]
+[u S4322 . 1 `S4300 1 . 1 0 `S4309 1 . 1 0 `S4318 1 . 1 0 ]
+[v _TXSTA2bits TXSTA2bits `VES4322  1 e 1 @3954 ]
+"5090
+[v _TXREG2 TXREG2 `VEuc  1 e 1 @3955 ]
+"5128
+[v _RCREG2 RCREG2 `VEuc  1 e 1 @3956 ]
+"5166
+[v _SPBRG2 SPBRG2 `VEuc  1 e 1 @3957 ]
+"5204
+[v _SPBRGH2 SPBRGH2 `VEuc  1 e 1 @3958 ]
+"7560
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"7672
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S4619 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"7699
+[s S4628 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S4637 . 1 `S4619 1 . 1 0 `S4628 1 . 1 0 ]
+[v _LATBbits LATBbits `VES4637  1 e 1 @3978 ]
+"7784
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"7896
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"8008
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"8060
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"8282
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"8504
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"8726
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S4053 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"8758
+[s S4062 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+[u S4071 . 1 `S4053 1 . 1 0 `S4062 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES4071  1 e 1 @3989 ]
+"8948
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"9064
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S3618 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"9436
+[s S3626 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[u S3631 . 1 `S3618 1 . 1 0 `S3626 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES3631  1 e 1 @3997 ]
+[s S3648 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"9513
+[s S3656 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S3661 . 1 `S3648 1 . 1 0 `S3656 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES3661  1 e 1 @3998 ]
+[s S3539 . 1 `uc 1 TMR1GIE 1 0 :1:0 
+`uc 1 TMR3GIE 1 0 :1:1 
+`uc 1 TMR5GIE 1 0 :1:2 
+`uc 1 CTMUIE 1 0 :1:3 
+`uc 1 TX2IE 1 0 :1:4 
+`uc 1 RC2IE 1 0 :1:5 
+`uc 1 BCL2IE 1 0 :1:6 
+`uc 1 SSP2IE 1 0 :1:7 
+]
+"9933
+[s S3548 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S3554 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S3559 . 1 `S3539 1 . 1 0 `S3548 1 . 1 0 `S3554 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES3559  1 e 1 @4003 ]
+[s S3584 . 1 `uc 1 TMR1GIF 1 0 :1:0 
+`uc 1 TMR3GIF 1 0 :1:1 
+`uc 1 TMR5GIF 1 0 :1:2 
+`uc 1 CTMUIF 1 0 :1:3 
+`uc 1 TX2IF 1 0 :1:4 
+`uc 1 RC2IF 1 0 :1:5 
+`uc 1 BCL2IF 1 0 :1:6 
+`uc 1 SSP2IF 1 0 :1:7 
+]
+"10036
+[s S3593 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S3598 . 1 `S3584 1 . 1 0 `S3593 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES3598  1 e 1 @4004 ]
+"15573
+[v _T1GCON T1GCON `VEuc  1 e 1 @4044 ]
+[s S3831 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_DONE 1 0 :1:3 
+]
+"15603
+[s S3834 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+[s S3842 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T1G_DONE 1 0 :1:3 
+]
+[s S3847 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO 1 0 :1:3 
+]
+[u S3850 . 1 `S3831 1 . 1 0 `S3834 1 . 1 0 `S3842 1 . 1 0 `S3847 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES3850  1 e 1 @4044 ]
+"15668
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+[s S3781 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"15701
+[s S3784 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[s S3791 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[s S3800 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN 1 0 :1:3 
+]
+[u S3803 . 1 `S3781 1 . 1 0 `S3784 1 . 1 0 `S3791 1 . 1 0 `S3800 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES3803  1 e 1 @4045 ]
+"15781
+[v _TMR1 TMR1 `VEus  1 e 2 @4046 ]
+"15788
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"15808
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S3441 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"15871
+[s S3443 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S3446 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S3449 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S3452 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S3455 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S3464 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S3470 . 1 `S3441 1 . 1 0 `S3443 1 . 1 0 `S3446 1 . 1 0 `S3449 1 . 1 0 `S3452 1 . 1 0 `S3455 1 . 1 0 `S3464 1 . 1 0 ]
+[v _RCONbits RCONbits `VES3470  1 e 1 @4048 ]
+"15989
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
+"16046
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"16129
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S4494 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"16149
+[s S4501 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S4505 . 1 `S4494 1 . 1 0 `S4501 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES4505  1 e 1 @4053 ]
+"16206
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"16226
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S3943 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"16881
+[s S3946 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S3955 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S3958 . 1 `S3943 1 . 1 0 `S3946 1 . 1 0 `S3955 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES3958  1 e 1 @4081 ]
+[s S1718 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"16958
+[s S1727 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S1736 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S1740 . 1 `S1718 1 . 1 0 `S1727 1 . 1 0 `S1736 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1740  1 e 1 @4082 ]
+"18491
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"18821
+[v _LATD3 LATD3 `VEb  1 e 0 @31843 ]
+"19373
+[v _PLLRDY PLLRDY `VEb  1 e 0 @32407 ]
+"18 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__tz.c
+[v ___gmt __gmt `C[4]uc  1 e 4 0 ]
+"30
+[v _lock lock `VE[2]i  1 s 4 lock ]
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"50 C:\Users\kolel\MPLABXProjects\Ethernet.X\main.c
+[v _cnt cnt `VEuc  1 e 1 0 ]
+"63 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/eusart2.c
+[v _eusart2RxHead eusart2RxHead `VEuc  1 e 1 0 ]
+"64
+[v _eusart2RxTail eusart2RxTail `VEuc  1 e 1 0 ]
+"65
+[v _eusart2RxBuffer eusart2RxBuffer `VE[64]uc  1 e 64 0 ]
+[s S4200 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"66
+[u S4205 . 1 `S4200 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusart2RxStatusBuffer eusart2RxStatusBuffer `VE[64]S4205  1 e 64 0 ]
+"67
+[v _eusart2RxCount eusart2RxCount `VEuc  1 e 1 0 ]
+"68
+[v _eusart2RxLastError eusart2RxLastError `VES4205  1 e 1 0 ]
+"73
+[v _EUSART2_RxDefaultInterruptHandler EUSART2_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"75
+[v _EUSART2_FramingErrorHandler EUSART2_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"76
+[v _EUSART2_OverrunErrorHandler EUSART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"77
+[v _EUSART2_ErrorHandler EUSART2_ErrorHandler `*.37(v  1 e 2 0 ]
+[s S4045 . 4 `uc 1 con1 1 0 `uc 1 stat 1 1 `uc 1 add 1 2 `uc 1 operation 1 3 ]
+"58 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/spi2.c
+[v _spi2_configuration spi2_configuration `C[2]S4045  1 s 8 spi2_configuration ]
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"79 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[v _hostMacAddress hostMacAddress `S874  1 e 6 0 ]
+"81
+[s S1465 . 13 `S874 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v _arpMap arpMap `[8]S1465  1 e 104 0 ]
+[s S692 . 6 `uc 1 error 1 0 :1:0 
+`uc 1 pktReady 1 0 :1:1 
+`uc 1 up 1 0 :1:2 
+`uc 1 idle 1 0 :1:3 
+`uc 1 linkChange 1 0 :1:4 
+`uc 1 bufferBusy 1 0 :1:5 
+`uc 1 . 1 1 :3:0 
+`us 1 saveRDPT 2 2 `us 1 saveWRPT 2 4 ]
+"59 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ethData ethData `VES692  1 e 6 0 ]
+"60
+[v _eth_MAC eth_MAC `*.39CS874  1 e 2 0 ]
+"61
+[v _nextPacketPointer nextPacketPointer `us  1 s 2 nextPacketPointer ]
+[s S877 . 4 `us 1 byteCount 2 0 `uc 1 long_drop_event 1 2 :1:0 
+`uc 1 . 1 2 :1:1 
+`uc 1 excessCarrierEvent 1 2 :1:2 
+`uc 1 . 1 2 :1:3 
+`uc 1 crcError 1 2 :1:4 
+`uc 1 lengthCheckError 1 2 :1:5 
+`uc 1 lengthLongError 1 2 :1:6 
+`uc 1 rxOK 1 2 :1:7 
+`uc 1 rxMulticast 1 3 :1:0 
+`uc 1 rxBroadcast 1 3 :1:1 
+`uc 1 dribbleNibble 1 3 :1:2 
+`uc 1 controlFrame 1 3 :1:3 
+`uc 1 pauseControlFrame 1 3 :1:4 
+`uc 1 unknownContrlFrame 1 3 :1:5 
+`uc 1 vlanTagPresent 1 3 :1:6 
+`uc 1 zero 1 3 :1:7 
+]
+"62
+[u S895 . 4 `[4]uc 1 v 4 0 `S877 1 . 4 0 ]
+[v _rxPacketStatusVector rxPacketStatusVector `S895  1 s 4 rxPacketStatusVector ]
+"63
+[v _lastBank lastBank `E496  1 e 1 0 ]
+"100
+[v _ethListSize ethListSize `uc  1 e 1 0 ]
+[s S904 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"102
+[v _txData txData `[20]S904  1 s 200 txData ]
+"104
+[v _pHead pHead `*.39S904  1 s 2 pHead ]
+"105
+[v _pTail pTail `*.39S904  1 s 2 pTail ]
+"131
+[v _TXPacketSize TXPacketSize `us  1 e 2 0 ]
+"246 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.h
+[v _Control_Byte Control_Byte `uc  1 e 1 0 ]
+"51 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[v _portUnreachable portUnreachable `us  1 e 2 0 ]
+[s S188 . 36 `ul 1 ipv4_myAddress 4 0 `[2]ul 1 ipv4_dns 8 4 `ul 1 ipv4_subnetMask 4 12 `ul 1 ipv4_router 4 16 `ul 1 ipv4_gateway 4 20 `[2]ul 1 ipv4_ntpAddress 8 24 `ul 1 ipv4_tftpAddress 4 32 ]
+"29 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ip_database.c
+[v _ip_database_info ip_database_info `S188  1 e 36 0 ]
+[s S264 . 20 `uc 1 ihl 1 0 :4:0 
+`uc 1 version 1 0 :4:4 
+`uc 1 ecn 1 1 :2:0 
+`uc 1 dscp 1 1 :6:2 
+`us 1 length 2 2 `us 1 identifcation 2 4 `uc 1 fragmentOffsetHigh 1 6 :5:0 
+`uc 1 . 1 6 :1:5 
+`uc 1 dontFragment 1 6 :1:6 
+`uc 1 moreFragments 1 6 :1:7 
+`uc 1 fragmentOffsetLow 1 7 `uc 1 timeToLive 1 8 `uc 1 protocol 1 9 `us 1 headerCksm 2 10 `ul 1 srcIpAddress 4 12 `ul 1 dstIpAddress 4 16 ]
+"60 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _ipv4Header ipv4Header `S264  1 e 20 0 ]
+"62
+[v _remoteIpv4Address remoteIpv4Address `ul  1 e 4 0 ]
+"46 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/lfsr.c
+[v _xorSequences xorSequences `C[18]uc  1 e 18 0 ]
+"47
+[v _xor_mask xor_mask `uc  1 e 1 0 ]
+"48
+[v _lfsr_value lfsr_value `uc  1 e 1 0 ]
+"66 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/log.c
+[v _limit limit `[23]E682  1 e 23 0 ]
+[s S2212 . 2 `E692 1 logFacility 1 0 `E682 1 severityThreshold 1 1 ]
+"68
+[v _severityThresholdTable severityThresholdTable `C[24]S2212  1 e 48 0 ]
+"45 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/mac_address.c
+[v _macAddress macAddress `S874  1 e 6 0 ]
+"46
+[v _broadcastMAC broadcastMAC `CS874  1 e 6 0 ]
+"63 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _arpTimer arpTimer `o  1 e 8 0 ]
+"65
+[v _networkStartPosition networkStartPosition `us  1 e 2 0 ]
+"31 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _deviceTime deviceTime `VEo  1 e 8 0 ]
+"32
+[v _dirtyTime dirtyTime `VEa  1 e 1 0 ]
+"34
+[v _seconds_counter seconds_counter `VEus  1 e 2 0 ]
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"52 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/tcpv4.c
+[v _tcbList tcbList `*.39S2302  1 e 2 0 ]
+"53
+[v _tcbListSize tcbListSize `c  1 e 1 0 ]
+"54
+[v _currentTCB currentTCB `*.39S2302  1 e 2 0 ]
+[s S2331 . 1 `uc 1 ns 1 0 :1:0 
+`uc 1 reserved 1 0 :3:1 
+`uc 1 dataOffset 1 0 :4:4 
+]
+"56
+[u S2335 . 1 `uc 1 byte13 1 0 `S2331 1 . 1 0 ]
+[s S2338 . 1 `uc 1 fin 1 0 :1:0 
+`uc 1 syn 1 0 :1:1 
+`uc 1 rst 1 0 :1:2 
+`uc 1 psh 1 0 :1:3 
+`uc 1 ack 1 0 :1:4 
+`uc 1 urg 1 0 :1:5 
+`uc 1 ece 1 0 :1:6 
+`uc 1 cwr 1 0 :1:7 
+]
+[u S2347 . 1 `uc 1 flags 1 0 `S2338 1 . 1 0 ]
+[s S2350 . 20 `us 1 sourcePort 2 0 `us 1 destPort 2 2 `ul 1 sequenceNumber 4 4 `ul 1 ackNumber 4 8 `S2335 1 . 1 12 `S2347 1 . 1 13 `us 1 windowSize 2 14 `us 1 checksum 2 16 `us 1 urgentPtr 2 18 ]
+[v _tcpHeader tcpHeader `S2350  1 s 20 tcpHeader ]
+"57
+[v _nextAvailablePort nextAvailablePort `us  1 s 2 nextAvailablePort ]
+"58
+[v _nextSequenceNumber nextSequenceNumber `ul  1 s 4 nextSequenceNumber ]
+"60
+[v _receivedRemoteAddress receivedRemoteAddress `ul  1 s 4 receivedRemoteAddress ]
+"61
+[v _rcvPayloadLen rcvPayloadLen `us  1 s 2 rcvPayloadLen ]
+"62
+[v _tcpMss tcpMss `us  1 s 2 tcpMss ]
+"65
+[v _tcpDataLength tcpDataLength `us  1 s 2 tcpDataLength ]
+"66
+[v _bytesToSendForRetransmit bytesToSendForRetransmit `us  1 s 2 bytesToSendForRetransmit ]
+"67
+[v _txBufferPtrForRetransmit txBufferPtrForRetransmit `*.34uc  1 s 2 txBufferPtrForRetransmit ]
+"68
+[v _localSeqnoForRetransmit localSeqnoForRetransmit `ul  1 s 4 localSeqnoForRetransmit ]
+"69
+[v _lastAckNumber lastAckNumber `ul  1 s 4 lastAckNumber ]
+"60 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"62
+[v _timer0ReloadVal timer0ReloadVal `VEus  1 e 2 0 ]
+"57 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"59
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"67 C:\Users\kolel\MPLABXProjects\Ethernet.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"101
+} 0
+"190
+[v _TCP_Blinky TCP_Blinky `(v  1 e 1 0 ]
+{
+"239
+[v TCP_Blinky@cnt cnt `uc  1 a 1 23 ]
+"238
+[v TCP_Blinky@temp temp `ui  1 a 2 18 ]
+"201
+[v TCP_Blinky@rxLen rxLen `us  1 a 2 21 ]
+"202
+[v TCP_Blinky@socket_state socket_state `E6798  1 a 1 20 ]
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"193
+[v TCP_Blinky@port7TCB port7TCB `S2302  1 s 58 port7TCB ]
+"196
+[v TCP_Blinky@rxdataPort7 rxdataPort7 `[20]uc  1 s 20 rxdataPort7 ]
+"197
+[v TCP_Blinky@txdataPort7 txdataPort7 `[20]uc  1 s 20 txdataPort7 ]
+"198
+[v TCP_Blinky@hit_counter hit_counter `uc  1 s 1 hit_counter ]
+"287
+} 0
+"1303 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/tcpv4.c
+[v _TCP_SocketRemove TCP_SocketRemove `(E781  1 e 1 0 ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+[v TCP_SocketRemove@tcbPtr tcbPtr `*.39S2302  1 p 2 26 ]
+"1314
+} 0
+"113
+[v _TCB_Remove TCB_Remove `(v  1 s 1 TCB_Remove ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+[v TCB_Remove@ptr ptr `*.39S2302  1 p 2 16 ]
+"133
+} 0
+"1274
+[v _TCP_SocketInit TCP_SocketInit `(E781  1 e 1 0 ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+[v TCP_SocketInit@tcbPtr tcbPtr `*.39S2302  1 p 2 23 ]
+"1301
+} 0
+"89
+[v _TCB_Insert TCB_Insert `(v  1 s 1 TCB_Insert ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+[v TCB_Insert@ptr ptr `*.39S2302  1 p 2 16 ]
+"102
+} 0
+"1455
+[v _TCP_SendDone TCP_SendDone `(E781  1 e 1 0 ]
+{
+"1457
+[v TCP_SendDone@ret ret `E781  1 a 1 25 ]
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"1455
+[v TCP_SendDone@tcbPtr tcbPtr `*.39S2302  1 p 2 23 ]
+"1467
+} 0
+"1424
+[v _TCP_Send TCP_Send `(E781  1 e 1 0 ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+[v TCP_Send@tcbPtr tcbPtr `*.39S2302  1 p 2 131 ]
+[v TCP_Send@data data `*.34uc  1 p 2 133 ]
+[v TCP_Send@dataLen dataLen `us  1 p 2 135 ]
+"1452
+} 0
+"1316
+[v _TCP_SocketPoll TCP_SocketPoll `(E998  1 e 1 0 ]
+{
+"1318
+[v TCP_SocketPoll@tmpSocketState tmpSocketState `E998  1 a 1 25 ]
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"1316
+[v TCP_SocketPoll@socket_ptr socket_ptr `*.39S2302  1 p 2 23 ]
+"1328
+} 0
+"1346
+[v _TCP_Listen TCP_Listen `(E781  1 e 1 0 ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+[v TCP_Listen@tcbPtr tcbPtr `*.39S2302  1 p 2 151 ]
+"1365
+} 0
+"1469
+[v _TCP_InsertRxBuffer TCP_InsertRxBuffer `(E781  1 e 1 0 ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+[v TCP_InsertRxBuffer@tcbPtr tcbPtr `*.39S2302  1 p 2 23 ]
+[v TCP_InsertRxBuffer@data data `*.39uc  1 p 2 25 ]
+[v TCP_InsertRxBuffer@data_len data_len `us  1 p 2 27 ]
+"1488
+} 0
+"1511
+[v _TCP_GetRxLength TCP_GetRxLength `(s  1 e 2 0 ]
+{
+"1513
+[v TCP_GetRxLength@ret ret `s  1 a 2 29 ]
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"1511
+[v TCP_GetRxLength@tcbPtr tcbPtr `*.39S2302  1 p 2 23 ]
+"1523
+} 0
+"1491
+[v _TCP_GetReceivedData TCP_GetReceivedData `(s  1 e 2 0 ]
+{
+"1493
+[v TCP_GetReceivedData@ret ret `s  1 a 2 29 ]
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"1491
+[v TCP_GetReceivedData@tcbPtr tcbPtr `*.39S2302  1 p 2 23 ]
+"1509
+} 0
+"1331
+[v _TCP_Bind TCP_Bind `(E781  1 e 1 0 ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+[v TCP_Bind@tcbPtr tcbPtr `*.39S2302  1 p 2 23 ]
+[v TCP_Bind@port port `us  1 p 2 25 ]
+"1343
+} 0
+"173
+[v _TCB_Check TCB_Check `(E781  1 s 1 TCB_Check ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"175
+[v TCB_Check@tcbPtr tcbPtr `*.39S2302  1 a 2 21 ]
+"177
+[v TCB_Check@count count `c  1 a 1 20 ]
+"176
+[v TCB_Check@ret ret `E781  1 a 1 19 ]
+"173
+[v TCB_Check@ptr ptr `*.39S2302  1 p 2 16 ]
+"198
+} 0
+"238 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/eusart2.c
+[v _EUSART2_putrs EUSART2_putrs `(v  1 e 1 0 ]
+{
+[v EUSART2_putrs@ptr ptr `*.32Cuc  1 p 2 17 ]
+"244
+} 0
+"162
+[v _EUSART2_Write EUSART2_Write `(v  1 e 1 0 ]
+{
+[v EUSART2_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART2_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART2_Write@txData txData `uc  1 a 1 16 ]
+"169
+} 0
+"50 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"61
+} 0
+"65 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"69 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"160
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 16 ]
+"162
+} 0
+"63 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/spi2.c
+[v _SPI2_Initialize SPI2_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
+"55 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"63 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"75 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_Init Network_Init `(v  1 e 1 0 ]
+{
+"85
+} 0
+"87
+[v _timersInit timersInit `(v  1 e 1 0 ]
+{
+"91
+} 0
+"60 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _rtcc_init rtcc_init `(v  1 e 1 0 ]
+{
+"64
+} 0
+"188 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/tmr1.c
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 16 ]
+"190
+} 0
+"1266 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/tcpv4.c
+[v _TCP_Init TCP_Init `(v  1 e 1 0 ]
+{
+"1272
+} 0
+"93 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_WaitForLink Network_WaitForLink `(v  1 e 1 0 ]
+{
+"96
+} 0
+"97 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/log.c
+[v _LOG_Init LOG_Init `(v  1 e 1 0 ]
+{
+"101
+[v LOG_Init@x x `uc  1 a 1 123 ]
+"99
+[v LOG_Init@t t `ul  1 a 4 119 ]
+"105
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.39v  1 a 2 109 ]
+"5
+[v printf@fmt fmt `*.32Cuc  1 p 2 73 ]
+"13
+} 0
+"69 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_Init IPV4_Init `(v  1 e 1 0 ]
+{
+"72
+} 0
+"31 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ip_database.c
+[v _ipdb_init ipdb_init `(v  1 e 1 0 ]
+{
+"38
+[v ipdb_init@x x `uc  1 a 1 16 ]
+"42
+} 0
+"335 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_Init ETH_Init `(v  1 e 1 0 ]
+{
+"409
+} 0
+"49 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/mac_address.h
+"51
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"48 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/mac_address.c
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[v _MAC_getAddress MAC_getAddress `(*.39CS874  1 e 2 0 ]
+{
+"51
+} 0
+"643 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_SendSystemReset ETH_SendSystemReset `(v  1 e 1 0 ]
+{
+"648
+} 0
+"240
+[v _ETH_PacketListReset ETH_PacketListReset `(v  1 e 1 0 ]
+{
+"242
+[v ETH_PacketListReset@index index `us  1 a 2 18 ]
+"243
+[v ETH_PacketListReset@ptr ptr `*.39uc  1 a 2 16 ]
+"254
+} 0
+"327
+[v _ETH_OpenSPI ETH_OpenSPI `(v  1 e 1 0 ]
+{
+"330
+} 0
+"56 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/drivers/spi_master.c
+[v _spi_master_open spi_master_open `(a  1 e 1 0 ]
+{
+[v spi_master_open@config config `E377  1 a 1 wreg ]
+[v spi_master_open@config config `E377  1 a 1 wreg ]
+[v spi_master_open@config config `E377  1 a 1 20 ]
+"63
+} 0
+"41
+[v _MAC_open MAC_open `(a  1 e 1 0 ]
+{
+"43
+} 0
+"73 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/spi2.c
+[v _SPI2_Open SPI2_Open `(a  1 e 1 0 ]
+{
+[v SPI2_Open@spi2UniqueConfiguration spi2UniqueConfiguration `E355  1 a 1 wreg ]
+[v SPI2_Open@spi2UniqueConfiguration spi2UniqueConfiguration `E355  1 a 1 wreg ]
+"75
+[v SPI2_Open@spi2UniqueConfiguration spi2UniqueConfiguration `E355  1 a 1 17 ]
+"86
+} 0
+"613 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ENC28_PhyWrite ENC28_PhyWrite `(v  1 s 1 ENC28_PhyWrite ]
+{
+[v ENC28_PhyWrite@a a `E618  1 a 1 wreg ]
+"615
+[v ENC28_PhyWrite@v v `uc  1 a 1 25 ]
+"613
+[v ENC28_PhyWrite@a a `E618  1 a 1 wreg ]
+[v ENC28_PhyWrite@d d `us  1 p 2 22 ]
+"615
+[v ENC28_PhyWrite@a a `E618  1 a 1 24 ]
+"623
+} 0
+"87 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Init ARPV4_Init `(v  1 e 1 0 ]
+{
+"89
+[v ARPV4_Init@x x `uc  1 a 1 23 ]
+"94
+} 0
+"1214 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_GetMAC ETH_GetMAC `(v  1 e 1 0 ]
+{
+[v ETH_GetMAC@macAddr macAddr `*.39uc  1 p 2 21 ]
+"1222
+} 0
+"52 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"83 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/eusart2.c
+[v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
+{
+"119
+} 0
+"234
+[v _EUSART2_SetRxInterruptHandler EUSART2_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART2_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 16 ]
+"236
+} 0
+"225
+[v _EUSART2_SetOverrunErrorHandler EUSART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART2_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 16 ]
+"227
+} 0
+"221
+[v _EUSART2_SetFramingErrorHandler EUSART2_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART2_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 16 ]
+"223
+} 0
+"229
+[v _EUSART2_SetErrorHandler EUSART2_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 16 ]
+"231
+} 0
+"98 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_Manage Network_Manage `(v  1 e 1 0 ]
+{
+"100
+[v Network_Manage@now now `o  1 a 8 0 ]
+"101
+[v Network_Manage@nowPv nowPv `o  1 s 8 nowPv ]
+"119
+} 0
+"160 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _time time `(o  1 e 8 0 ]
+{
+"163
+[v time@the_time the_time `o  1 a 8 25 ]
+"162
+[v time@gie_val gie_val `a  1 a 1 24 ]
+"160
+[v time@t t `*.39o  1 p 2 16 ]
+"176
+} 0
+"1525 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/tcpv4.c
+[v _TCP_Update TCP_Update `(v  1 e 1 0 ]
+{
+"1556
+[v TCP_Update@retries retries `i  1 a 2 20 ]
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"1527
+[v TCP_Update@tcbPtr tcbPtr `*.39S2302  1 a 2 22 ]
+"1529
+[v TCP_Update@count count `i  1 a 2 18 ]
+"1573
+} 0
+"121 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_Read Network_Read `(v  1 e 1 0 ]
+{
+"150
+[v Network_Read@t t `l  1 a 4 211 ]
+"124
+[v Network_Read@debug_str debug_str `[80]uc  1 a 80 131 ]
+[u S520 . 2 `us 1 type 2 0 `us 1 length 2 0 `us 1 tpid 2 0 ]
+"123
+[s S524 . 14 `[6]uc 1 destinationMAC 6 0 `[6]uc 1 sourceMAC 6 6 `S520 1 id 2 12 ]
+[v Network_Read@header header `S524  1 a 14 215 ]
+"164
+} 0
+"166
+[v _Network_SaveStartPosition Network_SaveStartPosition `(v  1 s 1 Network_SaveStartPosition ]
+{
+"169
+} 0
+"118 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_Packet IPV4_Packet `(E930  1 e 1 0 ]
+{
+"122
+[v IPV4_Packet@msg msg `[40]uc  1 a 40 82 ]
+"120
+[v IPV4_Packet@cksm cksm `us  1 a 2 125 ]
+"121
+[v IPV4_Packet@length length `us  1 a 2 123 ]
+"123
+[v IPV4_Packet@hdrLen hdrLen `uc  1 a 1 122 ]
+"218
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S5662 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+"13
+[v sprintf@f f `S5662  1 a 6 87 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 85 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 73 ]
+[v sprintf@fmt fmt `*.32Cuc  1 p 2 75 ]
+"23
+} 0
+"1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1393
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 71 ]
+[s S5688 _IO_FILE 0 ]
+"1390
+[v vfprintf@fp fp `*.39S5688  1 p 2 65 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 67 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 69 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"697
+[v vfpfcnvrt@llu llu `uo  1 a 8 57 ]
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 48 ]
+"695
+[v vfpfcnvrt@done done `i  1 a 2 42 ]
+"694
+[v vfpfcnvrt@cp cp `*.34uc  1 a 2 40 ]
+[v vfpfcnvrt@c c `uc  1 a 1 56 ]
+[s S5688 _IO_FILE 0 ]
+"692
+[v vfpfcnvrt@fp fp `*.39S5688  1 p 2 20 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 22 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 24 ]
+"1387
+} 0
+"645
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+{
+"648
+[v xtoa@n n `uo  1 a 8 8 ]
+"647
+[v xtoa@c c `i  1 a 2 18 ]
+[v xtoa@i i `i  1 a 2 16 ]
+[v xtoa@w w `i  1 a 2 6 ]
+[v xtoa@p p `i  1 a 2 4 ]
+[s S5688 _IO_FILE 0 ]
+"645
+[v xtoa@fp fp `*.39S5688  1 p 2 43 ]
+[v xtoa@d d `uo  1 p 8 45 ]
+[v xtoa@x x `uc  1 p 1 53 ]
+"687
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
+{
+[v toupper@c c `i  1 p 2 22 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
+[v _islower islower `(i  1 e 2 0 ]
+{
+[v islower@c c `i  1 p 2 16 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+{
+[v isupper@c c `i  1 p 2 16 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+{
+[v isalpha@c c `i  1 p 2 16 ]
+"8
+} 0
+"615 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _utoa utoa `(i  1 s 2 utoa ]
+{
+"618
+[v utoa@n n `uo  1 a 8 4 ]
+"617
+[v utoa@i i `i  1 a 2 12 ]
+[v utoa@w w `i  1 a 2 2 ]
+[v utoa@p p `i  1 a 2 0 ]
+[s S5688 _IO_FILE 0 ]
+"615
+[v utoa@fp fp `*.39S5688  1 p 2 43 ]
+[v utoa@d d `uo  1 p 8 45 ]
+"641
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 32 ]
+"9
+[v ___lomod@dividend dividend `uo  1 p 8 16 ]
+[v ___lomod@divisor divisor `uo  1 p 8 24 ]
+"27
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 32 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 40 ]
+"9
+[v ___lodiv@dividend dividend `uo  1 p 8 16 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 24 ]
+"32
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+"5
+[v strncmp@r r `*.32Cuc  1 a 2 25 ]
+[v strncmp@l l `*.32Cuc  1 a 2 23 ]
+"3
+[v strncmp@_l _l `*.32Cuc  1 p 2 16 ]
+[v strncmp@_r _r `*.32Cuc  1 p 2 18 ]
+[v strncmp@n n `ui  1 p 2 20 ]
+"9
+} 0
+"568 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _stoa stoa `(i  1 s 2 stoa ]
+{
+"570
+[v stoa@nuls nuls `[7]uc  1 a 7 30 ]
+"571
+[v stoa@l l `i  1 a 2 45 ]
+[v stoa@p p `i  1 a 2 43 ]
+"570
+[v stoa@cp cp `*.34uc  1 a 2 41 ]
+"571
+[v stoa@w w `i  1 a 2 39 ]
+[v stoa@i i `i  1 a 2 37 ]
+[s S5688 _IO_FILE 0 ]
+"568
+[v stoa@fp fp `*.39S5688  1 p 2 25 ]
+[v stoa@s s `*.34uc  1 p 2 27 ]
+"570
+[v stoa@F1141 F1141 `[7]uc  1 s 7 F1141 ]
+"611
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"290
+[v dtoa@n n `o  1 a 8 8 ]
+"289
+[v dtoa@i i `i  1 a 2 16 ]
+[v dtoa@s s `i  1 a 2 6 ]
+[v dtoa@w w `i  1 a 2 4 ]
+[v dtoa@p p `i  1 a 2 2 ]
+[s S5688 _IO_FILE 0 ]
+"287
+[v dtoa@fp fp `*.39S5688  1 p 2 43 ]
+[v dtoa@d d `o  1 p 8 45 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 41 ]
+[v pad@i i `i  1 a 2 39 ]
+[s S5688 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S5688  1 p 2 32 ]
+[v pad@buf buf `*.39uc  1 p 2 34 ]
+[v pad@p p `i  1 p 2 36 ]
+"95
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.34Cuc  1 a 2 18 ]
+"5
+[v strlen@s s `*.34Cuc  1 p 2 16 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 30 ]
+"10
+[v fputs@c c `uc  1 a 1 29 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 25 ]
+[s S5662 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S5662  1 p 2 27 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 16 ]
+[s S5662 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S5662  1 p 2 18 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 34 ]
+"4
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 33 ]
+[v ___aomod@counter counter `uc  1 a 1 32 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 16 ]
+[v ___aomod@divisor divisor `o  1 p 8 24 ]
+"36
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 34 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 33 ]
+[v ___aodiv@counter counter `uc  1 a 1 32 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 16 ]
+[v ___aodiv@divisor divisor `o  1 p 8 24 ]
+"43
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 36 ]
+[v atoi@neg neg `i  1 a 2 29 ]
+"4
+[v atoi@s s `*.32Cuc  1 p 2 23 ]
+"16
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 16 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 16 ]
+"8
+} 0
+"107 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _getHeaderLen getHeaderLen `(uc  1 s 1 getHeaderLen ]
+{
+"109
+[v getHeaderLen@rxptr rxptr `us  1 a 2 26 ]
+"110
+[v getHeaderLen@header_len header_len `uc  1 a 1 28 ]
+"117
+} 0
+"1278 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_SetRxByteCount ETH_SetRxByteCount `(v  1 e 1 0 ]
+{
+[v ETH_SetRxByteCount@count count `us  1 p 2 18 ]
+"1281
+} 0
+"1248
+[v _ETH_SetReadPtr ETH_SetReadPtr `(v  1 e 1 0 ]
+{
+[v ETH_SetReadPtr@rdptr rdptr `us  1 p 2 22 ]
+"1251
+} 0
+"1273
+[v _ETH_GetRxByteCount ETH_GetRxByteCount `(us  1 e 2 0 ]
+{
+"1276
+} 0
+"1243
+[v _ETH_GetReadPtr ETH_GetReadPtr `(us  1 e 2 0 ]
+{
+"1246
+} 0
+"506 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/tcpv4.c
+[v _TCP_Recv TCP_Recv `(v  1 e 1 0 ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"508
+[v TCP_Recv@tcbPtr tcbPtr `*.39S2302  1 a 2 158 ]
+"509
+[v TCP_Recv@count count `c  1 a 1 157 ]
+"506
+[v TCP_Recv@remoteAddress remoteAddress `ul  1 p 4 151 ]
+[v TCP_Recv@length length `us  1 p 2 155 ]
+"611
+} 0
+"378
+[v _TCP_ParseTCPOptions TCP_ParseTCPOptions `(E781  1 s 1 TCP_ParseTCPOptions ]
+{
+"381
+[v TCP_ParseTCPOptions@tcpOptionsSize tcpOptionsSize `us  1 a 2 32 ]
+"380
+[v TCP_ParseTCPOptions@opt opt `uc  1 a 1 31 ]
+"382
+[v TCP_ParseTCPOptions@ret ret `E781  1 a 1 30 ]
+"492
+} 0
+"625
+[v _TCP_FiniteStateMachine TCP_FiniteStateMachine `(E781  1 s 1 TCP_FiniteStateMachine ]
+{
+"627
+[v TCP_FiniteStateMachine@notAckBytes notAckBytes `us  1 a 2 14 ]
+"630
+[v TCP_FiniteStateMachine@nextState nextState `E969  1 a 1 17 ]
+"631
+[v TCP_FiniteStateMachine@event event `E982  1 a 1 16 ]
+"628
+[v TCP_FiniteStateMachine@ret ret `E781  1 a 1 13 ]
+"1263
+} 0
+"172 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[v _resetPortUnreachable resetPortUnreachable `(v  1 e 1 0 ]
+{
+"175
+} 0
+"164
+[v _isPortUnreachable isPortUnreachable `(a  1 e 1 0 ]
+{
+[v isPortUnreachable@port port `us  1 p 2 16 ]
+"170
+} 0
+"1575 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/tcpv4.c
+[v _TCP_TimoutRetransmit TCP_TimoutRetransmit `(E781  1 s 1 TCP_TimoutRetransmit ]
+{
+"1583
+} 0
+"329
+[v _TCP_PayloadSave TCP_PayloadSave `(E781  1 e 1 0 ]
+{
+"332
+[v TCP_PayloadSave@buffer_size buffer_size `us  1 a 2 141 ]
+"329
+[v TCP_PayloadSave@len len `us  1 p 2 131 ]
+"362
+} 0
+"211
+[v _TCP_Snd TCP_Snd `(E781  1 s 1 TCP_Snd ]
+{
+[s S2331 . 1 `uc 1 ns 1 0 :1:0 
+`uc 1 reserved 1 0 :3:1 
+`uc 1 dataOffset 1 0 :4:4 
+]
+"214
+[u S2335 . 1 `uc 1 byte13 1 0 `S2331 1 . 1 0 ]
+[s S2338 . 1 `uc 1 fin 1 0 :1:0 
+`uc 1 syn 1 0 :1:1 
+`uc 1 rst 1 0 :1:2 
+`uc 1 psh 1 0 :1:3 
+`uc 1 ack 1 0 :1:4 
+`uc 1 urg 1 0 :1:5 
+`uc 1 ece 1 0 :1:6 
+`uc 1 cwr 1 0 :1:7 
+]
+[u S2347 . 1 `uc 1 flags 1 0 `S2338 1 . 1 0 ]
+[s S2350 . 20 `us 1 sourcePort 2 0 `us 1 destPort 2 2 `ul 1 sequenceNumber 4 4 `ul 1 ackNumber 4 8 `S2335 1 . 1 12 `S2347 1 . 1 13 `us 1 windowSize 2 14 `us 1 checksum 2 16 `us 1 urgentPtr 2 18 ]
+[v TCP_Snd@txHeader txHeader `S2350  1 a 20 111 ]
+"215
+[v TCP_Snd@payloadLength payloadLength `us  1 a 2 108 ]
+"216
+[v TCP_Snd@cksm cksm `us  1 a 2 106 ]
+"217
+[v TCP_Snd@data data `*.34uc  1 a 2 104 ]
+"213
+[v TCP_Snd@ret ret `E781  1 a 1 110 ]
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+"211
+[v TCP_Snd@tcbPtr tcbPtr `*.39S2302  1 p 2 66 ]
+"315
+} 0
+"143
+[v _TCB_Reset TCB_Reset `(v  1 s 1 TCB_Reset ]
+{
+[s S2302 . 58 `us 1 localPort 2 0 `ul 1 destIP 4 2 `us 1 destPort 2 6 `ul 1 remoteSeqno 4 8 `ul 1 remoteAck 4 12 `ul 1 localSeqno 4 16 `ul 1 localLastAck 4 20 `us 1 remoteWnd 2 24 `us 1 localWnd 2 26 `us 1 mss 2 28 `*.39uc 1 rxBufferStart 2 30 `*.39uc 1 rxBufferPtr 2 32 `E1011 1 rxBufState 1 34 `*.34uc 1 txBufferStart 2 35 `*.34uc 1 txBufferPtr 2 37 `us 1 bytesToSend 2 39 `E1011 1 txBufState 1 41 `us 1 bytesSent 2 42 `a 1 payloadSave 1 44 `E969 1 fsmState 1 45 `E982 1 connectionEvent 1 46 `*.39v 1 nextTCB 2 47 `*.39v 1 prevTCB 2 49 `us 1 timeout 2 51 `us 1 timeoutReloadValue 2 53 `uc 1 timeoutsCount 1 55 `uc 1 flags 1 56 `E998 1 socketState 1 57 ]
+[v TCB_Reset@tcbPtr tcbPtr `*.39S2302  1 p 2 16 ]
+"162
+} 0
+"74 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_PseudoHeaderChecksum IPV4_PseudoHeaderChecksum `(us  1 e 2 0 ]
+{
+[s S1869 . 12 `ul 1 srcIpAddress 4 0 `ul 1 dstIpAddress 4 4 `uc 1 protocol 1 8 `uc 1 z 1 9 `us 1 length 2 10 ]
+"76
+[v IPV4_PseudoHeaderChecksum@tmp tmp `S1869  1 a 12 33 ]
+"78
+[v IPV4_PseudoHeaderChecksum@cksm cksm `ul  1 a 4 29 ]
+"79
+[v IPV4_PseudoHeaderChecksum@v v `*.39us  1 a 2 26 ]
+"77
+[v IPV4_PseudoHeaderChecksum@len len `uc  1 a 1 28 ]
+"74
+[v IPV4_PseudoHeaderChecksum@payloadLen payloadLen `us  1 p 2 16 ]
+"104
+} 0
+"58 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[v _ICMP_Receive ICMP_Receive `(E614  1 e 1 0 ]
+{
+[s S311 . 2 `uc 1 code 1 0 `uc 1 type 1 1 ]
+"60
+[u S314 . 2 `us 1 typeCode 2 0 `S311 1 . 2 0 ]
+[s S317 . 4 `S314 1 . 2 0 `us 1 checksum 2 2 ]
+[v ICMP_Receive@icmpHdr icmpHdr `S317  1 a 4 89 ]
+[s S264 . 20 `uc 1 ihl 1 0 :4:0 
+`uc 1 version 1 0 :4:4 
+`uc 1 ecn 1 1 :2:0 
+`uc 1 dscp 1 1 :6:2 
+`us 1 length 2 2 `us 1 identifcation 2 4 `uc 1 fragmentOffsetHigh 1 6 :5:0 
+`uc 1 . 1 6 :1:5 
+`uc 1 dontFragment 1 6 :1:6 
+`uc 1 moreFragments 1 6 :1:7 
+`uc 1 fragmentOffsetLow 1 7 `uc 1 timeToLive 1 8 `uc 1 protocol 1 9 `us 1 headerCksm 2 10 `ul 1 srcIpAddress 4 12 `ul 1 dstIpAddress 4 16 ]
+"58
+[v ICMP_Receive@ipv4Hdr ipv4Hdr `*.39S264  1 p 2 83 ]
+"88
+} 0
+"99
+[v _ICMP_EchoReply ICMP_EchoReply `(E614  1 e 1 0 ]
+{
+"112
+[v ICMP_EchoReply@ipv4PayloadLength ipv4PayloadLength `us  1 a 2 80 ]
+"111
+[v ICMP_EchoReply@icmp_cksm_start icmp_cksm_start `us  1 a 2 76 ]
+"101
+[v ICMP_EchoReply@cksm cksm `us  1 a 2 78 ]
+"104
+[v ICMP_EchoReply@sequence sequence `us  1 a 2 74 ]
+"103
+[v ICMP_EchoReply@identifier identifier `us  1 a 2 72 ]
+"102
+[v ICMP_EchoReply@ret ret `E614  1 a 1 82 ]
+[s S264 . 20 `uc 1 ihl 1 0 :4:0 
+`uc 1 version 1 0 :4:4 
+`uc 1 ecn 1 1 :2:0 
+`uc 1 dscp 1 1 :6:2 
+`us 1 length 2 2 `us 1 identifcation 2 4 `uc 1 fragmentOffsetHigh 1 6 :5:0 
+`uc 1 . 1 6 :1:5 
+`uc 1 dontFragment 1 6 :1:6 
+`uc 1 moreFragments 1 6 :1:7 
+`uc 1 fragmentOffsetLow 1 7 `uc 1 timeToLive 1 8 `uc 1 protocol 1 9 `us 1 headerCksm 2 10 `ul 1 srcIpAddress 4 12 `ul 1 dstIpAddress 4 16 ]
+"99
+[v ICMP_EchoReply@ipv4Hdr ipv4Hdr `*.39S264  1 p 2 66 ]
+"135
+} 0
+"220 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPv4_Start IPv4_Start `(E614  1 e 1 0 ]
+{
+"225
+[v IPv4_Start@targetAddress targetAddress `ul  1 a 4 55 ]
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"224
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[v IPv4_Start@destMacAddress destMacAddress `*.34CS874  1 a 2 59 ]
+"222
+[v IPv4_Start@ret ret `E614  1 a 1 61 ]
+"220
+[v IPv4_Start@destAddress destAddress `ul  1 p 4 61 ]
+[v IPv4_Start@protocol protocol `E471  1 p 1 65 ]
+"274
+} 0
+"730 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_Write8 ETH_Write8 `(v  1 e 1 0 ]
+{
+[v ETH_Write8@data data `uc  1 a 1 wreg ]
+[v ETH_Write8@data data `uc  1 a 1 wreg ]
+"732
+[v ETH_Write8@data data `uc  1 a 1 17 ]
+"737
+} 0
+"757
+[v _ETH_Write32 ETH_Write32 `(v  1 e 1 0 ]
+{
+[v ETH_Write32@data data `ul  1 p 4 17 ]
+"767
+} 0
+"743
+[v _ETH_Write16 ETH_Write16 `(v  1 e 1 0 ]
+{
+[v ETH_Write16@data data `us  1 p 2 17 ]
+"751
+} 0
+"202 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Request ARPV4_Request `(E779  1 e 1 0 ]
+{
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"208
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[s S1501 . 28 `us 1 htype 2 0 `us 1 ptype 2 2 `uc 1 hlen 1 4 `uc 1 plen 1 5 `us 1 oper 2 6 `S874 1 sha 6 8 `ul 1 spa 4 14 `S874 1 tha 6 18 `ul 1 tpa 4 24 ]
+[v ARPV4_Request@header header `S1501  1 a 28 33 ]
+"204
+[v ARPV4_Request@ret ret `E779  1 a 1 32 ]
+"202
+[v ARPV4_Request@destAddress destAddress `ul  1 p 4 43 ]
+"235
+} 0
+"49 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/mac_address.h
+"51
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"242 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[v _ARPV4_Lookup ARPV4_Lookup `(*.39S874  1 e 2 0 ]
+{
+"244
+[s S1465 . 13 `S874 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v ARPV4_Lookup@entry_pointer entry_pointer `*.39S1465  1 a 2 24 ]
+"245
+[v ARPV4_Lookup@x x `uc  1 a 1 26 ]
+"242
+[v ARPV4_Lookup@ip_address ip_address `ul  1 p 4 16 ]
+"254
+} 0
+"276 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_Send IPV4_Send `(E614  1 e 1 0 ]
+{
+"278
+[v IPV4_Send@totalLength totalLength `us  1 a 2 51 ]
+"279
+[v IPV4_Send@cksm cksm `us  1 a 2 49 ]
+"280
+[v IPV4_Send@ret ret `E614  1 a 1 48 ]
+"276
+[v IPV4_Send@payloadLength payloadLength `us  1 p 2 42 ]
+"294
+} 0
+"1153 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_TxComputeChecksum ETH_TxComputeChecksum `(us  1 e 2 0 ]
+{
+"1155
+[v ETH_TxComputeChecksum@cksm cksm `ul  1 a 4 38 ]
+"1153
+[v ETH_TxComputeChecksum@position position `us  1 p 2 24 ]
+[v ETH_TxComputeChecksum@length length `us  1 p 2 26 ]
+[v ETH_TxComputeChecksum@seed seed `us  1 p 2 28 ]
+"1185
+} 0
+"987
+[v _ETH_Insert ETH_Insert `(v  1 e 1 0 ]
+{
+"989
+[v ETH_Insert@current_tx_pointer current_tx_pointer `us  1 a 2 32 ]
+"987
+[v ETH_Insert@data data `*.39uc  1 p 2 24 ]
+[v ETH_Insert@len len `us  1 p 2 26 ]
+[v ETH_Insert@offset offset `us  1 p 2 28 ]
+"1002
+} 0
+"1238
+[v _ETH_SaveRDPT ETH_SaveRDPT `(v  1 e 1 0 ]
+{
+"1241
+} 0
+"672
+[v _ETH_Read16 ETH_Read16 `(us  1 e 2 0 ]
+{
+"674
+[v ETH_Read16@b b `us  1 a 2 20 ]
+"683
+} 0
+"1009
+[v _ETH_Copy ETH_Copy `(E614  1 e 1 0 ]
+{
+"1013
+[v ETH_Copy@temp_len temp_len `us  1 a 2 31 ]
+"1012
+[v ETH_Copy@timer timer `us  1 a 2 29 ]
+"1011
+[v ETH_Copy@tx_buffer_address tx_buffer_address `us  1 a 2 27 ]
+"1009
+[v ETH_Copy@len len `us  1 p 2 24 ]
+"1055
+} 0
+"953
+[v _ETH_Dump ETH_Dump `(v  1 e 1 0 ]
+{
+"955
+[v ETH_Dump@newRXTail newRXTail `us  1 a 2 26 ]
+"953
+[v ETH_Dump@length length `us  1 p 2 24 ]
+"966
+} 0
+"1193
+[v _ETH_RxComputeChecksum ETH_RxComputeChecksum `(us  1 e 2 0 ]
+{
+"1196
+[v ETH_RxComputeChecksum@cksm cksm `ul  1 a 4 46 ]
+"1195
+[v ETH_RxComputeChecksum@rxptr rxptr `us  1 a 2 44 ]
+"1193
+[v ETH_RxComputeChecksum@len len `us  1 p 2 36 ]
+[v ETH_RxComputeChecksum@seed seed `us  1 p 2 38 ]
+"1208
+} 0
+"1110
+[v _ETH_ComputeChecksum ETH_ComputeChecksum `(us  1 s 2 ETH_ComputeChecksum ]
+{
+"1112
+[v ETH_ComputeChecksum@cksm cksm `ul  1 a 4 30 ]
+"1113
+[v ETH_ComputeChecksum@v v `us  1 a 2 34 ]
+"1110
+[v ETH_ComputeChecksum@len len `us  1 p 2 18 ]
+[v ETH_ComputeChecksum@seed seed `us  1 p 2 20 ]
+"1145
+} 0
+"656
+[v _ETH_Read8 ETH_Read8 `(uc  1 e 1 0 ]
+{
+"658
+[v ETH_Read8@b b `uc  1 a 1 17 ]
+"666
+} 0
+"470
+[v _ETH_NextPacketUpdate ETH_NextPacketUpdate `(v  1 e 1 0 ]
+{
+"492
+} 0
+"971
+[v _ETH_Flush ETH_Flush `(v  1 e 1 0 ]
+{
+"979
+} 0
+"101 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Packet ARPV4_Packet `(E930  1 e 1 0 ]
+{
+"141
+[v ARPV4_Packet@x_1604 x `uc  1 a 1 47 ]
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"140
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[s S1465 . 13 `S874 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v ARPV4_Packet@arpPtr arpPtr `*.39S1465  1 a 2 44 ]
+"122
+[v ARPV4_Packet@x x `uc  1 a 1 46 ]
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"103
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[s S1501 . 28 `us 1 htype 2 0 `us 1 ptype 2 2 `uc 1 hlen 1 4 `uc 1 plen 1 5 `us 1 oper 2 6 `S874 1 sha 6 8 `ul 1 spa 4 14 `S874 1 tha 6 18 `ul 1 tpa 4 24 ]
+[v ARPV4_Packet@header header `S1501  1 a 28 50 ]
+"104
+[s S1465 . 13 `S874 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v ARPV4_Packet@entryPointer entryPointer `*.39S1465  1 a 2 48 ]
+"106
+[v ARPV4_Packet@length length `us  1 a 2 40 ]
+"107
+[v ARPV4_Packet@ret ret `E779  1 a 1 43 ]
+"105
+[v ARPV4_Packet@mergeFlag mergeFlag `a  1 a 1 42 ]
+"181
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 25 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 23 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 22 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 16 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 18 ]
+[v memcpy@n n `ui  1 p 2 20 ]
+"18
+} 0
+"822 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_WriteStart ETH_WriteStart `(E309  1 e 1 0 ]
+{
+[s S904 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"824
+[v ETH_WriteStart@ethPacket ethPacket `*.39S904  1 a 2 41 ]
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"822
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[v ETH_WriteStart@dest_mac dest_mac `*.34CS874  1 p 2 35 ]
+[v ETH_WriteStart@type type `us  1 p 2 37 ]
+"885
+} 0
+"1283
+[v _ETH_ResetByteCount ETH_ResetByteCount `(v  1 e 1 0 ]
+{
+"1286
+} 0
+"90 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[s S904 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"185 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_NewPacket ETH_NewPacket `(*.39S904  1 e 2 0 ]
+{
+"187
+[v ETH_NewPacket@index index `uc  1 a 1 20 ]
+"233
+} 0
+"791
+[v _ETH_WriteBlock ETH_WriteBlock `(us  1 e 2 0 ]
+{
+"793
+[v ETH_WriteBlock@p p `*.34Cuc  1 a 2 21 ]
+"791
+[v ETH_WriteBlock@data data `*.34Cuc  1 p 2 17 ]
+[v ETH_WriteBlock@length length `us  1 p 2 19 ]
+"803
+} 0
+"921
+[v _ETH_Send ETH_Send `(E309  1 e 1 0 ]
+{
+"923
+[v ETH_Send@packetEnd packetEnd `us  1 a 2 31 ]
+"946
+} 0
+"710
+[v _ETH_ReadBlock ETH_ReadBlock `(us  1 e 2 0 ]
+{
+"712
+[v ETH_ReadBlock@readCount readCount `us  1 a 2 23 ]
+"713
+[v ETH_ReadBlock@p p `*.39uc  1 a 2 21 ]
+"710
+[v ETH_ReadBlock@buffer buffer `*.39v  1 p 2 17 ]
+[v ETH_ReadBlock@length length `us  1 p 2 19 ]
+"724
+} 0
+"414
+[v _ETH_EventHandler ETH_EventHandler `(v  1 e 1 0 ]
+{
+[s S1108 . 3 `uc 1 . 1 0 :5:0 
+`uc 1 PLRITY 1 0 :1:5 
+`uc 1 . 1 1 :3:0 
+`uc 1 DPXSTAT 1 1 :1:3 
+`uc 1 LSTAT 1 1 :1:4 
+`uc 1 COLSTAT 1 1 :1:5 
+`uc 1 RXSTAT 1 1 :1:6 
+`uc 1 TXSTAT 1 1 :1:7 
+`uc 1 . 1 2 :2:0 
+]
+"417
+[u S1118 . 3 `ui 1 val 2 0 `S1108 1 . 3 0 ]
+[v ETH_EventHandler@phstat2_val phstat2_val `S1118  1 a 3 35 ]
+[s S1096 . 1 `uc 1 RXERIF 1 0 :1:0 
+`uc 1 TXERIF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TXIF 1 0 :1:3 
+`uc 1 LINKIF 1 0 :1:4 
+`uc 1 DMAIF 1 0 :1:5 
+`uc 1 PKTIF 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+"416
+[u S1105 . 1 `uc 1 val 1 0 `S1096 1 . 1 0 ]
+[v ETH_EventHandler@eir_val eir_val `S1105  1 a 1 38 ]
+"465
+} 0
+"1063
+[v _ETH_Shift_Tx_Packets ETH_Shift_Tx_Packets `(E309  1 e 1 0 ]
+{
+[s S904 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"1089
+[v ETH_Shift_Tx_Packets@pElem pElem `*.39S904  1 a 2 33 ]
+"1090
+[v ETH_Shift_Tx_Packets@shiftOffset shiftOffset `us  1 a 2 26 ]
+"1067
+[v ETH_Shift_Tx_Packets@len len `us  1 a 2 31 ]
+"1066
+[v ETH_Shift_Tx_Packets@timer timer `us  1 a 2 28 ]
+"1065
+[v ETH_Shift_Tx_Packets@econ1 econ1 `uc  1 a 1 30 ]
+"1108
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 20 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 16 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 18 ]
+"53
+} 0
+"891 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_SendQueued ETH_SendQueued `(E309  1 e 1 0 ]
+{
+"893
+[v ETH_SendQueued@econ1 econ1 `uc  1 a 1 26 ]
+"915
+} 0
+"564
+[v _ENC28_Wcr16 ENC28_Wcr16 `(v  1 s 1 ENC28_Wcr16 ]
+{
+[v ENC28_Wcr16@a a `E503  1 a 1 wreg ]
+[v ENC28_Wcr16@a a `E503  1 a 1 wreg ]
+[v ENC28_Wcr16@v v `us  1 p 2 19 ]
+"566
+[v ENC28_Wcr16@a a `E503  1 a 1 21 ]
+"578
+} 0
+"261
+[v _ETH_RemovePacket ETH_RemovePacket `(v  1 e 1 0 ]
+{
+[s S904 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+[v ETH_RemovePacket@pPacket pPacket `*.39S904  1 p 2 16 ]
+"314
+} 0
+"165
+[v _ETH_CheckLinkUp ETH_CheckLinkUp `(a  1 e 1 0 ]
+{
+"167
+[v ETH_CheckLinkUp@phstat2 phstat2 `us  1 a 2 28 ]
+"178
+} 0
+"630
+[v _ENC28_PhyRead ENC28_PhyRead `(us  1 s 2 ENC28_PhyRead ]
+{
+[v ENC28_PhyRead@a a `E618  1 a 1 wreg ]
+[v ENC28_PhyRead@a a `E618  1 a 1 wreg ]
+"632
+[v ENC28_PhyRead@a a `E618  1 a 1 27 ]
+"638
+} 0
+"550
+[v _ENC28_Wcr8 ENC28_Wcr8 `(v  1 s 1 ENC28_Wcr8 ]
+{
+[v ENC28_Wcr8@a a `E503  1 a 1 wreg ]
+[v ENC28_Wcr8@a a `E503  1 a 1 wreg ]
+[v ENC28_Wcr8@v v `uc  1 p 1 19 ]
+"552
+[v ENC28_Wcr8@a a `E503  1 a 1 20 ]
+"557
+} 0
+"507
+[v _ENC28_Rcr8 ENC28_Rcr8 `(uc  1 s 1 ENC28_Rcr8 ]
+{
+[v ENC28_Rcr8@a a `E503  1 a 1 wreg ]
+"509
+[v ENC28_Rcr8@v v `uc  1 a 1 19 ]
+"507
+[v ENC28_Rcr8@a a `E503  1 a 1 wreg ]
+"511
+[v ENC28_Rcr8@a a `E503  1 a 1 20 ]
+"518
+} 0
+"525
+[v _ENC28_Rcr16 ENC28_Rcr16 `(us  1 s 2 ENC28_Rcr16 ]
+{
+[v ENC28_Rcr16@a a `E503  1 a 1 wreg ]
+"527
+[v ENC28_Rcr16@v v `us  1 a 2 21 ]
+"525
+[v ENC28_Rcr16@a a `E503  1 a 1 wreg ]
+"529
+[v ENC28_Rcr16@a a `E503  1 a 1 23 ]
+"543
+} 0
+"585
+[v _ENC28_Bfs ENC28_Bfs `(v  1 s 1 ENC28_Bfs ]
+{
+[v ENC28_Bfs@a a `E503  1 a 1 wreg ]
+[v ENC28_Bfs@a a `E503  1 a 1 wreg ]
+[v ENC28_Bfs@bits bits `uc  1 p 1 19 ]
+"587
+[v ENC28_Bfs@a a `E503  1 a 1 20 ]
+"592
+} 0
+"599
+[v _ENC28_Bfc ENC28_Bfc `(v  1 s 1 ENC28_Bfc ]
+{
+[v ENC28_Bfc@a a `E503  1 a 1 wreg ]
+[v ENC28_Bfc@a a `E503  1 a 1 wreg ]
+[v ENC28_Bfc@bits bits `uc  1 p 1 19 ]
+"601
+[v ENC28_Bfc@a a `E503  1 a 1 20 ]
+"606
+} 0
+"139
+[v _ENC28_BankSel ENC28_BankSel `(v  1 s 1 ENC28_BankSel ]
+{
+[v ENC28_BankSel@r r `E503  1 a 1 wreg ]
+"141
+[v ENC28_BankSel@a a `uc  1 a 1 18 ]
+"139
+[v ENC28_BankSel@r r `E503  1 a 1 wreg ]
+"141
+[v ENC28_BankSel@r r `E503  1 a 1 17 ]
+"159
+} 0
+"93 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/spi2.c
+[v _SPI2_ExchangeByte SPI2_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI2_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI2_ExchangeByte@data data `uc  1 a 1 wreg ]
+"95
+[v SPI2_ExchangeByte@data data `uc  1 a 1 16 ]
+"99
+} 0
+"187 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Update ARPV4_Update `(v  1 e 1 0 ]
+{
+"190
+[v ARPV4_Update@x x `uc  1 a 1 18 ]
+[s S867 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"189
+[u S874 . 6 `[6]uc 1 mac_array 6 0 `S867 1 s 6 0 ]
+[s S1465 . 13 `S874 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v ARPV4_Update@entryPointer entryPointer `*.39S1465  1 a 2 16 ]
+"195
+} 0
+"58 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"84
+} 0
+"159 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"161
+[v TMR1_ISR@CountCallBack CountCallBack `VEui  1 s 2 CountCallBack ]
+"176
+} 0
+"122
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"142
+} 0
+"178
+[v _TMR1_CallBack TMR1_CallBack `(v  1 e 1 0 ]
+{
+"186
+} 0
+"192
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"195
+} 0
+"93 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _rtcc_handler rtcc_handler `(v  1 e 1 0 ]
+{
+"96
+} 0
+"138 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"157
+} 0
+"164
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"167
+} 0
+"173 C:\Users\kolel\MPLABXProjects\Ethernet.X\mcc_generated_files/eusart2.c
+[v _EUSART2_Receive_ISR EUSART2_Receive_ISR `(v  1 e 1 0 ]
+{
+"195
+} 0
+"209
+[v _EUSART2_DefaultOverrunErrorHandler EUSART2_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+"215
+} 0
+"207
+[v _EUSART2_DefaultFramingErrorHandler EUSART2_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"217
+[v _EUSART2_DefaultErrorHandler EUSART2_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"219
+} 0
+"197
+[v _EUSART2_RxDataHandler EUSART2_RxDataHandler `(v  1 e 1 0 ]
+{
+"205
+} 0
