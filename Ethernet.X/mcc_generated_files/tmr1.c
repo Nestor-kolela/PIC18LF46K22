@@ -55,7 +55,6 @@
   Section: Global Variable Definitions
 */
 volatile uint16_t timer1ReloadVal;
- 
 void (*TMR1_InterruptHandler)(void);
 
 /**
@@ -169,7 +168,7 @@ void TMR1_ISR(void)
     {
         // ticker function call
         TMR1_CallBack();
-        
+
         // reset ticker counter
         CountCallBack = 0;
     }
@@ -178,7 +177,6 @@ void TMR1_ISR(void)
 void TMR1_CallBack(void)
 {
     // Add your custom callback code here
-     
     if(TMR1_InterruptHandler)
     {
         TMR1_InterruptHandler();

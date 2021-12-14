@@ -9556,9 +9556,9 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 155 "./mcc_generated_files/pin_manager.h"
+# 183 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 167 "./mcc_generated_files/pin_manager.h"
+# 195 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -9953,8 +9953,9 @@ void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
 # 465 "./mcc_generated_files/eusart2.h"
 void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void));
 
-void EUSART2_putrs(const uint8_t * ptr);
 void EUSART2_puts(uint8_t * ptr);
+
+void EUSART2_putrs(const uint8_t * ptr);
 # 59 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/TCPIPLibrary/network.h" 1
@@ -10533,28 +10534,84 @@ size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 void *memccpy (void *restrict, const void *restrict, int, size_t);
 # 46 "main.c" 2
 
+# 1 "./I2C.h" 1
+# 15 "./I2C.h"
+void I2C_INTIALIZE(uint24_t clock);
+void i2c_start(void);
+void i2c_stop(void);
+void i2c_RS(void);
+char i2c_read(uint8_t ACK_NACK);
+void i2c_write(uint8_t data);
+void i2c_scanBus(void);
+void i2c_clrBuf(void);
+# 47 "main.c" 2
 
-char * ptr = "<!DOCTYPE html PUBLIC \"<html><head><meta content=\"text/html; charset=ISO-8859-1\"http-equiv=\"content-type\"><title>Hello World, Embedded Systems</title></head><body>PIC18LF46K22<br></body></html>";
+# 1 "./EEPROM.h" 1
+# 13 "./EEPROM.h"
+extern void i2c_start(void);
+extern void i2c_stop(void);
+extern void i2c_RS(void);
+extern char i2c_read(uint8_t ACK_NACK);
+extern void i2c_write(uint8_t data);
 
-volatile uint8_t cnt = 0;
+void EEPROM_write(const unsigned char data, const uint24_t address);
+void EEPROM_WritePg(const uint16_t page, uint8_t * ptr);
+uint8_t * EEPROM_ReadPg(uint16_t page, uint8_t * ptr);
+unsigned char EEPROM_Read(const uint24_t address);
+unsigned char * EEPROM_gets(unsigned char * buf, const uint24_t startAddress, const uint24_t endAddress);
+void EEPROM_putrs(unsigned char * buf, uint24_t startAddress);
+# 48 "main.c" 2
+
+# 1 "./DS3231.h" 1
+# 14 "./DS3231.h"
+typedef struct {
+    uint8_t seconds;
+    uint8_t minutes;
+    uint8_t hours;
+    uint8_t day;
+    uint8_t date;
+    uint8_t month;
+    uint8_t year;
+} time;
 
 
-void TCP_Handler(void);
-void TCP_Blinky(void);
+void DS3231_write(time myTime);
+static void BCD_to_ASCII(uint8_t valueInBCD, uint8_t * ptr);
+void DS3231_Display_UART(time myTime);
+void DS3231_read(time * myTime);
+# 49 "main.c" 2
 
-uint8_t buf[255];
-uint8_t head;
-uint8_t tail;
-void queueInsert(uint8_t ucData);
-uint8_t queueRead(void);
-uint8_t queuePeek(void);
-
-
+volatile _Bool flag;
+_Bool sentFlag = 0;
+tcpTCB_t port7TCB;
 
 
 
+
+
+
+
+const char * KOLELA = "<html><head><meta http-equiv=\"refresh\" content=\"5\"><title>easyWEB - dynamic Webside</title></head><body bgcolor=\"#3030A0\" text=\"#FFFF00\"><p><b><font color=\"#FFFFFF\" size=\"6\"><i>Hello World!</i></font></b></p><p><b>This is a dynamic webside hosted by the embedded Webserver</b><b>easyWEB.</b></p><p><b>Hardware:</b></p><ul><li><b>MSP430F149, 8 MHz, 60KB Flash, 2KB SRAM</b></li><li><b>CS8900A Crystal Ethernet Controller</b></li></ul><p><b>A/D Converter Value Port P6.7:</b></p><table bgcolor=\"#ff0000\" border=\"5\" cellpadding=\"0\" cellspacing=\"0\" width=\"500\"><tr><td><table width=\"AD7%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td bgcolor=\"#00ff00\">&nbsp;</td></tr></table></td></tr></table><table border=\"0\" width=\"500\"><tr><td width=\"20%\">0V</td><td width=\"20%\">0,5V</td><td width=\"20%\">1V</td><td width=\"20%\">1,5V</td><td width=\"20%\">2V</td></tr></table><p><b>MCU Temperature:</b></p><table bgcolor=\"#ff0000\" border=\"5\" cellpadding=\"0\" cellspacing=\"0\" width=\"500\"><tr><td><table width=\"ADA%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td bgcolor=\"#00ff00\">&nbsp;</td></tr></table></td></tr></table><table border=\"0\" width=\"500\"><tr><td width=\"20%\">20°C</td><td width=\"20%\">25°C</td><td width=\"20%\">30°C</td><td width=\"20%\">35°C</td><td width=\"20%\">40°C</td></tr></table></body></html>";
+
+void TCP_Handle(void);
 void main(void)
 {
+
+    time now;
+
+    now.date = 0x06;
+
+    now.day = 0x02;
+
+    now.hours = 0x19;
+    now.minutes = 0x29;
+
+    now.month = 0x12;
+
+    now.seconds = 0;
+
+    now.year = 0x21;
+
 
     SYSTEM_Initialize();
 
@@ -10562,6 +10619,7 @@ void main(void)
 
 
 
+    I2C_INTIALIZE(400000);
 
     (INTCONbits.GIE = 1);
 
@@ -10574,202 +10632,120 @@ void main(void)
 
 
 
-    do { LATBbits.LATB0 = 1; } while(0);
+
+
     while (1)
     {
 
         Network_Manage();
-
-        TCP_Blinky();
-        if(cnt)
+        TCP_Handle();
+        if(flag == 1)
         {
-            cnt = 0;
+            do { LATBbits.LATB0 = ~LATBbits.LATB0; } while(0);
+            flag = 0;
+            DS3231_read(&now);
+
+            DS3231_Display_UART(now);
+            EUSART2_putrs("\r\n");
+            if(sentFlag == 1)
+            {
+                if(TCP_Close(&port7TCB) == SUCCESS)
+                {
+
+                    sentFlag = 0;
+                }
+            }
             TCP_Update();
         }
     }
 }
 
-void TCP_Handler(void)
-{
-
-    static tcpTCB_t port7TCB;
+void TCP_Handle(void) {
 
 
-    static uint8_t rxdataPort7[20];
-    static uint8_t txdataPort7[20];
 
-    uint16_t rxLen, txLen;
+    static uint8_t rxdataPort7[512];
+    static uint8_t txdataPort7[512];
+    uint16_t rxLen, txLen, i;
+
+
     socketState_t socket_state;
+    rxLen = 0;
 
     socket_state = TCP_SocketPoll(&port7TCB);
-
-    switch(socket_state) {
+    switch (socket_state) {
         case NOT_A_SOCKET:
 
+            if(flag == 1)
+                EUSART2_putrs("Not a socket.\r\n");
             TCP_SocketInit(&port7TCB);
-            if (cnt)
-                EUSART2_putrs("Not a socket\r\n");
-            break;
         case SOCKET_CLOSED:
 
-
-            if (cnt)
-                EUSART2_putrs("Socket closed\r\n");
+            if(flag == 1)
+                EUSART2_putrs("Socket closed.\r\n");
             TCP_Bind(&port7TCB, 80);
 
-            TCP_InsertRxBuffer(&port7TCB, rxdataPort7, sizeof(rxdataPort7));
+            TCP_InsertRxBuffer(&port7TCB, rxdataPort7, sizeof (rxdataPort7));
 
             TCP_Listen(&port7TCB);
             break;
+
+        case SOCKET_IN_PROGRESS:
+        {
+            if(flag == 1)
+            {
+                EUSART2_putrs("In Progress.\r\n");
+            }
+        }break;
         case SOCKET_CONNECTED:
 
-            if(cnt)
-                EUSART2_putrs("Socket connected\r\n");
 
-            if(TCP_SendDone(&port7TCB))
-            {
+            if(flag == 1)
+                EUSART2_putrs("Connected.\r\n");
+
+            if (TCP_SendDone(&port7TCB)) {
 
                 rxLen = TCP_GetRxLength(&port7TCB);
-                if(rxLen > 0)
-                {
+                if (rxLen > 0) {
+
                     rxLen = TCP_GetReceivedData(&port7TCB);
 
-
-
-
-
-                    uint16_t temp = rxLen;
-
-                    for (uint16_t cnt = 0; cnt < temp; cnt++) {
-                        EUSART2_Write(rxdataPort7[cnt]);
+                    for (i = 0; i < rxLen; i++)
+                    {
+                        EUSART2_Write(txdataPort7[i] = rxdataPort7[i]);
                     }
 
+                    char tempBuf[50];
+                    sprintf(tempBuf, "\r\nThe size is %u\r\n", rxLen);
+                    EUSART2_puts(tempBuf);
 
-                    TCP_InsertRxBuffer(&port7TCB, rxdataPort7, sizeof(rxdataPort7));
+                    TCP_InsertRxBuffer(&port7TCB, rxdataPort7, sizeof (rxdataPort7));
+                    txLen = rxLen;
 
 
-                    if(rxdataPort7[0] == 'G')
+                    if(TCP_Send(&port7TCB, KOLELA, strlen(KOLELA)) == SUCCESS)
                     {
-                        TCP_Send(&port7TCB, ptr, strlen(ptr));
 
 
+                        sentFlag = 1;
+
+                        if(TCP_SocketRemove(&port7TCB) == SUCCESS)
+                        {
+                            EUSART2_puts("It was closed succesffully \r\n");
+                        }
+                        EUSART2_puts("It was sent successfully\r\n");
                     }
                 }
             }
-
-
             break;
-
-        case SOCKET_IN_PROGRESS:
-            if (cnt)
-                EUSART2_putrs("In Progress\r\n");
-            break;
-
         case SOCKET_CLOSING:
-            if(cnt)
-                EUSART2_putrs("Closing\r\n");
+
+            if(flag == 1)
+                EUSART2_putrs("Closing socket.\r\n");
             TCP_SocketRemove(&port7TCB);
-            break;
-
-        default:
-            break;
-    }
-}
-
-void TCP_Blinky(void)
-{
-
-    static tcpTCB_t port7TCB;
-
-
-    static uint8_t rxdataPort7[20];
-    static uint8_t txdataPort7[20];
-    static uint8_t hit_counter;
-    uint8_t len;
-
-    uint16_t rxLen, txLen;
-    socketState_t socket_state;
-
-    socket_state = TCP_SocketPoll(&port7TCB);
-
-    switch(socket_state)
-{
-        case NOT_A_SOCKET:
-
-            if (cnt)
-                EUSART2_putrs("Not a socket\r\n");
-            TCP_SocketInit(&port7TCB);
-            hit_counter = 0;
-            break;
-        case SOCKET_CLOSED:
-
-            if (cnt)
-                EUSART2_putrs("Socket closed\r\n");
-            TCP_Bind(&port7TCB, 80);
-
-            TCP_InsertRxBuffer(&port7TCB, rxdataPort7, sizeof(rxdataPort7));
-
-            TCP_Listen(&port7TCB);
-            break;
-        case SOCKET_CONNECTED:
-
-            if(cnt)
-                EUSART2_putrs("Socket connected\r\n");
-            if(TCP_SendDone(&port7TCB))
-            {
-
-                rxLen = TCP_GetRxLength(&port7TCB);
-                if(rxLen > 0)
-                {
-                    hit_counter++;
-                    rxLen = TCP_GetReceivedData(&port7TCB);
-
-                    unsigned temp = rxLen;
-                    for(uint8_t cnt = 0; cnt < temp; cnt++)
-                    {
-                        EUSART2_Write(rxdataPort7[cnt]);
-                    }
-# 260 "main.c"
-                    if(rxdataPort7[0] == 'G')
-                    {
-
-                    }
-                    TCP_InsertRxBuffer(&port7TCB, rxdataPort7, sizeof(rxdataPort7));
-
-                    TCP_Send(&port7TCB, txdataPort7, strlen(txdataPort7));
-                }
-            }
-            break;
-
-        case SOCKET_IN_PROGRESS:
-            if(cnt)
-                EUSART2_putrs("In Progress\r\n");
-            break;
-
-        case SOCKET_CLOSING:
-            if(cnt)
-                EUSART2_putrs("Closing\r\n");
-
-            TCP_SocketRemove(&port7TCB);
-
             break;
         default:
 
             break;
     }
-}
-
-void queueInsert(uint8_t ucData)
-{
-
-}
-
-uint8_t queueRead(void)
-{
-
-}
-
-uint8_t queuePeek(void)
-{
-
 }

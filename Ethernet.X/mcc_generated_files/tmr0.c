@@ -51,11 +51,12 @@
 #include <xc.h>
 #include "tmr0.h"
 #include "pin_manager.h"
+#include <stdbool.h>
 
+extern volatile bool flag; 
 /**
   Section: Global Variables Definitions
 */
-extern volatile uint8_t cnt;
 
 void (*TMR0_InterruptHandler)(void);
 
@@ -151,9 +152,10 @@ void TMR0_ISR(void)
         TMR0_InterruptHandler();
     }
 
-    cnt = 1;
     // add your TMR0 interrupt custom code
-    LED1_Toggle(); 
+    
+    
+    flag = true; 
 }
 
 

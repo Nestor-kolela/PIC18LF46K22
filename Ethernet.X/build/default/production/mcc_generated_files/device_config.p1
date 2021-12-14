@@ -36,7 +36,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "75
 [p x STVREN  =  ON     ]
 "76
-[p x LVP  =  ON     ]
+[p x LVP  =  OFF     ]
 "77
 [p x XINST  =  OFF     ]
 "78

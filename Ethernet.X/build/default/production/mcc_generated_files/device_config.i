@@ -34,7 +34,7 @@
 
 
 #pragma config STVREN = ON
-#pragma config LVP = ON
+#pragma config LVP = OFF
 #pragma config XINST = OFF
 #pragma config DEBUG = OFF
 

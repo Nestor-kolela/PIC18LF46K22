@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/pin_manager.c"
+# 1 "EEPROM.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,16 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/pin_manager.c" 2
-# 49 "mcc_generated_files/pin_manager.c"
-# 1 "mcc_generated_files/pin_manager.h" 1
-# 54 "mcc_generated_files/pin_manager.h"
+# 1 "EEPROM.c" 2
+
+
+
+
+
+
+
+# 1 "./EEPROM.h" 1
+# 11 "./EEPROM.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -9550,57 +9556,267 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 54 "mcc_generated_files/pin_manager.h" 2
-# 183 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 195 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 49 "mcc_generated_files/pin_manager.c" 2
+# 11 "./EEPROM.h" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uintptr_t;
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long intptr_t;
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int32_t;
 
 
 
 
 
+typedef long long int64_t;
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
 
-void PIN_MANAGER_Initialize(void)
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+typedef int24_t int_fast24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+typedef uint24_t uint_fast24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int16_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint16_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 12 "./EEPROM.h" 2
+
+extern void i2c_start(void);
+extern void i2c_stop(void);
+extern void i2c_RS(void);
+extern char i2c_read(uint8_t ACK_NACK);
+extern void i2c_write(uint8_t data);
+
+void EEPROM_write(const unsigned char data, const uint24_t address);
+void EEPROM_WritePg(const uint16_t page, uint8_t * ptr);
+uint8_t * EEPROM_ReadPg(uint16_t page, uint8_t * ptr);
+unsigned char EEPROM_Read(const uint24_t address);
+unsigned char * EEPROM_gets(unsigned char * buf, const uint24_t startAddress, const uint24_t endAddress);
+void EEPROM_putrs(unsigned char * buf, uint24_t startAddress);
+# 8 "EEPROM.c" 2
+
+
+
+
+extern void EUSART1_putrs(const uint8_t * ptr);
+extern void EUSART1_puts(uint8_t * ptr);
+
+void EEPROM_write(const unsigned char data, const uint24_t address)
 {
+    i2c_start();
+
+
+    i2c_write(0b10100000 | ((address >> 13 ) & 0b00001000));
+
+    i2c_write((uint8_t)(address >> 8) & 0xFF);
+
+    i2c_write((uint8_t)(address) & 0xFF);
+
+    i2c_write(data);
+
+
+    i2c_stop();
 
 
 
-    LATE = 0x00;
-    LATD = 0x00;
-    LATA = 0x00;
-    LATB = 0x00;
-    LATC = 0x00;
+    SSPCON2bits.ACKSTAT = 1;
+    while(1)
+    {
+        i2c_start();
+        i2c_write(0b10100000 | ((address >> 13 ) & 0b00001000));
+        if(!SSPCON2bits.ACKSTAT)
+        {
+            break;
+        }
+    }
+}
+unsigned char EEPROM_Read(const uint24_t address)
+{
+    uint8_t tempValue = 0;
+
+    i2c_start();
 
 
 
+    i2c_write(0b10100000 | ((address >> 13 ) & 0b00001000));
 
-    TRISE = 0x06;
-    TRISA = 0xFF;
-    TRISB = 0xFE;
-    TRISC = 0xFF;
-    TRISD = 0xA2;
+    i2c_write((uint8_t)(address >> 8) & 0xFF);
 
+    i2c_write((uint8_t)(address) & 0xFF);
 
+    i2c_start();
 
+    i2c_write(0b10100001 | ((address >> 13 ) & 0b00001000));
 
-    ANSELD = 0x20;
-    ANSELC = 0xFC;
-    ANSELB = 0x3E;
-    ANSELE = 0x06;
-    ANSELA = 0x2F;
+    tempValue = i2c_read(1);
 
+    i2c_stop();
 
+    return tempValue;
 
+}
+void EEPROM_putrs(unsigned char * buf, uint24_t startAddress)
+{
+    while(*(buf) != '\0')
+    {
+        EEPROM_write(*(buf++), startAddress++);
 
-    WPUB = 0x00;
-    INTCON2bits.nRBPU = 1;
-# 97 "mcc_generated_files/pin_manager.c"
+    }
+    return;
+}
+unsigned char * EEPROM_gets(unsigned char * buf, const uint24_t startAddress, const uint24_t endAddress)
+{
+    uint24_t tempValue = 0;
+    uint24_t count = 0;
+
+    for(tempValue = startAddress; tempValue<=endAddress; tempValue++)
+    {
+        *(buf + count++)= EEPROM_Read(tempValue);
+    }
+    *(buf + count) = '\0';
+
+    return &buf[0];
 }
 
-void PIN_MANAGER_IOC(void)
+void EEPROM_WritePg(const uint16_t page, uint8_t * ptr)
 {
 
-    INTCONbits.RBIF = 0;
+    if(page < 1024)
+    {
+        uint32_t product;
+
+        product = page * 128;
+
+        i2c_start();
+
+        i2c_write(0b10100000 | ((product >> 13 ) & 0b00001000));
+
+        i2c_write((uint8_t)(product >> 8) & 0xFF);
+
+        i2c_write((uint8_t)(product) & 0xFF);
+
+        for(uint8_t cnt = 0; cnt < 128; cnt++)
+        {
+            i2c_write(*(ptr + cnt));
+        }
+
+        i2c_stop();
+
+        while (1)
+        {
+            i2c_start();
+            i2c_write(0b10100000 | ((product >> 13) & 0b00001000));
+            if (!SSPCON2bits.ACKSTAT)
+            {
+                break;
+            }
+        }
+    }else
+    {
+        return ;
+    }
+
+}
+
+uint8_t * EEPROM_ReadPg(uint16_t page, uint8_t * ptr)
+{
+    if (page < 1024)
+    {
+
+        uint32_t product = page * 128;
+
+
+
+        i2c_start();
+
+        i2c_write(0b10100000 | ((product >> 13 ) & 0b00001000));
+
+        i2c_write((uint8_t)(product >> 8) & 0xFF);
+
+        i2c_write((uint8_t)(product) & 0xFF);
+
+        i2c_start();
+
+        i2c_write(0b10100001 | ((product >> 13 ) & 0b00001000));
+
+        uint8_t cnt;
+
+        for(cnt = 0; cnt < 127; cnt++)
+        {
+            *(ptr + cnt) = i2c_read(0);
+        }
+
+        *(ptr + cnt)= i2c_read(1);
+
+        return &ptr[0];
+
+    }else
+    {
+        return (uint8_t *) ((void*)0);
+    }
+
 }

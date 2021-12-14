@@ -11,4 +11,7 @@ mcc_generated_files/eusart2.h  \
 mcc_generated_files/TCPIPLibrary/network.h  \
 mcc_generated_files/TCPIPLibrary/tcpip_types.h  \
 mcc_generated_files/drivers/spi_master.h  \
-mcc_generated_files/TCPIPLibrary/tcpv4.h 
+mcc_generated_files/TCPIPLibrary/tcpv4.h  \
+I2C.h  \
+EEPROM.h  \
+DS3231.h 

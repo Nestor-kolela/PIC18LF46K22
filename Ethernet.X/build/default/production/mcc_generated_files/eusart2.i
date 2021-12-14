@@ -9689,14 +9689,15 @@ void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
 # 465 "mcc_generated_files/eusart2.h"
 void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void));
 
-void EUSART2_putrs(const uint8_t * ptr);
 void EUSART2_puts(uint8_t * ptr);
+
+void EUSART2_putrs(const uint8_t * ptr);
 # 50 "mcc_generated_files/eusart2.c" 2
 # 63 "mcc_generated_files/eusart2.c"
 volatile uint8_t eusart2RxHead = 0;
 volatile uint8_t eusart2RxTail = 0;
-volatile uint8_t eusart2RxBuffer[64];
-volatile eusart2_status_t eusart2RxStatusBuffer[64];
+volatile uint8_t eusart2RxBuffer[8];
+volatile eusart2_status_t eusart2RxStatusBuffer[8];
 volatile uint8_t eusart2RxCount;
 volatile eusart2_status_t eusart2RxLastError;
 
@@ -9801,7 +9802,21 @@ void EUSART2_Write(uint8_t txData)
     TXREG2 = txData;
 }
 
+void EUSART2_puts(uint8_t * ptr)
+{
+    while(*ptr)
+    {
+        EUSART2_Write(*ptr++);
+    }
+}
 
+void EUSART2_putrs(const uint8_t * ptr)
+{
+    while(*ptr)
+    {
+        EUSART2_Write(*ptr++);
+    }
+}
 
 void EUSART2_Receive_ISR(void)
 {
@@ -9866,19 +9881,4 @@ void EUSART2_SetErrorHandler(void (* interruptHandler)(void)){
 
 void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void)){
     EUSART2_RxDefaultInterruptHandler = interruptHandler;
-}
-
-void EUSART2_putrs(const uint8_t * ptr)
-{
-    while(*ptr)
-    {
-        EUSART2_Write(*ptr++);
-    }
-}
-void EUSART2_puts(uint8_t * ptr)
-{
-    while(*ptr)
-    {
-        EUSART2_Write(*ptr++);
-    }
 }

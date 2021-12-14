@@ -9556,9 +9556,9 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 155 "mcc_generated_files/pin_manager.h"
+# 183 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 167 "mcc_generated_files/pin_manager.h"
+# 195 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -9953,8 +9953,9 @@ void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
 # 465 "mcc_generated_files/eusart2.h"
 void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void));
 
-void EUSART2_putrs(const uint8_t * ptr);
 void EUSART2_puts(uint8_t * ptr);
+
+void EUSART2_putrs(const uint8_t * ptr);
 # 59 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/TCPIPLibrary/network.h" 1

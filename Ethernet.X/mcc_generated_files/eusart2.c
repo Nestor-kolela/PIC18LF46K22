@@ -54,7 +54,7 @@
 */
 
 #define EUSART2_TX_BUFFER_SIZE 8
-#define EUSART2_RX_BUFFER_SIZE 64
+#define EUSART2_RX_BUFFER_SIZE 8
 
 /**
   Section: Global Variables
@@ -168,7 +168,21 @@ void EUSART2_Write(uint8_t txData)
     TXREG2 = txData;    // Write the data byte to the USART.
 }
 
+void EUSART2_puts(uint8_t * ptr)
+{
+    while(*ptr)
+    {
+        EUSART2_Write(*ptr++); 
+    }
+}
 
+void EUSART2_putrs(const uint8_t * ptr)
+{
+    while(*ptr)
+    {
+        EUSART2_Write(*ptr++); 
+    }
+}
 
 void EUSART2_Receive_ISR(void)
 {
@@ -233,21 +247,6 @@ void EUSART2_SetErrorHandler(void (* interruptHandler)(void)){
 
 void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void)){
     EUSART2_RxDefaultInterruptHandler = interruptHandler;
-}
-
-void EUSART2_putrs(const uint8_t * ptr)
-{
-    while(*ptr)
-    {
-        EUSART2_Write(*ptr++); 
-    }
-}
-void EUSART2_puts(uint8_t * ptr)
-{
-    while(*ptr)
-    {
-        EUSART2_Write(*ptr++); 
-    }
 }
 /**
   End of File

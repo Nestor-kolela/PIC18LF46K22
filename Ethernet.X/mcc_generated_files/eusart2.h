@@ -464,8 +464,9 @@ void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
 */
 void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void));
 
-void EUSART2_putrs(const uint8_t * ptr);
-void EUSART2_puts(uint8_t * ptr);
+void EUSART2_puts(uint8_t * ptr); 
+
+void EUSART2_putrs(const uint8_t * ptr); 
 
 #ifdef __cplusplus  // Provide C++ Compatibility
 

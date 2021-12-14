@@ -9674,7 +9674,6 @@ void TMR1_DefaultInterruptHandler(void);
 
 
 volatile uint16_t timer1ReloadVal;
-
 void (*TMR1_InterruptHandler)(void);
 
 
@@ -9796,7 +9795,6 @@ void TMR1_ISR(void)
 
 void TMR1_CallBack(void)
 {
-
 
     if(TMR1_InterruptHandler)
     {

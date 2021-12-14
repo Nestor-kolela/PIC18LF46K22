@@ -51,14 +51,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 16129: extern volatile unsigned char T0CON __attribute__((address(0xFD5)));
 [v _T0CON `Vuc ~T0 @X0 0 e@4053 ]
 [v F6029 `(v ~T0 @X0 0 tf ]
-"58 mcc_generated_files/tmr0.c
-[; ;mcc_generated_files/tmr0.c: 58: extern volatile uint8_t cnt;
-[v _cnt `Vuc ~T0 @X0 0 e ]
-"156
-[; ;mcc_generated_files/tmr0.c: 156:     LED1_Toggle();
-[v _LED1_Toggle `(i ~T0 @X0 0 e? ]
+"56 mcc_generated_files/tmr0.c
+[; ;mcc_generated_files/tmr0.c: 56: extern volatile _Bool flag;
+[v _flag `Va ~T0 @X0 0 e ]
+[v F6031 `(v ~T0 @X0 0 tf ]
 [v F6033 `(v ~T0 @X0 0 tf ]
-[v F6035 `(v ~T0 @X0 0 tf ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 54: __asm("ANSELA equ 0F38h");
 [; <" ANSELA equ 0F38h ;# ">
@@ -818,214 +815,211 @@ Version 4.0 HI-TECH Software Intermediate Code
 "17406
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 17406: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"60 mcc_generated_files/tmr0.c
-[; ;mcc_generated_files/tmr0.c: 60: void (*TMR0_InterruptHandler)(void);
+"61 mcc_generated_files/tmr0.c
+[; ;mcc_generated_files/tmr0.c: 61: void (*TMR0_InterruptHandler)(void);
 [v _TMR0_InterruptHandler `*F6015 ~T0 @X0 1 e ]
-"62
-[; ;mcc_generated_files/tmr0.c: 62: volatile uint16_t timer0ReloadVal;
+"63
+[; ;mcc_generated_files/tmr0.c: 63: volatile uint16_t timer0ReloadVal;
 [v _timer0ReloadVal `Vus ~T0 @X0 1 e ]
-"69
-[; ;mcc_generated_files/tmr0.c: 69: void TMR0_Initialize(void)
-[v _TMR0_Initialize `(v ~T0 @X0 1 ef ]
 "70
-[; ;mcc_generated_files/tmr0.c: 70: {
+[; ;mcc_generated_files/tmr0.c: 70: void TMR0_Initialize(void)
+[v _TMR0_Initialize `(v ~T0 @X0 1 ef ]
+"71
+[; ;mcc_generated_files/tmr0.c: 71: {
 {
 [e :U _TMR0_Initialize ]
 [f ]
-"74
-[; ;mcc_generated_files/tmr0.c: 74:     T0CONbits.T08BIT = 0;
+"75
+[; ;mcc_generated_files/tmr0.c: 75:     T0CONbits.T08BIT = 0;
 [e = . . _T0CONbits 0 4 -> -> 0 `i `uc ]
-"77
-[; ;mcc_generated_files/tmr0.c: 77:     TMR0H = 0x0B;
+"78
+[; ;mcc_generated_files/tmr0.c: 78:     TMR0H = 0x0B;
 [e = _TMR0H -> -> 11 `i `uc ]
-"80
-[; ;mcc_generated_files/tmr0.c: 80:     TMR0L = 0xDB;
+"81
+[; ;mcc_generated_files/tmr0.c: 81:     TMR0L = 0xDB;
 [e = _TMR0L -> -> 219 `i `uc ]
-"84
-[; ;mcc_generated_files/tmr0.c: 84:     timer0ReloadVal = (uint16_t)((TMR0H << 8) | TMR0L);
+"85
+[; ;mcc_generated_files/tmr0.c: 85:     timer0ReloadVal = (uint16_t)((TMR0H << 8) | TMR0L);
 [e = _timer0ReloadVal -> | << -> _TMR0H `i -> 8 `i -> _TMR0L `i `us ]
-"87
-[; ;mcc_generated_files/tmr0.c: 87:     INTCONbits.TMR0IF = 0;
+"88
+[; ;mcc_generated_files/tmr0.c: 88:     INTCONbits.TMR0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"90
-[; ;mcc_generated_files/tmr0.c: 90:     INTCONbits.TMR0IE = 1;
+"91
+[; ;mcc_generated_files/tmr0.c: 91:     INTCONbits.TMR0IE = 1;
 [e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-"93
-[; ;mcc_generated_files/tmr0.c: 93:     TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
+"94
+[; ;mcc_generated_files/tmr0.c: 94:     TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
 [e ( _TMR0_SetInterruptHandler (1 &U _TMR0_DefaultInterruptHandler ]
-"96
-[; ;mcc_generated_files/tmr0.c: 96:     T0CON = 0x97;
-[e = _T0CON -> -> 151 `i `uc ]
 "97
-[; ;mcc_generated_files/tmr0.c: 97: }
+[; ;mcc_generated_files/tmr0.c: 97:     T0CON = 0x97;
+[e = _T0CON -> -> 151 `i `uc ]
+"98
+[; ;mcc_generated_files/tmr0.c: 98: }
 [e :UE 854 ]
 }
-"99
-[; ;mcc_generated_files/tmr0.c: 99: void TMR0_StartTimer(void)
-[v _TMR0_StartTimer `(v ~T0 @X0 1 ef ]
 "100
-[; ;mcc_generated_files/tmr0.c: 100: {
+[; ;mcc_generated_files/tmr0.c: 100: void TMR0_StartTimer(void)
+[v _TMR0_StartTimer `(v ~T0 @X0 1 ef ]
+"101
+[; ;mcc_generated_files/tmr0.c: 101: {
 {
 [e :U _TMR0_StartTimer ]
 [f ]
-"102
-[; ;mcc_generated_files/tmr0.c: 102:     T0CONbits.TMR0ON = 1;
-[e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
 "103
-[; ;mcc_generated_files/tmr0.c: 103: }
+[; ;mcc_generated_files/tmr0.c: 103:     T0CONbits.TMR0ON = 1;
+[e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
+"104
+[; ;mcc_generated_files/tmr0.c: 104: }
 [e :UE 855 ]
 }
-"105
-[; ;mcc_generated_files/tmr0.c: 105: void TMR0_StopTimer(void)
-[v _TMR0_StopTimer `(v ~T0 @X0 1 ef ]
 "106
-[; ;mcc_generated_files/tmr0.c: 106: {
+[; ;mcc_generated_files/tmr0.c: 106: void TMR0_StopTimer(void)
+[v _TMR0_StopTimer `(v ~T0 @X0 1 ef ]
+"107
+[; ;mcc_generated_files/tmr0.c: 107: {
 {
 [e :U _TMR0_StopTimer ]
 [f ]
-"108
-[; ;mcc_generated_files/tmr0.c: 108:     T0CONbits.TMR0ON = 0;
-[e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
 "109
-[; ;mcc_generated_files/tmr0.c: 109: }
+[; ;mcc_generated_files/tmr0.c: 109:     T0CONbits.TMR0ON = 0;
+[e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
+"110
+[; ;mcc_generated_files/tmr0.c: 110: }
 [e :UE 856 ]
 }
-"111
-[; ;mcc_generated_files/tmr0.c: 111: uint16_t TMR0_ReadTimer(void)
-[v _TMR0_ReadTimer `(us ~T0 @X0 1 ef ]
 "112
-[; ;mcc_generated_files/tmr0.c: 112: {
+[; ;mcc_generated_files/tmr0.c: 112: uint16_t TMR0_ReadTimer(void)
+[v _TMR0_ReadTimer `(us ~T0 @X0 1 ef ]
+"113
+[; ;mcc_generated_files/tmr0.c: 113: {
 {
 [e :U _TMR0_ReadTimer ]
 [f ]
-"113
-[; ;mcc_generated_files/tmr0.c: 113:     uint16_t readVal;
-[v _readVal `us ~T0 @X0 1 a ]
 "114
-[; ;mcc_generated_files/tmr0.c: 114:     uint8_t readValLow;
-[v _readValLow `uc ~T0 @X0 1 a ]
+[; ;mcc_generated_files/tmr0.c: 114:     uint16_t readVal;
+[v _readVal `us ~T0 @X0 1 a ]
 "115
-[; ;mcc_generated_files/tmr0.c: 115:     uint8_t readValHigh;
+[; ;mcc_generated_files/tmr0.c: 115:     uint8_t readValLow;
+[v _readValLow `uc ~T0 @X0 1 a ]
+"116
+[; ;mcc_generated_files/tmr0.c: 116:     uint8_t readValHigh;
 [v _readValHigh `uc ~T0 @X0 1 a ]
-"117
-[; ;mcc_generated_files/tmr0.c: 117:     readValLow = TMR0L;
-[e = _readValLow _TMR0L ]
 "118
-[; ;mcc_generated_files/tmr0.c: 118:     readValHigh = TMR0H;
-[e = _readValHigh _TMR0H ]
+[; ;mcc_generated_files/tmr0.c: 118:     readValLow = TMR0L;
+[e = _readValLow _TMR0L ]
 "119
-[; ;mcc_generated_files/tmr0.c: 119:     readVal = ((uint16_t)readValHigh << 8) + readValLow;
+[; ;mcc_generated_files/tmr0.c: 119:     readValHigh = TMR0H;
+[e = _readValHigh _TMR0H ]
+"120
+[; ;mcc_generated_files/tmr0.c: 120:     readVal = ((uint16_t)readValHigh << 8) + readValLow;
 [e = _readVal -> + << -> -> _readValHigh `us `ui -> 8 `i -> _readValLow `ui `us ]
-"121
-[; ;mcc_generated_files/tmr0.c: 121:     return readVal;
+"122
+[; ;mcc_generated_files/tmr0.c: 122:     return readVal;
 [e ) _readVal ]
 [e $UE 857  ]
-"122
-[; ;mcc_generated_files/tmr0.c: 122: }
+"123
+[; ;mcc_generated_files/tmr0.c: 123: }
 [e :UE 857 ]
 }
-"124
-[; ;mcc_generated_files/tmr0.c: 124: void TMR0_WriteTimer(uint16_t timerVal)
-[v _TMR0_WriteTimer `(v ~T0 @X0 1 ef1`us ]
 "125
-[; ;mcc_generated_files/tmr0.c: 125: {
+[; ;mcc_generated_files/tmr0.c: 125: void TMR0_WriteTimer(uint16_t timerVal)
+[v _TMR0_WriteTimer `(v ~T0 @X0 1 ef1`us ]
+"126
+[; ;mcc_generated_files/tmr0.c: 126: {
 {
 [e :U _TMR0_WriteTimer ]
-"124
-[; ;mcc_generated_files/tmr0.c: 124: void TMR0_WriteTimer(uint16_t timerVal)
-[v _timerVal `us ~T0 @X0 1 r1 ]
 "125
-[; ;mcc_generated_files/tmr0.c: 125: {
+[; ;mcc_generated_files/tmr0.c: 125: void TMR0_WriteTimer(uint16_t timerVal)
+[v _timerVal `us ~T0 @X0 1 r1 ]
+"126
+[; ;mcc_generated_files/tmr0.c: 126: {
 [f ]
-"127
-[; ;mcc_generated_files/tmr0.c: 127:     TMR0H = timerVal >> 8;
-[e = _TMR0H -> >> -> _timerVal `ui -> 8 `i `uc ]
 "128
-[; ;mcc_generated_files/tmr0.c: 128:     TMR0L = (uint8_t) timerVal;
-[e = _TMR0L -> _timerVal `uc ]
+[; ;mcc_generated_files/tmr0.c: 128:     TMR0H = timerVal >> 8;
+[e = _TMR0H -> >> -> _timerVal `ui -> 8 `i `uc ]
 "129
-[; ;mcc_generated_files/tmr0.c: 129: }
+[; ;mcc_generated_files/tmr0.c: 129:     TMR0L = (uint8_t) timerVal;
+[e = _TMR0L -> _timerVal `uc ]
+"130
+[; ;mcc_generated_files/tmr0.c: 130: }
 [e :UE 858 ]
 }
-"131
-[; ;mcc_generated_files/tmr0.c: 131: void TMR0_Reload(void)
-[v _TMR0_Reload `(v ~T0 @X0 1 ef ]
 "132
-[; ;mcc_generated_files/tmr0.c: 132: {
+[; ;mcc_generated_files/tmr0.c: 132: void TMR0_Reload(void)
+[v _TMR0_Reload `(v ~T0 @X0 1 ef ]
+"133
+[; ;mcc_generated_files/tmr0.c: 133: {
 {
 [e :U _TMR0_Reload ]
 [f ]
-"134
-[; ;mcc_generated_files/tmr0.c: 134:     TMR0H = timer0ReloadVal >> 8;
-[e = _TMR0H -> >> -> _timer0ReloadVal `ui -> 8 `i `uc ]
 "135
-[; ;mcc_generated_files/tmr0.c: 135:     TMR0L = (uint8_t) timer0ReloadVal;
-[e = _TMR0L -> _timer0ReloadVal `uc ]
+[; ;mcc_generated_files/tmr0.c: 135:     TMR0H = timer0ReloadVal >> 8;
+[e = _TMR0H -> >> -> _timer0ReloadVal `ui -> 8 `i `uc ]
 "136
-[; ;mcc_generated_files/tmr0.c: 136: }
+[; ;mcc_generated_files/tmr0.c: 136:     TMR0L = (uint8_t) timer0ReloadVal;
+[e = _TMR0L -> _timer0ReloadVal `uc ]
+"137
+[; ;mcc_generated_files/tmr0.c: 137: }
 [e :UE 859 ]
 }
-"138
-[; ;mcc_generated_files/tmr0.c: 138: void TMR0_ISR(void)
-[v _TMR0_ISR `(v ~T0 @X0 1 ef ]
 "139
-[; ;mcc_generated_files/tmr0.c: 139: {
+[; ;mcc_generated_files/tmr0.c: 139: void TMR0_ISR(void)
+[v _TMR0_ISR `(v ~T0 @X0 1 ef ]
+"140
+[; ;mcc_generated_files/tmr0.c: 140: {
 {
 [e :U _TMR0_ISR ]
 [f ]
-"142
-[; ;mcc_generated_files/tmr0.c: 142:     INTCONbits.TMR0IF = 0;
+"143
+[; ;mcc_generated_files/tmr0.c: 143:     INTCONbits.TMR0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"146
-[; ;mcc_generated_files/tmr0.c: 146:     TMR0H = timer0ReloadVal >> 8;
-[e = _TMR0H -> >> -> _timer0ReloadVal `ui -> 8 `i `uc ]
 "147
-[; ;mcc_generated_files/tmr0.c: 147:     TMR0L = (uint8_t) timer0ReloadVal;
+[; ;mcc_generated_files/tmr0.c: 147:     TMR0H = timer0ReloadVal >> 8;
+[e = _TMR0H -> >> -> _timer0ReloadVal `ui -> 8 `i `uc ]
+"148
+[; ;mcc_generated_files/tmr0.c: 148:     TMR0L = (uint8_t) timer0ReloadVal;
 [e = _TMR0L -> _timer0ReloadVal `uc ]
-"149
-[; ;mcc_generated_files/tmr0.c: 149:     if(TMR0_InterruptHandler)
-[e $ ! != _TMR0_InterruptHandler -> -> 0 `i `*F6029 861  ]
 "150
-[; ;mcc_generated_files/tmr0.c: 150:     {
-{
+[; ;mcc_generated_files/tmr0.c: 150:     if(TMR0_InterruptHandler)
+[e $ ! != _TMR0_InterruptHandler -> -> 0 `i `*F6029 861  ]
 "151
-[; ;mcc_generated_files/tmr0.c: 151:         TMR0_InterruptHandler();
-[e ( *U _TMR0_InterruptHandler ..  ]
+[; ;mcc_generated_files/tmr0.c: 151:     {
+{
 "152
-[; ;mcc_generated_files/tmr0.c: 152:     }
+[; ;mcc_generated_files/tmr0.c: 152:         TMR0_InterruptHandler();
+[e ( *U _TMR0_InterruptHandler ..  ]
+"153
+[; ;mcc_generated_files/tmr0.c: 153:     }
 }
 [e :U 861 ]
-"154
-[; ;mcc_generated_files/tmr0.c: 154:     cnt = 1;
-[e = _cnt -> -> 1 `i `uc ]
-"156
-[; ;mcc_generated_files/tmr0.c: 156:     LED1_Toggle();
-[e ( _LED1_Toggle ..  ]
-"157
-[; ;mcc_generated_files/tmr0.c: 157: }
+"158
+[; ;mcc_generated_files/tmr0.c: 158:     flag = 1;
+[e = _flag -> -> 1 `i `a ]
+"159
+[; ;mcc_generated_files/tmr0.c: 159: }
 [e :UE 860 ]
 }
-"160
-[; ;mcc_generated_files/tmr0.c: 160: void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
-[v _TMR0_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F6033 ]
+"162
+[; ;mcc_generated_files/tmr0.c: 162: void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
+[v _TMR0_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F6031 ]
 {
 [e :U _TMR0_SetInterruptHandler ]
-[v _InterruptHandler `*F6035 ~T0 @X0 1 r1 ]
+[v _InterruptHandler `*F6033 ~T0 @X0 1 r1 ]
 [f ]
-"161
-[; ;mcc_generated_files/tmr0.c: 161:     TMR0_InterruptHandler = InterruptHandler;
+"163
+[; ;mcc_generated_files/tmr0.c: 163:     TMR0_InterruptHandler = InterruptHandler;
 [e = _TMR0_InterruptHandler _InterruptHandler ]
-"162
-[; ;mcc_generated_files/tmr0.c: 162: }
+"164
+[; ;mcc_generated_files/tmr0.c: 164: }
 [e :UE 862 ]
 }
-"164
-[; ;mcc_generated_files/tmr0.c: 164: void TMR0_DefaultInterruptHandler(void){
+"166
+[; ;mcc_generated_files/tmr0.c: 166: void TMR0_DefaultInterruptHandler(void){
 [v _TMR0_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _TMR0_DefaultInterruptHandler ]
 [f ]
-"167
-[; ;mcc_generated_files/tmr0.c: 167: }
+"169
+[; ;mcc_generated_files/tmr0.c: 169: }
 [e :UE 863 ]
 }

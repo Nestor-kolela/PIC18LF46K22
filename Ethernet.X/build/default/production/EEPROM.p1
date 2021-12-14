@@ -1,156 +1,39 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"76 mcc_generated_files/eusart2.h
-[; ;mcc_generated_files/eusart2.h: 76:     struct {
-[s S855 :1 `uc 1 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
-[n S855 . perr ferr oerr reserved ]
-"75
-[; ;mcc_generated_files/eusart2.h: 75: typedef union {
-[u S854 `S855 1 `uc 1 ]
-[n S854 . . status ]
-[v F6046 `(v ~T0 @X0 0 tf ]
-[v F6048 `(v ~T0 @X0 0 tf ]
-[v F6050 `(v ~T0 @X0 0 tf ]
-[v F6052 `(v ~T0 @X0 0 tf ]
-"9909 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 9909:     struct {
-[s S459 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S459 . TMR1GIE TMR3GIE TMR5GIE CTMUIE TX2IE RC2IE BCL2IE SSP2IE ]
-"9919
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 9919:     struct {
-[s S460 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S460 . RXB0IE RXB1IE TXB0IE TXB1IE TXB2IE ]
-"9926
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 9926:     struct {
-[s S461 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S461 . . RXBNIE . TXBNIE ]
-"9908
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 9908: typedef union {
-[u S458 `S459 1 `S460 1 `S461 1 ]
-[n S458 . . . . ]
-"9933
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 9933: extern volatile PIE3bits_t PIE3bits __attribute__((address(0xFA3)));
-[v _PIE3bits `VS458 ~T0 @X0 0 e@4003 ]
-[v F6032 `(v ~T0 @X0 0 tf ]
-"465 mcc_generated_files/eusart2.h
-[; ;mcc_generated_files/eusart2.h: 465: void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void));
-[v _EUSART2_SetRxInterruptHandler `(v ~T0 @X0 0 ef1`*F6032 ]
-"369
-[; ;mcc_generated_files/eusart2.h: 369: void EUSART2_Receive_ISR(void);
-[v _EUSART2_Receive_ISR `(v ~T0 @X0 0 ef ]
-"4288 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4288: extern volatile unsigned char BAUDCON2 __attribute__((address(0xF70)));
-[v _BAUDCON2 `Vuc ~T0 @X0 0 e@3952 ]
-"4550
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4550: extern volatile unsigned char RCSTA2 __attribute__((address(0xF71)));
-[v _RCSTA2 `Vuc ~T0 @X0 0 e@3953 ]
-"4838
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4838: extern volatile unsigned char TXSTA2 __attribute__((address(0xF72)));
-[v _TXSTA2 `Vuc ~T0 @X0 0 e@3954 ]
-"5166
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 5166: extern volatile unsigned char SPBRG2 __attribute__((address(0xF75)));
-[v _SPBRG2 `Vuc ~T0 @X0 0 e@3957 ]
-"5204
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 5204: extern volatile unsigned char SPBRGH2 __attribute__((address(0xF76)));
-[v _SPBRGH2 `Vuc ~T0 @X0 0 e@3958 ]
-[v F6020 `(v ~T0 @X0 0 tf ]
-"408 mcc_generated_files/eusart2.h
-[; ;mcc_generated_files/eusart2.h: 408: void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void));
-[v _EUSART2_SetFramingErrorHandler `(v ~T0 @X0 0 ef1`*F6020 ]
-"79 mcc_generated_files/eusart2.c
-[; ;mcc_generated_files/eusart2.c: 79: void EUSART2_DefaultFramingErrorHandler(void);
-[v _EUSART2_DefaultFramingErrorHandler `(v ~T0 @X0 0 ef ]
-[v F6024 `(v ~T0 @X0 0 tf ]
-"426 mcc_generated_files/eusart2.h
-[; ;mcc_generated_files/eusart2.h: 426: void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void));
-[v _EUSART2_SetOverrunErrorHandler `(v ~T0 @X0 0 ef1`*F6024 ]
-"80 mcc_generated_files/eusart2.c
-[; ;mcc_generated_files/eusart2.c: 80: void EUSART2_DefaultOverrunErrorHandler(void);
-[v _EUSART2_DefaultOverrunErrorHandler `(v ~T0 @X0 0 ef ]
-[v F6028 `(v ~T0 @X0 0 tf ]
-"444 mcc_generated_files/eusart2.h
-[; ;mcc_generated_files/eusart2.h: 444: void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
-[v _EUSART2_SetErrorHandler `(v ~T0 @X0 0 ef1`*F6028 ]
-"81 mcc_generated_files/eusart2.c
-[; ;mcc_generated_files/eusart2.c: 81: void EUSART2_DefaultErrorHandler(void);
-[v _EUSART2_DefaultErrorHandler `(v ~T0 @X0 0 ef ]
-"10019 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 10019:     struct {
-[s S463 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S463 . TMR1GIF TMR3GIF TMR5GIF CTMUIF TX2IF RC2IF BCL2IF SSP2IF ]
-"10029
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 10029:     struct {
-[s S464 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S464 . . RXBNIF . TXBNIF ]
-"10018
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 10018: typedef union {
-[u S462 `S463 1 `S464 1 ]
-[n S462 . . . ]
-"10036
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 10036: extern volatile PIR3bits_t PIR3bits __attribute__((address(0xFA4)));
-[v _PIR3bits `VS462 ~T0 @X0 0 e@4004 ]
-"4849
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4849:     struct {
-[s S230 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S230 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
-"4859
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4859:     struct {
-[s S231 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S231 . TX9D2 TRMT2 BRGH2 SENDB2 SYNC2 TXEN2 TX92 CSRC2 ]
-"4869
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4869:     struct {
-[s S232 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
-[n S232 . TXD82 . TX8_92 ]
-"4848
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4848: typedef union {
-[u S229 `S230 1 `S231 1 `S232 1 ]
-[n S229 . . . . ]
-"4875
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4875: extern volatile TXSTA2bits_t TXSTA2bits __attribute__((address(0xF72)));
-[v _TXSTA2bits `VS229 ~T0 @X0 0 e@3954 ]
-"5090
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 5090: extern volatile unsigned char TXREG2 __attribute__((address(0xF73)));
-[v _TXREG2 `Vuc ~T0 @X0 0 e@3955 ]
-"4561
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4561:     struct {
-[s S218 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S218 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
-"4571
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4571:     struct {
-[s S219 :3 `uc 1 :1 `uc 1 ]
-[n S219 . . ADEN ]
-"4575
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4575:     struct {
-[s S220 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S220 . RX9D2 OERR2 FERR2 ADDEN2 CREN2 SREN2 RX92 SPEN2 ]
-"4585
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4585:     struct {
-[s S221 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
-[n S221 . RCD82 . RC8_92 ]
-"4590
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4590:     struct {
-[s S222 :6 `uc 1 :1 `uc 1 ]
-[n S222 . . RC92 ]
-"4560
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4560: typedef union {
-[u S217 `S218 1 `S219 1 `S220 1 `S221 1 `S222 1 ]
-[n S217 . . . . . . ]
-"4595
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 4595: extern volatile RCSTA2bits_t RCSTA2bits __attribute__((address(0xF71)));
-[v _RCSTA2bits `VS217 ~T0 @X0 0 e@3953 ]
-"390 mcc_generated_files/eusart2.h
-[; ;mcc_generated_files/eusart2.h: 390: void EUSART2_RxDataHandler(void);
-[v _EUSART2_RxDataHandler `(v ~T0 @X0 0 ef ]
-"5128 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 5128: extern volatile unsigned char RCREG2 __attribute__((address(0xF74)));
-[v _RCREG2 `Vuc ~T0 @X0 0 e@3956 ]
-[v F6079 `(v ~T0 @X0 0 tf ]
-[v F6081 `(v ~T0 @X0 0 tf ]
-[v F6084 `(v ~T0 @X0 0 tf ]
-[v F6086 `(v ~T0 @X0 0 tf ]
-[v F6089 `(v ~T0 @X0 0 tf ]
-[v F6091 `(v ~T0 @X0 0 tf ]
-[v F6094 `(v ~T0 @X0 0 tf ]
-[v F6096 `(v ~T0 @X0 0 tf ]
+"13 ./EEPROM.h
+[; ;./EEPROM.h: 13: extern void i2c_start(void);
+[v _i2c_start `(v ~T0 @X0 0 ef ]
+"17
+[; ;./EEPROM.h: 17: extern void i2c_write(uint8_t data);
+[v _i2c_write `(v ~T0 @X0 0 ef1`uc ]
+"14
+[; ;./EEPROM.h: 14: extern void i2c_stop(void);
+[v _i2c_stop `(v ~T0 @X0 0 ef ]
+"13965 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 13965:     struct {
+[s S666 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S666 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
+"13975
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 13975:     struct {
+[s S667 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S667 . SEN1 ADMSK1 ADMSK2 ADMSK3 ACKEN1 ACKDT1 ACKSTAT1 GCEN1 ]
+"13985
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 13985:     struct {
+[s S668 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S668 . . ADMSK11 ADMSK21 ADMSK31 ADMSK4 ADMSK5 ]
+"13993
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 13993:     struct {
+[s S669 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S669 . . RSEN1 PEN1 RCEN1 ADMSK41 ADMSK51 ]
+"13964
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 13964: typedef union {
+[u S665 `S666 1 `S667 1 `S668 1 `S669 1 ]
+[n S665 . . . . . ]
+"14002
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 14002: extern volatile SSPCON2bits_t SSPCON2bits __attribute__((address(0xFC5)));
+[v _SSPCON2bits `VS665 ~T0 @X0 0 e@4037 ]
+"16 ./EEPROM.h
+[; ;./EEPROM.h: 16: extern char i2c_read(uint8_t ACK_NACK);
+[v _i2c_read `(uc ~T0 @X0 0 ef1`uc ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 54: __asm("ANSELA equ 0F38h");
 [; <" ANSELA equ 0F38h ;# ">
@@ -910,511 +793,419 @@ Version 4.0 HI-TECH Software Intermediate Code
 "17406
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h: 17406: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"63 mcc_generated_files/eusart2.c
-[; ;mcc_generated_files/eusart2.c: 63: volatile uint8_t eusart2RxHead = 0;
-[v _eusart2RxHead `Vuc ~T0 @X0 1 e ]
-[i _eusart2RxHead
--> -> 0 `i `uc
-]
+"15 EEPROM.c
+[; ;EEPROM.c: 15: void EEPROM_write(const unsigned char data, const uint24_t address)
+[v _EEPROM_write `(v ~T0 @X0 1 ef2`Cuc`Cum ]
+"16
+[; ;EEPROM.c: 16: {
+{
+[e :U _EEPROM_write ]
+"15
+[; ;EEPROM.c: 15: void EEPROM_write(const unsigned char data, const uint24_t address)
+[v _data `Cuc ~T0 @X0 1 r1 ]
+[v _address `Cum ~T0 @X0 1 r2 ]
+"16
+[; ;EEPROM.c: 16: {
+[f ]
+"17
+[; ;EEPROM.c: 17:     i2c_start();
+[e ( _i2c_start ..  ]
+"20
+[; ;EEPROM.c: 20:     i2c_write(0b10100000 | ((address >> 13 ) & 0b00001000));
+[e ( _i2c_write (1 -> | -> -> -> 160 `i `m `um & >> _address -> 13 `i -> -> -> 8 `i `m `um `uc ]
+"22
+[; ;EEPROM.c: 22:     i2c_write((uint8_t)(address >> 8) & 0xFF);
+[e ( _i2c_write (1 -> & -> -> >> _address -> 8 `i `uc `i -> 255 `i `uc ]
+"24
+[; ;EEPROM.c: 24:     i2c_write((uint8_t)(address) & 0xFF);
+[e ( _i2c_write (1 -> & -> -> _address `uc `i -> 255 `i `uc ]
+"26
+[; ;EEPROM.c: 26:     i2c_write(data);
+[e ( _i2c_write (1 _data ]
+"29
+[; ;EEPROM.c: 29:     i2c_stop();
+[e ( _i2c_stop ..  ]
+"33
+[; ;EEPROM.c: 33:     SSPCON2bits.ACKSTAT = 1;
+[e = . . _SSPCON2bits 0 6 -> -> 1 `i `uc ]
+"34
+[; ;EEPROM.c: 34:     while(1)
+[e :U 856 ]
+"35
+[; ;EEPROM.c: 35:     {
+{
+"36
+[; ;EEPROM.c: 36:         i2c_start();
+[e ( _i2c_start ..  ]
+"37
+[; ;EEPROM.c: 37:         i2c_write(0b10100000 | ((address >> 13 ) & 0b00001000));
+[e ( _i2c_write (1 -> | -> -> -> 160 `i `m `um & >> _address -> 13 `i -> -> -> 8 `i `m `um `uc ]
+"38
+[; ;EEPROM.c: 38:         if(!SSPCON2bits.ACKSTAT)
+[e $ ! ! != -> . . _SSPCON2bits 0 6 `i -> 0 `i 858  ]
+"39
+[; ;EEPROM.c: 39:         {
+{
+"40
+[; ;EEPROM.c: 40:             break;
+[e $U 857  ]
+"41
+[; ;EEPROM.c: 41:         }
+}
+[e :U 858 ]
+"42
+[; ;EEPROM.c: 42:     }
+}
+[e :U 855 ]
+[e $U 856  ]
+[e :U 857 ]
+"43
+[; ;EEPROM.c: 43: }
+[e :UE 854 ]
+}
+"44
+[; ;EEPROM.c: 44: unsigned char EEPROM_Read(const uint24_t address)
+[v _EEPROM_Read `(uc ~T0 @X0 1 ef1`Cum ]
+"45
+[; ;EEPROM.c: 45: {
+{
+[e :U _EEPROM_Read ]
+"44
+[; ;EEPROM.c: 44: unsigned char EEPROM_Read(const uint24_t address)
+[v _address `Cum ~T0 @X0 1 r1 ]
+"45
+[; ;EEPROM.c: 45: {
+[f ]
+"46
+[; ;EEPROM.c: 46:     uint8_t tempValue = 0;
+[v _tempValue `uc ~T0 @X0 1 a ]
+[e = _tempValue -> -> 0 `i `uc ]
+"48
+[; ;EEPROM.c: 48:     i2c_start();
+[e ( _i2c_start ..  ]
+"52
+[; ;EEPROM.c: 52:     i2c_write(0b10100000 | ((address >> 13 ) & 0b00001000));
+[e ( _i2c_write (1 -> | -> -> -> 160 `i `m `um & >> _address -> 13 `i -> -> -> 8 `i `m `um `uc ]
+"54
+[; ;EEPROM.c: 54:     i2c_write((uint8_t)(address >> 8) & 0xFF);
+[e ( _i2c_write (1 -> & -> -> >> _address -> 8 `i `uc `i -> 255 `i `uc ]
+"56
+[; ;EEPROM.c: 56:     i2c_write((uint8_t)(address) & 0xFF);
+[e ( _i2c_write (1 -> & -> -> _address `uc `i -> 255 `i `uc ]
+"58
+[; ;EEPROM.c: 58:     i2c_start();
+[e ( _i2c_start ..  ]
+"60
+[; ;EEPROM.c: 60:     i2c_write(0b10100001 | ((address >> 13 ) & 0b00001000));
+[e ( _i2c_write (1 -> | -> -> -> 161 `i `m `um & >> _address -> 13 `i -> -> -> 8 `i `m `um `uc ]
+"62
+[; ;EEPROM.c: 62:     tempValue = i2c_read(1);
+[e = _tempValue -> ( _i2c_read (1 -> -> 1 `i `uc `uc ]
 "64
-[; ;mcc_generated_files/eusart2.c: 64: volatile uint8_t eusart2RxTail = 0;
-[v _eusart2RxTail `Vuc ~T0 @X0 1 e ]
-[i _eusart2RxTail
--> -> 0 `i `uc
-]
-"65
-[; ;mcc_generated_files/eusart2.c: 65: volatile uint8_t eusart2RxBuffer[8];
-[v _eusart2RxBuffer `Vuc ~T0 @X0 -> 8 `i e ]
+[; ;EEPROM.c: 64:     i2c_stop();
+[e ( _i2c_stop ..  ]
 "66
-[; ;mcc_generated_files/eusart2.c: 66: volatile eusart2_status_t eusart2RxStatusBuffer[8];
-[v _eusart2RxStatusBuffer `VS854 ~T0 @X0 -> 8 `i e ]
-"67
-[; ;mcc_generated_files/eusart2.c: 67: volatile uint8_t eusart2RxCount;
-[v _eusart2RxCount `Vuc ~T0 @X0 1 e ]
-"68
-[; ;mcc_generated_files/eusart2.c: 68: volatile eusart2_status_t eusart2RxLastError;
-[v _eusart2RxLastError `VS854 ~T0 @X0 1 e ]
-"73
-[; ;mcc_generated_files/eusart2.c: 73: void (*EUSART2_RxDefaultInterruptHandler)(void);
-[v _EUSART2_RxDefaultInterruptHandler `*F6046 ~T0 @X0 1 e ]
-"75
-[; ;mcc_generated_files/eusart2.c: 75: void (*EUSART2_FramingErrorHandler)(void);
-[v _EUSART2_FramingErrorHandler `*F6048 ~T0 @X0 1 e ]
-"76
-[; ;mcc_generated_files/eusart2.c: 76: void (*EUSART2_OverrunErrorHandler)(void);
-[v _EUSART2_OverrunErrorHandler `*F6050 ~T0 @X0 1 e ]
-"77
-[; ;mcc_generated_files/eusart2.c: 77: void (*EUSART2_ErrorHandler)(void);
-[v _EUSART2_ErrorHandler `*F6052 ~T0 @X0 1 e ]
-"83
-[; ;mcc_generated_files/eusart2.c: 83: void EUSART2_Initialize(void)
-[v _EUSART2_Initialize `(v ~T0 @X0 1 ef ]
-"84
-[; ;mcc_generated_files/eusart2.c: 84: {
-{
-[e :U _EUSART2_Initialize ]
-[f ]
-"86
-[; ;mcc_generated_files/eusart2.c: 86:     PIE3bits.RC2IE = 0;
-[e = . . _PIE3bits 0 5 -> -> 0 `i `uc ]
-"87
-[; ;mcc_generated_files/eusart2.c: 87:     EUSART2_SetRxInterruptHandler(EUSART2_Receive_ISR);
-[e ( _EUSART2_SetRxInterruptHandler (1 &U _EUSART2_Receive_ISR ]
-"91
-[; ;mcc_generated_files/eusart2.c: 91:     BAUDCON2 = 0x08;
-[e = _BAUDCON2 -> -> 8 `i `uc ]
-"94
-[; ;mcc_generated_files/eusart2.c: 94:     RCSTA2 = 0x90;
-[e = _RCSTA2 -> -> 144 `i `uc ]
-"97
-[; ;mcc_generated_files/eusart2.c: 97:     TXSTA2 = 0x24;
-[e = _TXSTA2 -> -> 36 `i `uc ]
-"100
-[; ;mcc_generated_files/eusart2.c: 100:     SPBRG2 = 0x8A;
-[e = _SPBRG2 -> -> 138 `i `uc ]
-"103
-[; ;mcc_generated_files/eusart2.c: 103:     SPBRGH2 = 0x00;
-[e = _SPBRGH2 -> -> 0 `i `uc ]
-"106
-[; ;mcc_generated_files/eusart2.c: 106:     EUSART2_SetFramingErrorHandler(EUSART2_DefaultFramingErrorHandler);
-[e ( _EUSART2_SetFramingErrorHandler (1 &U _EUSART2_DefaultFramingErrorHandler ]
-"107
-[; ;mcc_generated_files/eusart2.c: 107:     EUSART2_SetOverrunErrorHandler(EUSART2_DefaultOverrunErrorHandler);
-[e ( _EUSART2_SetOverrunErrorHandler (1 &U _EUSART2_DefaultOverrunErrorHandler ]
-"108
-[; ;mcc_generated_files/eusart2.c: 108:     EUSART2_SetErrorHandler(EUSART2_DefaultErrorHandler);
-[e ( _EUSART2_SetErrorHandler (1 &U _EUSART2_DefaultErrorHandler ]
-"110
-[; ;mcc_generated_files/eusart2.c: 110:     eusart2RxLastError.status = 0;
-[e = . _eusart2RxLastError 1 -> -> 0 `i `uc ]
-"113
-[; ;mcc_generated_files/eusart2.c: 113:     eusart2RxHead = 0;
-[e = _eusart2RxHead -> -> 0 `i `uc ]
-"114
-[; ;mcc_generated_files/eusart2.c: 114:     eusart2RxTail = 0;
-[e = _eusart2RxTail -> -> 0 `i `uc ]
-"115
-[; ;mcc_generated_files/eusart2.c: 115:     eusart2RxCount = 0;
-[e = _eusart2RxCount -> -> 0 `i `uc ]
-"118
-[; ;mcc_generated_files/eusart2.c: 118:     PIE3bits.RC2IE = 1;
-[e = . . _PIE3bits 0 5 -> -> 1 `i `uc ]
-"119
-[; ;mcc_generated_files/eusart2.c: 119: }
-[e :UE 856 ]
-}
-"121
-[; ;mcc_generated_files/eusart2.c: 121: _Bool EUSART2_is_tx_ready(void)
-[v _EUSART2_is_tx_ready `(a ~T0 @X0 1 ef ]
-"122
-[; ;mcc_generated_files/eusart2.c: 122: {
-{
-[e :U _EUSART2_is_tx_ready ]
-[f ]
-"123
-[; ;mcc_generated_files/eusart2.c: 123:     return (_Bool)(PIR3bits.TX2IF && TXSTA2bits.TXEN);
-[e ) -> -> && != -> . . _PIR3bits 0 4 `i -> 0 `i != -> . . _TXSTA2bits 0 5 `i -> 0 `i `i `a ]
-[e $UE 857  ]
-"124
-[; ;mcc_generated_files/eusart2.c: 124: }
-[e :UE 857 ]
-}
-"126
-[; ;mcc_generated_files/eusart2.c: 126: _Bool EUSART2_is_rx_ready(void)
-[v _EUSART2_is_rx_ready `(a ~T0 @X0 1 ef ]
-"127
-[; ;mcc_generated_files/eusart2.c: 127: {
-{
-[e :U _EUSART2_is_rx_ready ]
-[f ]
-"128
-[; ;mcc_generated_files/eusart2.c: 128:     return (eusart2RxCount ? 1 : 0);
-[e ) -> ? != -> _eusart2RxCount `i -> 0 `i : -> 1 `i -> 0 `i `a ]
-[e $UE 858  ]
-"129
-[; ;mcc_generated_files/eusart2.c: 129: }
-[e :UE 858 ]
-}
-"131
-[; ;mcc_generated_files/eusart2.c: 131: _Bool EUSART2_is_tx_done(void)
-[v _EUSART2_is_tx_done `(a ~T0 @X0 1 ef ]
-"132
-[; ;mcc_generated_files/eusart2.c: 132: {
-{
-[e :U _EUSART2_is_tx_done ]
-[f ]
-"133
-[; ;mcc_generated_files/eusart2.c: 133:     return TXSTA2bits.TRMT;
-[e ) -> . . _TXSTA2bits 0 1 `a ]
+[; ;EEPROM.c: 66:     return tempValue;
+[e ) _tempValue ]
 [e $UE 859  ]
-"134
-[; ;mcc_generated_files/eusart2.c: 134: }
+"68
+[; ;EEPROM.c: 68: }
 [e :UE 859 ]
 }
-"136
-[; ;mcc_generated_files/eusart2.c: 136: eusart2_status_t EUSART2_get_last_status(void){
-[v _EUSART2_get_last_status `(S854 ~T0 @X0 1 ef ]
+"69
+[; ;EEPROM.c: 69: void EEPROM_putrs(unsigned char * buf, uint24_t startAddress)
+[v _EEPROM_putrs `(v ~T0 @X0 1 ef2`*uc`um ]
+"70
+[; ;EEPROM.c: 70: {
 {
-[e :U _EUSART2_get_last_status ]
+[e :U _EEPROM_putrs ]
+"69
+[; ;EEPROM.c: 69: void EEPROM_putrs(unsigned char * buf, uint24_t startAddress)
+[v _buf `*uc ~T0 @X0 1 r1 ]
+[v _startAddress `um ~T0 @X0 1 r2 ]
+"70
+[; ;EEPROM.c: 70: {
 [f ]
-"137
-[; ;mcc_generated_files/eusart2.c: 137:     return eusart2RxLastError;
-[e ) _eusart2RxLastError ]
+"71
+[; ;EEPROM.c: 71:     while(*(buf) != '\0')
+[e $U 861  ]
+[e :U 862 ]
+"72
+[; ;EEPROM.c: 72:     {
+{
+"73
+[; ;EEPROM.c: 73:         EEPROM_write(*(buf++), startAddress++);
+[e ( _EEPROM_write (2 , *U ++ _buf * -> -> 1 `i `x -> -> # *U _buf `i `x ++ _startAddress -> -> -> 1 `i `m `um ]
+"75
+[; ;EEPROM.c: 75:     }
+}
+[e :U 861 ]
+"71
+[; ;EEPROM.c: 71:     while(*(buf) != '\0')
+[e $ != -> *U _buf `ui -> 0 `ui 862  ]
+[e :U 863 ]
+"76
+[; ;EEPROM.c: 76:     return;
 [e $UE 860  ]
-"138
-[; ;mcc_generated_files/eusart2.c: 138: }
+"77
+[; ;EEPROM.c: 77: }
 [e :UE 860 ]
 }
-"140
-[; ;mcc_generated_files/eusart2.c: 140: uint8_t EUSART2_Read(void)
-[v _EUSART2_Read `(uc ~T0 @X0 1 ef ]
-"141
-[; ;mcc_generated_files/eusart2.c: 141: {
+"78
+[; ;EEPROM.c: 78: unsigned char * EEPROM_gets(unsigned char * buf, const uint24_t startAddress, const uint24_t endAddress)
+[v _EEPROM_gets `(*uc ~T0 @X0 1 ef3`*uc`Cum`Cum ]
+"79
+[; ;EEPROM.c: 79: {
 {
-[e :U _EUSART2_Read ]
+[e :U _EEPROM_gets ]
+"78
+[; ;EEPROM.c: 78: unsigned char * EEPROM_gets(unsigned char * buf, const uint24_t startAddress, const uint24_t endAddress)
+[v _buf `*uc ~T0 @X0 1 r1 ]
+[v _startAddress `Cum ~T0 @X0 1 r2 ]
+[v _endAddress `Cum ~T0 @X0 1 r3 ]
+"79
+[; ;EEPROM.c: 79: {
 [f ]
-"142
-[; ;mcc_generated_files/eusart2.c: 142:     uint8_t readValue = 0;
-[v _readValue `uc ~T0 @X0 1 a ]
-[e = _readValue -> -> 0 `i `uc ]
-"144
-[; ;mcc_generated_files/eusart2.c: 144:     while(0 == eusart2RxCount)
-[e $U 862  ]
-[e :U 863 ]
-"145
-[; ;mcc_generated_files/eusart2.c: 145:     {
+"80
+[; ;EEPROM.c: 80:     uint24_t tempValue = 0;
+[v _tempValue `um ~T0 @X0 1 a ]
+[e = _tempValue -> -> -> 0 `i `m `um ]
+"81
+[; ;EEPROM.c: 81:     uint24_t count = 0;
+[v _count `um ~T0 @X0 1 a ]
+[e = _count -> -> -> 0 `i `m `um ]
+"83
+[; ;EEPROM.c: 83:     for(tempValue = startAddress; tempValue<=endAddress; tempValue++)
 {
-"146
-[; ;mcc_generated_files/eusart2.c: 146:     }
-}
-[e :U 862 ]
-"144
-[; ;mcc_generated_files/eusart2.c: 144:     while(0 == eusart2RxCount)
-[e $ == -> 0 `i -> _eusart2RxCount `i 863  ]
-[e :U 864 ]
-"148
-[; ;mcc_generated_files/eusart2.c: 148:     eusart2RxLastError = eusart2RxStatusBuffer[eusart2RxTail];
-[e = _eusart2RxLastError *U + &U _eusart2RxStatusBuffer * -> _eusart2RxTail `ux -> -> # *U &U _eusart2RxStatusBuffer `ui `ux ]
-"150
-[; ;mcc_generated_files/eusart2.c: 150:     readValue = eusart2RxBuffer[eusart2RxTail++];
-[e = _readValue *U + &U _eusart2RxBuffer * -> ++ _eusart2RxTail -> -> 1 `i `Vuc `ux -> -> # *U &U _eusart2RxBuffer `ui `ux ]
-"151
-[; ;mcc_generated_files/eusart2.c: 151:     if(sizeof(eusart2RxBuffer) <= eusart2RxTail)
-[e $ ! <= -> # _eusart2RxBuffer `ui -> _eusart2RxTail `ui 865  ]
-"152
-[; ;mcc_generated_files/eusart2.c: 152:     {
-{
-"153
-[; ;mcc_generated_files/eusart2.c: 153:         eusart2RxTail = 0;
-[e = _eusart2RxTail -> -> 0 `i `uc ]
-"154
-[; ;mcc_generated_files/eusart2.c: 154:     }
-}
+[e = _tempValue _startAddress ]
+[e $ <= _tempValue _endAddress 865  ]
+[e $U 866  ]
 [e :U 865 ]
-"155
-[; ;mcc_generated_files/eusart2.c: 155:     PIE3bits.RC2IE = 0;
-[e = . . _PIE3bits 0 5 -> -> 0 `i `uc ]
-"156
-[; ;mcc_generated_files/eusart2.c: 156:     eusart2RxCount--;
-[e -- _eusart2RxCount -> -> 1 `i `Vuc ]
-"157
-[; ;mcc_generated_files/eusart2.c: 157:     PIE3bits.RC2IE = 1;
-[e = . . _PIE3bits 0 5 -> -> 1 `i `uc ]
-"159
-[; ;mcc_generated_files/eusart2.c: 159:     return readValue;
-[e ) _readValue ]
-[e $UE 861  ]
-"160
-[; ;mcc_generated_files/eusart2.c: 160: }
-[e :UE 861 ]
-}
-"162
-[; ;mcc_generated_files/eusart2.c: 162: void EUSART2_Write(uint8_t txData)
-[v _EUSART2_Write `(v ~T0 @X0 1 ef1`uc ]
-"163
-[; ;mcc_generated_files/eusart2.c: 163: {
+"84
+[; ;EEPROM.c: 84:     {
 {
-[e :U _EUSART2_Write ]
-"162
-[; ;mcc_generated_files/eusart2.c: 162: void EUSART2_Write(uint8_t txData)
-[v _txData `uc ~T0 @X0 1 r1 ]
-"163
-[; ;mcc_generated_files/eusart2.c: 163: {
+"85
+[; ;EEPROM.c: 85:         *(buf + count++)= EEPROM_Read(tempValue);
+[e = *U + _buf * -> ++ _count -> -> -> 1 `i `m `um `ux -> -> # *U _buf `ui `ux ( _EEPROM_Read (1 _tempValue ]
+"86
+[; ;EEPROM.c: 86:     }
+}
+[e ++ _tempValue -> -> -> 1 `i `m `um ]
+[e $ <= _tempValue _endAddress 865  ]
+[e :U 866 ]
+}
+"87
+[; ;EEPROM.c: 87:     *(buf + count) = '\0';
+[e = *U + _buf * -> _count `ux -> -> # *U _buf `ui `ux -> -> 0 `ui `uc ]
+"89
+[; ;EEPROM.c: 89:     return &buf[0];
+[e ) &U *U + _buf * -> -> 0 `i `x -> -> # *U _buf `i `x ]
+[e $UE 864  ]
+"90
+[; ;EEPROM.c: 90: }
+[e :UE 864 ]
+}
+"92
+[; ;EEPROM.c: 92: void EEPROM_WritePg(const uint16_t page, uint8_t * ptr)
+[v _EEPROM_WritePg `(v ~T0 @X0 1 ef2`Cus`*uc ]
+"93
+[; ;EEPROM.c: 93: {
+{
+[e :U _EEPROM_WritePg ]
+"92
+[; ;EEPROM.c: 92: void EEPROM_WritePg(const uint16_t page, uint8_t * ptr)
+[v _page `Cus ~T0 @X0 1 r1 ]
+[v _ptr `*uc ~T0 @X0 1 r2 ]
+"93
+[; ;EEPROM.c: 93: {
 [f ]
+"95
+[; ;EEPROM.c: 95:     if(page < 1024)
+[e $ ! < -> _page `ui -> -> 1024 `i `ui 869  ]
+"96
+[; ;EEPROM.c: 96:     {
+{
+"97
+[; ;EEPROM.c: 97:         uint32_t product;
+[v _product `ul ~T0 @X0 1 a ]
+"99
+[; ;EEPROM.c: 99:         product = page * 128;
+[e = _product -> * -> _page `ui -> -> 128 `i `ui `ul ]
+"101
+[; ;EEPROM.c: 101:         i2c_start();
+[e ( _i2c_start ..  ]
+"103
+[; ;EEPROM.c: 103:         i2c_write(0b10100000 | ((product >> 13 ) & 0b00001000));
+[e ( _i2c_write (1 -> | -> -> -> 160 `i `l `ul & >> _product -> 13 `i -> -> -> 8 `i `l `ul `uc ]
+"105
+[; ;EEPROM.c: 105:         i2c_write((uint8_t)(product >> 8) & 0xFF);
+[e ( _i2c_write (1 -> & -> -> >> _product -> 8 `i `uc `i -> 255 `i `uc ]
+"107
+[; ;EEPROM.c: 107:         i2c_write((uint8_t)(product) & 0xFF);
+[e ( _i2c_write (1 -> & -> -> _product `uc `i -> 255 `i `uc ]
+"109
+[; ;EEPROM.c: 109:         for(uint8_t cnt = 0; cnt < 128; cnt++)
+{
+[v _cnt `uc ~T0 @X0 1 a ]
+[e = _cnt -> -> 0 `i `uc ]
+[e $ < -> _cnt `i -> 128 `i 870  ]
+[e $U 871  ]
+[e :U 870 ]
+"110
+[; ;EEPROM.c: 110:         {
+{
+"111
+[; ;EEPROM.c: 111:             i2c_write(*(ptr + cnt));
+[e ( _i2c_write (1 *U + _ptr * -> -> _cnt `i `x -> -> # *U _ptr `i `x ]
+"112
+[; ;EEPROM.c: 112:         }
+}
+[e ++ _cnt -> -> 1 `i `uc ]
+[e $ < -> _cnt `i -> 128 `i 870  ]
+[e :U 871 ]
+}
+"114
+[; ;EEPROM.c: 114:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"116
+[; ;EEPROM.c: 116:         while (1)
+[e :U 874 ]
+"117
+[; ;EEPROM.c: 117:         {
+{
+"118
+[; ;EEPROM.c: 118:             i2c_start();
+[e ( _i2c_start ..  ]
+"119
+[; ;EEPROM.c: 119:             i2c_write(0b10100000 | ((product >> 13) & 0b00001000));
+[e ( _i2c_write (1 -> | -> -> -> 160 `i `l `ul & >> _product -> 13 `i -> -> -> 8 `i `l `ul `uc ]
+"120
+[; ;EEPROM.c: 120:             if (!SSPCON2bits.ACKSTAT)
+[e $ ! ! != -> . . _SSPCON2bits 0 6 `i -> 0 `i 876  ]
+"121
+[; ;EEPROM.c: 121:             {
+{
+"122
+[; ;EEPROM.c: 122:                 break;
+[e $U 875  ]
+"123
+[; ;EEPROM.c: 123:             }
+}
+[e :U 876 ]
+"124
+[; ;EEPROM.c: 124:         }
+}
+[e :U 873 ]
+[e $U 874  ]
+[e :U 875 ]
+"125
+[; ;EEPROM.c: 125:     }else
+}
+[e $U 877  ]
+[e :U 869 ]
+"126
+[; ;EEPROM.c: 126:     {
+{
+"127
+[; ;EEPROM.c: 127:         return ;
+[e $UE 868  ]
+"128
+[; ;EEPROM.c: 128:     }
+}
+[e :U 877 ]
+"130
+[; ;EEPROM.c: 130: }
+[e :UE 868 ]
+}
+"132
+[; ;EEPROM.c: 132: uint8_t * EEPROM_ReadPg(uint16_t page, uint8_t * ptr)
+[v _EEPROM_ReadPg `(*uc ~T0 @X0 1 ef2`us`*uc ]
+"133
+[; ;EEPROM.c: 133: {
+{
+[e :U _EEPROM_ReadPg ]
+"132
+[; ;EEPROM.c: 132: uint8_t * EEPROM_ReadPg(uint16_t page, uint8_t * ptr)
+[v _page `us ~T0 @X0 1 r1 ]
+[v _ptr `*uc ~T0 @X0 1 r2 ]
+"133
+[; ;EEPROM.c: 133: {
+[f ]
+"134
+[; ;EEPROM.c: 134:     if (page < 1024)
+[e $ ! < -> _page `ui -> -> 1024 `i `ui 879  ]
+"135
+[; ;EEPROM.c: 135:     {
+{
+"137
+[; ;EEPROM.c: 137:         uint32_t product = page * 128;
+[v _product `ul ~T0 @X0 1 a ]
+[e = _product -> * -> _page `ui -> -> 128 `i `ui `ul ]
+"141
+[; ;EEPROM.c: 141:         i2c_start();
+[e ( _i2c_start ..  ]
+"143
+[; ;EEPROM.c: 143:         i2c_write(0b10100000 | ((product >> 13 ) & 0b00001000));
+[e ( _i2c_write (1 -> | -> -> -> 160 `i `l `ul & >> _product -> 13 `i -> -> -> 8 `i `l `ul `uc ]
+"145
+[; ;EEPROM.c: 145:         i2c_write((uint8_t)(product >> 8) & 0xFF);
+[e ( _i2c_write (1 -> & -> -> >> _product -> 8 `i `uc `i -> 255 `i `uc ]
+"147
+[; ;EEPROM.c: 147:         i2c_write((uint8_t)(product) & 0xFF);
+[e ( _i2c_write (1 -> & -> -> _product `uc `i -> 255 `i `uc ]
+"149
+[; ;EEPROM.c: 149:         i2c_start();
+[e ( _i2c_start ..  ]
+"151
+[; ;EEPROM.c: 151:         i2c_write(0b10100001 | ((product >> 13 ) & 0b00001000));
+[e ( _i2c_write (1 -> | -> -> -> 161 `i `l `ul & >> _product -> 13 `i -> -> -> 8 `i `l `ul `uc ]
+"153
+[; ;EEPROM.c: 153:         uint8_t cnt;
+[v _cnt `uc ~T0 @X0 1 a ]
+"155
+[; ;EEPROM.c: 155:         for(cnt = 0; cnt < 127; cnt++)
+{
+[e = _cnt -> -> 0 `i `uc ]
+[e $ < -> _cnt `i -> 127 `i 880  ]
+[e $U 881  ]
+[e :U 880 ]
+"156
+[; ;EEPROM.c: 156:         {
+{
+"157
+[; ;EEPROM.c: 157:             *(ptr + cnt) = i2c_read(0);
+[e = *U + _ptr * -> -> _cnt `i `x -> -> # *U _ptr `i `x -> ( _i2c_read (1 -> -> 0 `i `uc `uc ]
+"158
+[; ;EEPROM.c: 158:         }
+}
+[e ++ _cnt -> -> 1 `i `uc ]
+[e $ < -> _cnt `i -> 127 `i 880  ]
+[e :U 881 ]
+}
+"160
+[; ;EEPROM.c: 160:         *(ptr + cnt)= i2c_read(1);
+[e = *U + _ptr * -> -> _cnt `i `x -> -> # *U _ptr `i `x -> ( _i2c_read (1 -> -> 1 `i `uc `uc ]
+"162
+[; ;EEPROM.c: 162:         return &ptr[0];
+[e ) &U *U + _ptr * -> -> 0 `i `x -> -> # *U _ptr `i `x ]
+[e $UE 878  ]
 "164
-[; ;mcc_generated_files/eusart2.c: 164:     while(0 == PIR3bits.TX2IF)
-[e $U 867  ]
-[e :U 868 ]
+[; ;EEPROM.c: 164:     }else
+}
+[e $U 883  ]
+[e :U 879 ]
 "165
-[; ;mcc_generated_files/eusart2.c: 165:     {
+[; ;EEPROM.c: 165:     {
 {
 "166
-[; ;mcc_generated_files/eusart2.c: 166:     }
+[; ;EEPROM.c: 166:         return (uint8_t *) ((void*)0);
+[e ) -> -> -> 0 `i `*v `*uc ]
+[e $UE 878  ]
+"167
+[; ;EEPROM.c: 167:     }
 }
-[e :U 867 ]
-"164
-[; ;mcc_generated_files/eusart2.c: 164:     while(0 == PIR3bits.TX2IF)
-[e $ == -> 0 `i -> . . _PIR3bits 0 4 `i 868  ]
-[e :U 869 ]
-"168
-[; ;mcc_generated_files/eusart2.c: 168:     TXREG2 = txData;
-[e = _TXREG2 _txData ]
+[e :U 883 ]
 "169
-[; ;mcc_generated_files/eusart2.c: 169: }
-[e :UE 866 ]
-}
-"171
-[; ;mcc_generated_files/eusart2.c: 171: void EUSART2_puts(uint8_t * ptr)
-[v _EUSART2_puts `(v ~T0 @X0 1 ef1`*uc ]
-"172
-[; ;mcc_generated_files/eusart2.c: 172: {
-{
-[e :U _EUSART2_puts ]
-"171
-[; ;mcc_generated_files/eusart2.c: 171: void EUSART2_puts(uint8_t * ptr)
-[v _ptr `*uc ~T0 @X0 1 r1 ]
-"172
-[; ;mcc_generated_files/eusart2.c: 172: {
-[f ]
-"173
-[; ;mcc_generated_files/eusart2.c: 173:     while(*ptr)
-[e $U 871  ]
-[e :U 872 ]
-"174
-[; ;mcc_generated_files/eusart2.c: 174:     {
-{
-"175
-[; ;mcc_generated_files/eusart2.c: 175:         EUSART2_Write(*ptr++);
-[e ( _EUSART2_Write (1 *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
-"176
-[; ;mcc_generated_files/eusart2.c: 176:     }
-}
-[e :U 871 ]
-"173
-[; ;mcc_generated_files/eusart2.c: 173:     while(*ptr)
-[e $ != -> *U _ptr `i -> 0 `i 872  ]
-[e :U 873 ]
-"177
-[; ;mcc_generated_files/eusart2.c: 177: }
-[e :UE 870 ]
-}
-"179
-[; ;mcc_generated_files/eusart2.c: 179: void EUSART2_putrs(const uint8_t * ptr)
-[v _EUSART2_putrs `(v ~T0 @X0 1 ef1`*Cuc ]
-"180
-[; ;mcc_generated_files/eusart2.c: 180: {
-{
-[e :U _EUSART2_putrs ]
-"179
-[; ;mcc_generated_files/eusart2.c: 179: void EUSART2_putrs(const uint8_t * ptr)
-[v _ptr `*Cuc ~T0 @X0 1 r1 ]
-"180
-[; ;mcc_generated_files/eusart2.c: 180: {
-[f ]
-"181
-[; ;mcc_generated_files/eusart2.c: 181:     while(*ptr)
-[e $U 875  ]
-[e :U 876 ]
-"182
-[; ;mcc_generated_files/eusart2.c: 182:     {
-{
-"183
-[; ;mcc_generated_files/eusart2.c: 183:         EUSART2_Write(*ptr++);
-[e ( _EUSART2_Write (1 *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
-"184
-[; ;mcc_generated_files/eusart2.c: 184:     }
-}
-[e :U 875 ]
-"181
-[; ;mcc_generated_files/eusart2.c: 181:     while(*ptr)
-[e $ != -> *U _ptr `i -> 0 `i 876  ]
-[e :U 877 ]
-"185
-[; ;mcc_generated_files/eusart2.c: 185: }
-[e :UE 874 ]
-}
-"187
-[; ;mcc_generated_files/eusart2.c: 187: void EUSART2_Receive_ISR(void)
-[v _EUSART2_Receive_ISR `(v ~T0 @X0 1 ef ]
-"188
-[; ;mcc_generated_files/eusart2.c: 188: {
-{
-[e :U _EUSART2_Receive_ISR ]
-[f ]
-"190
-[; ;mcc_generated_files/eusart2.c: 190:     eusart2RxStatusBuffer[eusart2RxHead].status = 0;
-[e = . *U + &U _eusart2RxStatusBuffer * -> _eusart2RxHead `ux -> -> # *U &U _eusart2RxStatusBuffer `ui `ux 1 -> -> 0 `i `uc ]
-"192
-[; ;mcc_generated_files/eusart2.c: 192:     if(RCSTA2bits.FERR){
-[e $ ! != -> . . _RCSTA2bits 0 2 `i -> 0 `i 879  ]
-{
-"193
-[; ;mcc_generated_files/eusart2.c: 193:         eusart2RxStatusBuffer[eusart2RxHead].ferr = 1;
-[e = . . *U + &U _eusart2RxStatusBuffer * -> _eusart2RxHead `ux -> -> # *U &U _eusart2RxStatusBuffer `ui `ux 0 1 -> -> 1 `i `uc ]
-"194
-[; ;mcc_generated_files/eusart2.c: 194:         EUSART2_FramingErrorHandler();
-[e ( *U _EUSART2_FramingErrorHandler ..  ]
-"195
-[; ;mcc_generated_files/eusart2.c: 195:     }
-}
-[e :U 879 ]
-"197
-[; ;mcc_generated_files/eusart2.c: 197:     if(RCSTA2bits.OERR){
-[e $ ! != -> . . _RCSTA2bits 0 1 `i -> 0 `i 880  ]
-{
-"198
-[; ;mcc_generated_files/eusart2.c: 198:         eusart2RxStatusBuffer[eusart2RxHead].oerr = 1;
-[e = . . *U + &U _eusart2RxStatusBuffer * -> _eusart2RxHead `ux -> -> # *U &U _eusart2RxStatusBuffer `ui `ux 0 2 -> -> 1 `i `uc ]
-"199
-[; ;mcc_generated_files/eusart2.c: 199:         EUSART2_OverrunErrorHandler();
-[e ( *U _EUSART2_OverrunErrorHandler ..  ]
-"200
-[; ;mcc_generated_files/eusart2.c: 200:     }
-}
-[e :U 880 ]
-"202
-[; ;mcc_generated_files/eusart2.c: 202:     if(eusart2RxStatusBuffer[eusart2RxHead].status){
-[e $ ! != -> . *U + &U _eusart2RxStatusBuffer * -> _eusart2RxHead `ux -> -> # *U &U _eusart2RxStatusBuffer `ui `ux 1 `i -> 0 `i 881  ]
-{
-"203
-[; ;mcc_generated_files/eusart2.c: 203:         EUSART2_ErrorHandler();
-[e ( *U _EUSART2_ErrorHandler ..  ]
-"204
-[; ;mcc_generated_files/eusart2.c: 204:     } else {
-}
-[e $U 882  ]
-[e :U 881 ]
-{
-"205
-[; ;mcc_generated_files/eusart2.c: 205:         EUSART2_RxDataHandler();
-[e ( _EUSART2_RxDataHandler ..  ]
-"206
-[; ;mcc_generated_files/eusart2.c: 206:     }
-}
-[e :U 882 ]
-"209
-[; ;mcc_generated_files/eusart2.c: 209: }
+[; ;EEPROM.c: 169: }
 [e :UE 878 ]
-}
-"211
-[; ;mcc_generated_files/eusart2.c: 211: void EUSART2_RxDataHandler(void){
-[v _EUSART2_RxDataHandler `(v ~T0 @X0 1 ef ]
-{
-[e :U _EUSART2_RxDataHandler ]
-[f ]
-"213
-[; ;mcc_generated_files/eusart2.c: 213:     eusart2RxBuffer[eusart2RxHead++] = RCREG2;
-[e = *U + &U _eusart2RxBuffer * -> ++ _eusart2RxHead -> -> 1 `i `Vuc `ux -> -> # *U &U _eusart2RxBuffer `ui `ux _RCREG2 ]
-"214
-[; ;mcc_generated_files/eusart2.c: 214:     if(sizeof(eusart2RxBuffer) <= eusart2RxHead)
-[e $ ! <= -> # _eusart2RxBuffer `ui -> _eusart2RxHead `ui 884  ]
-"215
-[; ;mcc_generated_files/eusart2.c: 215:     {
-{
-"216
-[; ;mcc_generated_files/eusart2.c: 216:         eusart2RxHead = 0;
-[e = _eusart2RxHead -> -> 0 `i `uc ]
-"217
-[; ;mcc_generated_files/eusart2.c: 217:     }
-}
-[e :U 884 ]
-"218
-[; ;mcc_generated_files/eusart2.c: 218:     eusart2RxCount++;
-[e ++ _eusart2RxCount -> -> 1 `i `Vuc ]
-"219
-[; ;mcc_generated_files/eusart2.c: 219: }
-[e :UE 883 ]
-}
-"221
-[; ;mcc_generated_files/eusart2.c: 221: void EUSART2_DefaultFramingErrorHandler(void){}
-[v _EUSART2_DefaultFramingErrorHandler `(v ~T0 @X0 1 ef ]
-{
-[e :U _EUSART2_DefaultFramingErrorHandler ]
-[f ]
-[e :UE 885 ]
-}
-"223
-[; ;mcc_generated_files/eusart2.c: 223: void EUSART2_DefaultOverrunErrorHandler(void){
-[v _EUSART2_DefaultOverrunErrorHandler `(v ~T0 @X0 1 ef ]
-{
-[e :U _EUSART2_DefaultOverrunErrorHandler ]
-[f ]
-"226
-[; ;mcc_generated_files/eusart2.c: 226:     RCSTA2bits.CREN = 0;
-[e = . . _RCSTA2bits 0 4 -> -> 0 `i `uc ]
-"227
-[; ;mcc_generated_files/eusart2.c: 227:     RCSTA2bits.CREN = 1;
-[e = . . _RCSTA2bits 0 4 -> -> 1 `i `uc ]
-"229
-[; ;mcc_generated_files/eusart2.c: 229: }
-[e :UE 886 ]
-}
-"231
-[; ;mcc_generated_files/eusart2.c: 231: void EUSART2_DefaultErrorHandler(void){
-[v _EUSART2_DefaultErrorHandler `(v ~T0 @X0 1 ef ]
-{
-[e :U _EUSART2_DefaultErrorHandler ]
-[f ]
-"232
-[; ;mcc_generated_files/eusart2.c: 232:     EUSART2_RxDataHandler();
-[e ( _EUSART2_RxDataHandler ..  ]
-"233
-[; ;mcc_generated_files/eusart2.c: 233: }
-[e :UE 887 ]
-}
-"235
-[; ;mcc_generated_files/eusart2.c: 235: void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void)){
-[v _EUSART2_SetFramingErrorHandler `(v ~T0 @X0 1 ef1`*F6079 ]
-{
-[e :U _EUSART2_SetFramingErrorHandler ]
-[v _interruptHandler `*F6081 ~T0 @X0 1 r1 ]
-[f ]
-"236
-[; ;mcc_generated_files/eusart2.c: 236:     EUSART2_FramingErrorHandler = interruptHandler;
-[e = _EUSART2_FramingErrorHandler _interruptHandler ]
-"237
-[; ;mcc_generated_files/eusart2.c: 237: }
-[e :UE 888 ]
-}
-"239
-[; ;mcc_generated_files/eusart2.c: 239: void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void)){
-[v _EUSART2_SetOverrunErrorHandler `(v ~T0 @X0 1 ef1`*F6084 ]
-{
-[e :U _EUSART2_SetOverrunErrorHandler ]
-[v _interruptHandler `*F6086 ~T0 @X0 1 r1 ]
-[f ]
-"240
-[; ;mcc_generated_files/eusart2.c: 240:     EUSART2_OverrunErrorHandler = interruptHandler;
-[e = _EUSART2_OverrunErrorHandler _interruptHandler ]
-"241
-[; ;mcc_generated_files/eusart2.c: 241: }
-[e :UE 889 ]
-}
-"243
-[; ;mcc_generated_files/eusart2.c: 243: void EUSART2_SetErrorHandler(void (* interruptHandler)(void)){
-[v _EUSART2_SetErrorHandler `(v ~T0 @X0 1 ef1`*F6089 ]
-{
-[e :U _EUSART2_SetErrorHandler ]
-[v _interruptHandler `*F6091 ~T0 @X0 1 r1 ]
-[f ]
-"244
-[; ;mcc_generated_files/eusart2.c: 244:     EUSART2_ErrorHandler = interruptHandler;
-[e = _EUSART2_ErrorHandler _interruptHandler ]
-"245
-[; ;mcc_generated_files/eusart2.c: 245: }
-[e :UE 890 ]
-}
-"248
-[; ;mcc_generated_files/eusart2.c: 248: void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void)){
-[v _EUSART2_SetRxInterruptHandler `(v ~T0 @X0 1 ef1`*F6094 ]
-{
-[e :U _EUSART2_SetRxInterruptHandler ]
-[v _interruptHandler `*F6096 ~T0 @X0 1 r1 ]
-[f ]
-"249
-[; ;mcc_generated_files/eusart2.c: 249:     EUSART2_RxDefaultInterruptHandler = interruptHandler;
-[e = _EUSART2_RxDefaultInterruptHandler _interruptHandler ]
-"250
-[; ;mcc_generated_files/eusart2.c: 250: }
-[e :UE 891 ]
 }
