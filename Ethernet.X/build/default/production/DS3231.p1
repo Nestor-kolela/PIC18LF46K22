@@ -895,17 +895,95 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 858 ]
 }
 "70
-[; ;DS3231.c: 70: void DS3231_Display_UART(time myTime) {
+[; ;DS3231.c: 70: void DS3231_GetTime(time myTime, uint8_t * buf)
+[v _DS3231_GetTime `(v ~T0 @X0 1 ef2`S854`*uc ]
+"71
+[; ;DS3231.c: 71: {
+{
+[e :U _DS3231_GetTime ]
+"70
+[; ;DS3231.c: 70: void DS3231_GetTime(time myTime, uint8_t * buf)
+[v _myTime `S854 ~T0 @X0 1 r1 ]
+[v _buf `*uc ~T0 @X0 1 r2 ]
+"71
+[; ;DS3231.c: 71: {
+[f ]
+"73
+[; ;DS3231.c: 73:     BCD_to_ASCII((uint8_t) (myTime.hours), buf);
+[e ( _BCD_to_ASCII (2 , . _myTime 2 _buf ]
+"74
+[; ;DS3231.c: 74:     *(buf + 2) = ':';
+[e = *U + _buf * -> -> 2 `i `x -> -> # *U _buf `i `x -> -> 58 `ui `uc ]
+"76
+[; ;DS3231.c: 76:     BCD_to_ASCII((uint8_t) (myTime.minutes), &buf[3]);
+[e ( _BCD_to_ASCII (2 , . _myTime 1 &U *U + _buf * -> -> 3 `i `x -> -> # *U _buf `i `x ]
+"78
+[; ;DS3231.c: 78:     *(buf + 5) = ':';
+[e = *U + _buf * -> -> 5 `i `x -> -> # *U _buf `i `x -> -> 58 `ui `uc ]
+"80
+[; ;DS3231.c: 80:     BCD_to_ASCII((uint8_t) (myTime.seconds), &buf[6]);
+[e ( _BCD_to_ASCII (2 , . _myTime 0 &U *U + _buf * -> -> 6 `i `x -> -> # *U _buf `i `x ]
+"82
+[; ;DS3231.c: 82:     *(buf + 8) = '\0';
+[e = *U + _buf * -> -> 8 `i `x -> -> # *U _buf `i `x -> -> 0 `ui `uc ]
+"84
+[; ;DS3231.c: 84: }
+[e :UE 859 ]
+}
+"86
+[; ;DS3231.c: 86: void DS3231_GetDate(time myTime, uint8_t * buf)
+[v _DS3231_GetDate `(v ~T0 @X0 1 ef2`S854`*uc ]
+"87
+[; ;DS3231.c: 87: {
+{
+[e :U _DS3231_GetDate ]
+"86
+[; ;DS3231.c: 86: void DS3231_GetDate(time myTime, uint8_t * buf)
+[v _myTime `S854 ~T0 @X0 1 r1 ]
+[v _buf `*uc ~T0 @X0 1 r2 ]
+"87
+[; ;DS3231.c: 87: {
+[f ]
+"89
+[; ;DS3231.c: 89:     BCD_to_ASCII((uint8_t) (myTime.date), &buf[0]);
+[e ( _BCD_to_ASCII (2 , . _myTime 4 &U *U + _buf * -> -> 0 `i `x -> -> # *U _buf `i `x ]
+"90
+[; ;DS3231.c: 90:     *(buf + 2) = ':';
+[e = *U + _buf * -> -> 2 `i `x -> -> # *U _buf `i `x -> -> 58 `ui `uc ]
+"92
+[; ;DS3231.c: 92:     BCD_to_ASCII((uint8_t) (myTime.month), &buf[3]);
+[e ( _BCD_to_ASCII (2 , . _myTime 5 &U *U + _buf * -> -> 3 `i `x -> -> # *U _buf `i `x ]
+"94
+[; ;DS3231.c: 94:     *(buf + 5) = ':';
+[e = *U + _buf * -> -> 5 `i `x -> -> # *U _buf `i `x -> -> 58 `ui `uc ]
+"96
+[; ;DS3231.c: 96:     *(buf + 6) = '2';
+[e = *U + _buf * -> -> 6 `i `x -> -> # *U _buf `i `x -> -> 50 `ui `uc ]
+"97
+[; ;DS3231.c: 97:     *(buf + 7) = '0';
+[e = *U + _buf * -> -> 7 `i `x -> -> # *U _buf `i `x -> -> 48 `ui `uc ]
+"98
+[; ;DS3231.c: 98:     BCD_to_ASCII((uint8_t) (myTime.year), &buf[8]);
+[e ( _BCD_to_ASCII (2 , . _myTime 6 &U *U + _buf * -> -> 8 `i `x -> -> # *U _buf `i `x ]
+"100
+[; ;DS3231.c: 100:     *(buf + 10) = '\0';
+[e = *U + _buf * -> -> 10 `i `x -> -> # *U _buf `i `x -> -> 0 `ui `uc ]
+"102
+[; ;DS3231.c: 102: }
+[e :UE 860 ]
+}
+"103
+[; ;DS3231.c: 103: void DS3231_Display_UART(time myTime) {
 [v _DS3231_Display_UART `(v ~T0 @X0 1 ef1`S854 ]
 {
 [e :U _DS3231_Display_UART ]
 [v _myTime `S854 ~T0 @X0 1 r1 ]
 [f ]
-[v F6075 `uc ~T0 @X0 -> 11 `i s ]
-[i F6075
+[v F6088 `uc ~T0 @X0 -> 11 `i s ]
+[i F6088
 :U ..
-"71
-[; ;DS3231.c: 71:     uint8_t timeStr[11] = "00:00:00";
+"104
+[; ;DS3231.c: 104:     uint8_t timeStr[11] = "00:00:00";
 -> 48 `c
 -> 48 `c
 -> 58 `c
@@ -918,18 +996,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _timeStr `uc ~T0 @X0 -> 11 `i a ]
-[e = _timeStr F6075 ]
-[v F6077 `uc ~T0 @X0 -> 13 `i s ]
-[i F6077
+[e = _timeStr F6088 ]
+[v F6090 `uc ~T0 @X0 -> 13 `i s ]
+[i F6090
 :U ..
-"72
-[; ;DS3231.c: 72:     uint8_t dateStr[13] = "00/00/2000";
+"105
+[; ;DS3231.c: 105:     uint8_t dateStr[13] = "00:00:2000";
 -> 48 `c
 -> 48 `c
--> 47 `c
+-> 58 `c
 -> 48 `c
 -> 48 `c
--> 47 `c
+-> 58 `c
 -> 50 `c
 -> 48 `c
 -> 48 `c
@@ -938,76 +1016,118 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _dateStr `uc ~T0 @X0 -> 13 `i a ]
-[e = _dateStr F6077 ]
-"74
-[; ;DS3231.c: 74:     BCD_to_ASCII((uint8_t) (myTime.hours), timeStr);
+[e = _dateStr F6090 ]
+"107
+[; ;DS3231.c: 107:     BCD_to_ASCII((uint8_t) (myTime.hours), timeStr);
 [e ( _BCD_to_ASCII (2 , . _myTime 2 &U _timeStr ]
-"75
-[; ;DS3231.c: 75:     *(timeStr + 2) = ':';
+"108
+[; ;DS3231.c: 108:     *(timeStr + 2) = ':';
 [e = *U + &U _timeStr * -> -> 2 `i `x -> -> # *U &U _timeStr `i `x -> -> 58 `ui `uc ]
-"77
-[; ;DS3231.c: 77:     BCD_to_ASCII((uint8_t) (myTime.minutes), &timeStr[3]);
+"110
+[; ;DS3231.c: 110:     BCD_to_ASCII((uint8_t) (myTime.minutes), &timeStr[3]);
 [e ( _BCD_to_ASCII (2 , . _myTime 1 &U *U + &U _timeStr * -> -> -> 3 `i `ui `ux -> -> # *U &U _timeStr `ui `ux ]
-"79
-[; ;DS3231.c: 79:     *(timeStr + 5) = ':';
+"112
+[; ;DS3231.c: 112:     *(timeStr + 5) = ':';
 [e = *U + &U _timeStr * -> -> 5 `i `x -> -> # *U &U _timeStr `i `x -> -> 58 `ui `uc ]
-"81
-[; ;DS3231.c: 81:     BCD_to_ASCII((uint8_t) (myTime.seconds), &timeStr[6]);
+"114
+[; ;DS3231.c: 114:     BCD_to_ASCII((uint8_t) (myTime.seconds), &timeStr[6]);
 [e ( _BCD_to_ASCII (2 , . _myTime 0 &U *U + &U _timeStr * -> -> -> 6 `i `ui `ux -> -> # *U &U _timeStr `ui `ux ]
-"83
-[; ;DS3231.c: 83:     *(timeStr + 10) = '\0';
+"116
+[; ;DS3231.c: 116:     *(timeStr + 10) = '\0';
 [e = *U + &U _timeStr * -> -> 10 `i `x -> -> # *U &U _timeStr `i `x -> -> 0 `ui `uc ]
-"87
-[; ;DS3231.c: 87:     BCD_to_ASCII((uint8_t) (myTime.date), dateStr);
+"120
+[; ;DS3231.c: 120:     BCD_to_ASCII((uint8_t) (myTime.date), dateStr);
 [e ( _BCD_to_ASCII (2 , . _myTime 4 &U _dateStr ]
-"88
-[; ;DS3231.c: 88:     *(dateStr + 2) = '/';
+"121
+[; ;DS3231.c: 121:     *(dateStr + 2) = '/';
 [e = *U + &U _dateStr * -> -> 2 `i `x -> -> # *U &U _dateStr `i `x -> -> 47 `ui `uc ]
-"90
-[; ;DS3231.c: 90:     BCD_to_ASCII((uint8_t) (myTime.month), &dateStr[3]);
+"123
+[; ;DS3231.c: 123:     BCD_to_ASCII((uint8_t) (myTime.month), &dateStr[3]);
 [e ( _BCD_to_ASCII (2 , . _myTime 5 &U *U + &U _dateStr * -> -> -> 3 `i `ui `ux -> -> # *U &U _dateStr `ui `ux ]
-"92
-[; ;DS3231.c: 92:     *(dateStr + 5) = '/';
+"125
+[; ;DS3231.c: 125:     *(dateStr + 5) = '/';
 [e = *U + &U _dateStr * -> -> 5 `i `x -> -> # *U &U _dateStr `i `x -> -> 47 `ui `uc ]
-"94
-[; ;DS3231.c: 94:     BCD_to_ASCII((uint8_t) (myTime.year), &dateStr[8]);
+"127
+[; ;DS3231.c: 127:     BCD_to_ASCII((uint8_t) (myTime.year), &dateStr[8]);
 [e ( _BCD_to_ASCII (2 , . _myTime 6 &U *U + &U _dateStr * -> -> -> 8 `i `ui `ux -> -> # *U &U _dateStr `ui `ux ]
-"96
-[; ;DS3231.c: 96:     *(dateStr + 12) = '\0';
+"129
+[; ;DS3231.c: 129:     *(dateStr + 12) = '\0';
 [e = *U + &U _dateStr * -> -> 12 `i `x -> -> # *U &U _dateStr `i `x -> -> 0 `ui `uc ]
-"98
-[; ;DS3231.c: 98:     EUSART2_puts(timeStr);
+"131
+[; ;DS3231.c: 131:     EUSART2_puts(timeStr);
 [e ( _EUSART2_puts (1 &U _timeStr ]
-"99
-[; ;DS3231.c: 99:     EUSART2_putrs("\r\n");
+"132
+[; ;DS3231.c: 132:     EUSART2_putrs("\r\n");
 [e ( _EUSART2_putrs (1 :s 8C ]
-"100
-[; ;DS3231.c: 100:     EUSART2_puts(dateStr);
+"133
+[; ;DS3231.c: 133:     EUSART2_puts(dateStr);
 [e ( _EUSART2_puts (1 &U _dateStr ]
-"101
-[; ;DS3231.c: 101:     EUSART2_putrs(eish[myTime.day - 1]);
+"134
+[; ;DS3231.c: 134:     EUSART2_putrs(eish[myTime.day - 1]);
 [e ( _EUSART2_putrs (1 -> *U + &U _eish * -> -> - -> . _myTime 3 `i -> 1 `i `ui `ux -> -> # *U &U _eish `ui `ux `*Cuc ]
-"102
-[; ;DS3231.c: 102: }
-[e :UE 859 ]
+"135
+[; ;DS3231.c: 135: }
+[e :UE 861 ]
 }
-"104
-[; ;DS3231.c: 104: static void BCD_to_ASCII(uint8_t valueInBCD, uint8_t * ptr) {
+"137
+[; ;DS3231.c: 137: static void BCD_to_ASCII(uint8_t valueInBCD, uint8_t * ptr) {
 [v _BCD_to_ASCII `(v ~T0 @X0 1 sf2`uc`*uc ]
 {
 [e :U _BCD_to_ASCII ]
 [v _valueInBCD `uc ~T0 @X0 1 r1 ]
 [v _ptr `*uc ~T0 @X0 1 r2 ]
 [f ]
-"105
-[; ;DS3231.c: 105:     *ptr++ = ((valueInBCD >> 4) | 0x30);
+"138
+[; ;DS3231.c: 138:     *ptr++ = ((valueInBCD >> 4) | 0x30);
 [e = *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> | >> -> _valueInBCD `i -> 4 `i -> 48 `i `uc ]
-"106
-[; ;DS3231.c: 106:     *ptr = ((valueInBCD & 0x0F) | 0x30);
+"139
+[; ;DS3231.c: 139:     *ptr = ((valueInBCD & 0x0F) | 0x30);
 [e = *U _ptr -> | & -> _valueInBCD `i -> 15 `i -> 48 `i `uc ]
-"107
-[; ;DS3231.c: 107: }
-[e :UE 860 ]
+"140
+[; ;DS3231.c: 140: }
+[e :UE 862 ]
+}
+"142
+[; ;DS3231.c: 142: uint16_t DS3231_GetTemperature(void)
+[v _DS3231_GetTemperature `(us ~T0 @X0 1 ef ]
+"143
+[; ;DS3231.c: 143: {
+{
+[e :U _DS3231_GetTemperature ]
+[f ]
+"145
+[; ;DS3231.c: 145:     i2c_start();
+[e ( _i2c_start ..  ]
+"147
+[; ;DS3231.c: 147:     i2c_write(0xD0);
+[e ( _i2c_write (1 -> -> 208 `i `uc ]
+"149
+[; ;DS3231.c: 149:     i2c_write(0x11);
+[e ( _i2c_write (1 -> -> 17 `i `uc ]
+"151
+[; ;DS3231.c: 151:     i2c_RS();
+[e ( _i2c_RS ..  ]
+"153
+[; ;DS3231.c: 153:     i2c_write(0xD1);
+[e ( _i2c_write (1 -> -> 209 `i `uc ]
+"155
+[; ;DS3231.c: 155:     uint8_t highByte = i2c_read(0);
+[v _highByte `uc ~T0 @X0 1 a ]
+[e = _highByte -> ( _i2c_read (1 -> -> 0 `i `uc `uc ]
+"157
+[; ;DS3231.c: 157:     uint8_t lowByte = i2c_read(1);
+[v _lowByte `uc ~T0 @X0 1 a ]
+[e = _lowByte -> ( _i2c_read (1 -> -> 1 `i `uc `uc ]
+"159
+[; ;DS3231.c: 159:     i2c_stop();
+[e ( _i2c_stop ..  ]
+"160
+[; ;DS3231.c: 160:     return (highByte << 8) | lowByte;
+[e ) -> | << -> _highByte `i -> 8 `i -> _lowByte `i `us ]
+[e $UE 863  ]
+"162
+[; ;DS3231.c: 162: }
+[e :UE 863 ]
 }
 [a 5C 44 84 104 117 114 115 100 97 121 0 ]
 [a 3C 44 84 117 101 115 100 97 121 0 ]

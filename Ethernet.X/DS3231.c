@@ -67,9 +67,42 @@ void DS3231_read(time * myTime) {
     i2c_stop();
 }
 
+void DS3231_GetTime(time myTime, uint8_t * buf)
+{
+    //00:00:00\0
+    BCD_to_ASCII((uint8_t) (myTime.hours), buf);
+    *(buf + 2) = ':';
+
+    BCD_to_ASCII((uint8_t) (myTime.minutes), &buf[3]);
+
+    *(buf + 5) = ':';
+
+    BCD_to_ASCII((uint8_t) (myTime.seconds), &buf[6]);
+    
+    *(buf + 8) = '\0';
+ 
+}
+
+void DS3231_GetDate(time myTime, uint8_t * buf)
+{
+    //00:00:2021
+    BCD_to_ASCII((uint8_t) (myTime.date), &buf[0]);
+    *(buf + 2) = ':';
+
+    BCD_to_ASCII((uint8_t) (myTime.month), &buf[3]);
+
+    *(buf + 5) = ':';
+
+    *(buf + 6) = '2'; 
+    *(buf + 7) = '0';
+    BCD_to_ASCII((uint8_t) (myTime.year), &buf[8]);
+    
+    *(buf + 10) = '\0';
+
+}
 void DS3231_Display_UART(time myTime) {
     uint8_t timeStr[11] = "00:00:00";
-    uint8_t dateStr[13] = "00/00/2000";
+    uint8_t dateStr[13] = "00:00:2000";
 
     BCD_to_ASCII((uint8_t) (myTime.hours), timeStr);
     *(timeStr + 2) = ':';
@@ -104,4 +137,26 @@ void DS3231_Display_UART(time myTime) {
 static void BCD_to_ASCII(uint8_t valueInBCD, uint8_t * ptr) {
     *ptr++ = ((valueInBCD >> 4) | 0x30);
     *ptr = ((valueInBCD & 0x0F) | 0x30);
+}
+
+uint16_t DS3231_GetTemperature(void)
+{
+    //address 11 and 12
+    i2c_start(); //send a start
+    
+    i2c_write(0xD0);
+
+    i2c_write(0x11);
+    
+    i2c_RS();
+
+    i2c_write(0xD1);
+    
+    uint8_t highByte = i2c_read(0); //read address 11
+    
+    uint8_t lowByte = i2c_read(1);
+
+    i2c_stop();
+    return (highByte << 8) | lowByte; 
+    
 }

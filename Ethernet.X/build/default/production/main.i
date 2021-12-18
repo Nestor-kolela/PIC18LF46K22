@@ -10579,6 +10579,9 @@ void DS3231_write(time myTime);
 static void BCD_to_ASCII(uint8_t valueInBCD, uint8_t * ptr);
 void DS3231_Display_UART(time myTime);
 void DS3231_read(time * myTime);
+void DS3231_GetTime(time myTime, uint8_t * buf);
+void DS3231_GetDate(time myTime, uint8_t * buf);
+uint16_t DS3231_GetTemperature(void);
 # 49 "main.c" 2
 
 volatile _Bool flag;
@@ -10590,14 +10593,22 @@ tcpTCB_t port7TCB;
 
 
 
-
-const char * KOLELA = "<html><head><meta http-equiv=\"refresh\" content=\"5\"><title>easyWEB - dynamic Webside</title></head><body bgcolor=\"#3030A0\" text=\"#FFFF00\"><p><b><font color=\"#FFFFFF\" size=\"6\"><i>Hello World!</i></font></b></p><p><b>This is a dynamic webside hosted by the embedded Webserver</b><b>easyWEB.</b></p><p><b>Hardware:</b></p><ul><li><b>MSP430F149, 8 MHz, 60KB Flash, 2KB SRAM</b></li><li><b>CS8900A Crystal Ethernet Controller</b></li></ul><p><b>A/D Converter Value Port P6.7:</b></p><table bgcolor=\"#ff0000\" border=\"5\" cellpadding=\"0\" cellspacing=\"0\" width=\"500\"><tr><td><table width=\"AD7%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td bgcolor=\"#00ff00\">&nbsp;</td></tr></table></td></tr></table><table border=\"0\" width=\"500\"><tr><td width=\"20%\">0V</td><td width=\"20%\">0,5V</td><td width=\"20%\">1V</td><td width=\"20%\">1,5V</td><td width=\"20%\">2V</td></tr></table><p><b>MCU Temperature:</b></p><table bgcolor=\"#ff0000\" border=\"5\" cellpadding=\"0\" cellspacing=\"0\" width=\"500\"><tr><td><table width=\"ADA%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td bgcolor=\"#00ff00\">&nbsp;</td></tr></table></td></tr></table><table border=\"0\" width=\"500\"><tr><td width=\"20%\">20°C</td><td width=\"20%\">25°C</td><td width=\"20%\">30°C</td><td width=\"20%\">35°C</td><td width=\"20%\">40°C</td></tr></table></body></html>";
-
+char KOLELA[] = "<html><head><meta http-equiv=\"refresh\" content=\"10\"><title>Embedded WebServer ENC28J60</title></head><body style=\"color: rgb(0, 0, 0); background-color: rgb(51, 51, 255);\"alink=\"#000099\" link=\"#000099\" vlink=\"#990099\"><big style=\"font-weight: bold; color: white;\"><big><big>Hello World!</big></big></big><br><br><br><big style=\"color: rgb(255, 255, 102); font-weight: bold;\">This is a dynamic website hosted by the embedded Web Server<br><br>Hardware: PIC18LF46K22, 64MHz, 64 KB Flash, 3KB SRAM<br><br>ENC28J60 Crystal Ethernet Controller</big><br><br><br><br><br><big style=\"font-weight: bold; font-style: italic;\"><span style=\"color: rgb(255, 255, 102);\">Time: </span><span style=\"color: yellow;\">00:00:00</span><br style=\"color: rgb(255, 255, 102);\"><span style=\"color: rgb(255, 255, 102);\">Date: 14:12:2021</span><br style=\"color: rgb(255, 255, 102);\"><span style=\"color: rgb(255, 255, 102);\">Temperature: </span></big><span style=\"font-weight: bold; color: rgb(255, 255, 102);\">+25.00 Celsius</span><br><span style=\"color: rgb(255, 255, 102); font-weight: bold;\"><br><br>GPIOs Status <br><br>LED1 is OFF<br>LED2 is OFF<br>LED3 is OFF<br><br><br><br>Designer: Nestor&nbsp;Kalambay</span><br></body></html>";
 void TCP_Handle(void);
+time now;
+
+char temporaryTime[] = "00:00:00";
+char temporaryDate[] = "14:12:2021";
+char temperatureBuf[] = "+25.00";
+char ledOneStatus[12] = "LED1 is OFF";
+char ledTwoStatus[12] = "LED2 is OFF";
+char ledThreeStatus[12] = "LED3 is OFF";
+
+
 void main(void)
 {
 
-    time now;
+
 
     now.date = 0x06;
 
@@ -10621,6 +10632,7 @@ void main(void)
 
     I2C_INTIALIZE(400000);
 
+
     (INTCONbits.GIE = 1);
 
 
@@ -10628,7 +10640,6 @@ void main(void)
 
 
     (INTCONbits.PEIE = 1);
-
 
 
 
@@ -10647,16 +10658,18 @@ void main(void)
 
             DS3231_Display_UART(now);
             EUSART2_putrs("\r\n");
+
             if(sentFlag == 1)
             {
                 if(TCP_Close(&port7TCB) == SUCCESS)
                 {
-
                     sentFlag = 0;
                 }
             }
             TCP_Update();
         }
+
+
     }
 }
 
@@ -10664,8 +10677,8 @@ void TCP_Handle(void) {
 
 
 
-    static uint8_t rxdataPort7[512];
-    static uint8_t txdataPort7[512];
+    static uint8_t rxdataPort7[500];
+    static uint8_t txdataPort7[500];
     uint16_t rxLen, txLen, i;
 
 
@@ -10703,10 +10716,12 @@ void TCP_Handle(void) {
             if(flag == 1)
                 EUSART2_putrs("Connected.\r\n");
 
-            if (TCP_SendDone(&port7TCB)) {
+            if (TCP_SendDone(&port7TCB))
+            {
 
                 rxLen = TCP_GetRxLength(&port7TCB);
-                if (rxLen > 0) {
+                if (rxLen > 0)
+                {
 
                     rxLen = TCP_GetReceivedData(&port7TCB);
 
@@ -10715,25 +10730,96 @@ void TCP_Handle(void) {
                         EUSART2_Write(txdataPort7[i] = rxdataPort7[i]);
                     }
 
-                    char tempBuf[50];
-                    sprintf(tempBuf, "\r\nThe size is %u\r\n", rxLen);
-                    EUSART2_puts(tempBuf);
-
                     TCP_InsertRxBuffer(&port7TCB, rxdataPort7, sizeof (rxdataPort7));
-                    txLen = rxLen;
 
+                    char * ptr = strstr(KOLELA, temporaryTime);
+                    char * ptrDate = strstr(KOLELA, temporaryDate);
+                    char * ptrTemp = strstr(KOLELA, temperatureBuf);
 
-                    if(TCP_Send(&port7TCB, KOLELA, strlen(KOLELA)) == SUCCESS)
+                    char * ptrLED1 = strstr(KOLELA, ledOneStatus);
+                    char * ptrLED2 = strstr(KOLELA, ledTwoStatus);
+                    char * ptrLED3 = strstr(KOLELA, ledThreeStatus);
+
+                    if(ptr != ((void*)0) && ptrDate != ((void*)0) && ptrTemp != ((void*)0) && ptrLED1 != ((void*)0) && ptrLED2 != ((void*)0) && ptrLED3 != ((void*)0))
                     {
 
+                        char tempBuf[10];
+                        char dateBuf[12];
 
-                        sentFlag = 1;
+                        DS3231_GetTime(now, tempBuf);
+                        DS3231_GetDate(now, dateBuf);
+                        char buf[20];
+                        uint16_t temperature = DS3231_GetTemperature();
 
-                        if(TCP_SocketRemove(&port7TCB) == SUCCESS)
+                        float tempInFloat = 0.25 * ((temperature & 0x00C0) >> 6);
+
+                        tempInFloat += (float) ((temperature & 0x7F00) >> 8);
+
+                        sprintf(buf, (temperature & 0x8000) ? "-%.2f": "+%.2f", tempInFloat);
+
+                        uint8_t i;
+                        for(i = 0; i < strlen(tempBuf); i++)
                         {
-                            EUSART2_puts("It was closed succesffully \r\n");
+                            *ptr++ = temporaryTime[i] = tempBuf[i];
                         }
-                        EUSART2_puts("It was sent successfully\r\n");
+                        temporaryTime[i] = '\0';
+
+
+                        for(i = 0; i < strlen(dateBuf); i++)
+                        {
+                            *ptrDate++ = temporaryDate[i] = dateBuf[i];
+                        }
+                        temporaryDate[i] = '\0';
+
+
+                        for(i = 0; i < strlen(temperatureBuf); i++)
+                        {
+                            *ptrTemp++ = temperatureBuf[i] = buf[i];
+                        }
+                        temperatureBuf[i] = '\0';
+
+
+
+                        strcpy(buf, PORTBbits.RB0 ? "LED1 is ON ": "LED1 is OFF");
+
+                        for(i = 0; i < strlen(ledOneStatus); i++)
+                        {
+                            *ptrLED1++ = ledOneStatus[i] = buf[i];
+                        }
+                        ledOneStatus[i] = '\0';
+
+
+
+                        strcpy(buf, PORTDbits.RD2 ? "LED2 is ON ": "LED2 is OFF");
+
+                        for(i = 0; i < strlen(ledTwoStatus); i++)
+                        {
+                            *ptrLED2++ = ledTwoStatus[i] = buf[i];
+                        }
+                        ledTwoStatus[i] = '\0';
+
+
+
+                        strcpy(buf, PORTEbits.RE0 ? "LED3 is ON ": "LED3 is OFF");
+
+                        for(i = 0; i < strlen(ledThreeStatus); i++)
+                        {
+                            *ptrLED3++ = ledThreeStatus[i] = buf[i];
+                        }
+                        ledThreeStatus[i] = '\0';
+
+                        if (TCP_Send(&port7TCB, KOLELA, strlen(KOLELA)) == SUCCESS) {
+
+
+                            sentFlag = 1;
+
+                            if (TCP_SocketRemove(&port7TCB) == SUCCESS)
+                            {
+                                EUSART2_puts("It was closed succesffully \r\n");
+                            }
+                            EUSART2_puts("It was sent successfully\r\n");
+                        }
+
                     }
                 }
             }

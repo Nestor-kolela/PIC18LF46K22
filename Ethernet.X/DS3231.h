@@ -26,5 +26,9 @@ void DS3231_write(time myTime);
 static void BCD_to_ASCII(uint8_t valueInBCD, uint8_t * ptr);
 void DS3231_Display_UART(time myTime);
 void DS3231_read(time * myTime);
+void DS3231_GetTime(time myTime, uint8_t * buf);
+void DS3231_GetDate(time myTime, uint8_t * buf);
+uint16_t DS3231_GetTemperature(void); 
+
 #endif
 
