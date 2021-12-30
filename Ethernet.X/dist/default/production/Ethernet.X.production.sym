@@ -2092,7 +2092,7 @@ text166 DE3A DF6F CODE DE3A 0
 %locals
 dist/default/production\Ethernet.X.production.o
 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf46k22.h
-C:\Users\kolel\AppData\Local\Temp\xcAsbcc.s
+C:\Users\kolel\AppData\Local\Temp\xcAsees.s
 11632 B75A 0 CODE 0
 11634 B75A 0 CODE 0
 11637 B75A 0 CODE 0
@@ -5443,7 +5443,7 @@ DS3231.c
 138 DBA8 0 CODE 0
 139 DBBC 0 CODE 0
 140 DBCC 0 CODE 0
-C:\Users\kolel\AppData\Local\Temp\xcAsbcc.s
+C:\Users\kolel\AppData\Local\Temp\xcAsees.s
 61559 8 0 CODE 0
 mcc_generated_files/interrupt_manager.c
 58 8 0 CODE 0
